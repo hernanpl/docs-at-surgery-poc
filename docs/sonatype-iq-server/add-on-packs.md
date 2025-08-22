@@ -72,7 +72,7 @@ Click on the *Create Attribution Report* as shown below.
 
 Refer to [License Legal REST API](#UUID-ae622dee-2c48-11f3-5a4c-92d5727a91cd) for more information on *Attribution Report* templates and other customizations.
 
-![166330437.png]({{ /assets/images/uuid-2b466175-e3de-ea96-541d-30db5542af0c.png)
+![166330437.png](/docs-at-surgery-poc/assets/images/uuid-2b466175-e3de-ea96-541d-30db5542af0c.png)
 
 Selecting a component from the *Applications Legal Details* page or the *Components* tab of the *Legal Backlog* takes you to the *Component License Details* page. The top portion of the screen gives you an overview of your review progress and other license details. The remainder of the screen is where you will review your license obligations, and add or edit copyright statements, notice texts, license texts, and attributions.
 
@@ -86,4 +86,4 @@ Most legal teams don’t currently have a tool to support their work and rely on
 
 On the left side, each type of legal obligation is color-coded for easy reference. When you click one of these color-coded items, the view automatically scrolls to the corresponding section of the license text on the right. This makes it quick and straightforward to see exactly where each obligation appears in the full license.
 
-![ALP_-_license.png]({{ /assets/images/uuid-f99e1348-15bb-37d2-5d8f-b3ea4977f31d.png)
+![ALP_-_license.png](/docs-at-surgery-poc/assets/images/uuid-f99e1348-15bb-37d2-5d8f-b3ea4977f31d.png)

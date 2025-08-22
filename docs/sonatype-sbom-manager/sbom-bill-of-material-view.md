@@ -49,7 +49,7 @@ The generated PDF includes the `Analysis Status` for VEX annotated vulnerabiliti
 
 See the [VEX Workflow](#UUID-802be01f-19ec-fc23-7537-34280dc06905) for details.
 
-![SBM-Export-PDF-Analysis_Status.png]({{ /assets/images/uuid-b086d3f3-d17f-6ef3-5030-1cc143cf0a3c.png)
+![SBM-Export-PDF-Analysis_Status.png](/docs-at-surgery-poc/assets/images/uuid-b086d3f3-d17f-6ef3-5030-1cc143cf0a3c.png)
 
 ## Missing Vulnerabilities in Imported SBOMs
 

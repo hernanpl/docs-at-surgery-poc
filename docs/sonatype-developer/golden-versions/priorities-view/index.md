@@ -45,7 +45,7 @@ Use the Fail/Warn policy action filter to view the priorities based on whether t
 
 NOTE: The fail/warn policy action filter is set to false by default, for Jira integrations.
 
-![fail-Warn_filter.png]({{ /assets/images/uuid-8d4e900a-9e0c-723b-472f-a6dd7a31c853.png)
+![fail-Warn_filter.png](/docs-at-surgery-poc/assets/images/uuid-8d4e900a-9e0c-723b-472f-a6dd7a31c853.png)
 
 The *Next Step* column in the new *Priorities View* allows you to create new pull requests (PRs), view existing PRs (including automated PRs). Learn more on how to: [Create manual pull requests from the Priorities View.](#UUID-15336078-6f2b-937e-efc8-0a163fcd48aa)
 
@@ -85,7 +85,7 @@ Using this feature, teams can seamlessly incorporate the remediation effort into
 
 (Refer to [Steps to configure manual PR creation](#UUID-15336078-6f2b-937e-efc8-0a163fcd48aa_section-idm23494518728636) .)
 
-![small_Priorities_View_Manual_PR.png]({{ /assets/images/uuid-77b55b71-3f42-b1b9-8f65-01b9272862af.png)
+![small_Priorities_View_Manual_PR.png](/docs-at-surgery-poc/assets/images/uuid-77b55b71-3f42-b1b9-8f65-01b9272862af.png)
 
 The *Create PR* button in the Next Step column is enabled if the following conditions are met:
 
@@ -105,7 +105,7 @@ The creation of manual PR is an asynchronous process. The link *View PR* will be
 
 To view more details for the component, prior to creating the manual PR, click on the component name under the Component column. The link displays the Component Details Page. Use the Create PR button as shown in the image below, on the Component Details Page, if you accept the suggested remediation.
 
-![CPP_with_PR_button.png]({{ /assets/images/uuid-f0c41935-3581-a59f-37d7-d5f3d91ed3e4.png)
+![CPP_with_PR_button.png](/docs-at-surgery-poc/assets/images/uuid-f0c41935-3581-a59f-37d7-d5f3d91ed3e4.png)
 
 **Example of a manual PR created from the Priorities View**
 
@@ -133,7 +133,7 @@ The *Next Step* column in the *Priorities View* can initiate one of the followin
 
 The *Build Action* column on the Priorities View contains the following possible statuses:
 
-![Priorities_view_with_waivers.png]({{ /assets/images/uuid-41070b16-e61d-3bd3-0d61-05bbc17b0f4e.png)
+![Priorities_view_with_waivers.png](/docs-at-surgery-poc/assets/images/uuid-41070b16-e61d-3bd3-0d61-05bbc17b0f4e.png)
 
 If waivers for a violation are in effect, the *Build Action* column displays the status as *Waived* .
 

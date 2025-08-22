@@ -96,7 +96,7 @@ SBOMs generated for CycloneDX 1.4+ include vulnerability data for components kno
 
 Getting the SBOM through the UI.
 
-![170099035.png]({{ /assets/images/uuid-7ed518df-d112-5db0-8900-9eef3ea7001b.png)
+![170099035.png](/docs-at-surgery-poc/assets/images/uuid-7ed518df-d112-5db0-8900-9eef3ea7001b.png)
 
 ### Exporting an SBOM through the REST API
 

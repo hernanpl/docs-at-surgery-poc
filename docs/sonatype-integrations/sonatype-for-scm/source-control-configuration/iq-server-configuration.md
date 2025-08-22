@@ -75,7 +75,7 @@ To test the configuration:
 
 **Note:** Testing the SCM Configuration is only available at the Application Level.
 
-![126655196.png]({{ /assets/images/uuid-9578dbc0-1639-cb85-3e8c-0cf00f0153ec.png)
+![126655196.png](/docs-at-surgery-poc/assets/images/uuid-9578dbc0-1639-cb85-3e8c-0cf00f0153ec.png)
 
 The 'Test Configuration' button is available once any changes have been saved with the 'Update' button.
 
@@ -95,7 +95,7 @@ SSH can be used for Git operations such as clone, fetch, and push. To enable SSH
 
 **On a Child Organization or an Application:**
 
-![126655184.png]({{ /assets/images/uuid-d457cf4e-1aed-70e3-6623-25250e5e7e9c.png)
+![126655184.png](/docs-at-surgery-poc/assets/images/uuid-d457cf4e-1aed-70e3-6623-25250e5e7e9c.png)
 
 SSH **requires native git** and a properly configured SSH key that is available to IQ. Configuring an SSH key is beyond the scope of this help document. Please consult your security or operations team.
 

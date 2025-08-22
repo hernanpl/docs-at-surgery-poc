@@ -35,7 +35,7 @@ The trend line gives an insight into the priority given to remediation tasks on 
 
 ### Build Stage Risk Monitoring Summary
 
-![Build_stage_risk_monitoring_summary.png]({{ /assets/images/uuid-9459e7bd-f6f8-9dcf-222d-36651ffd821c.png)
+![Build_stage_risk_monitoring_summary.png](/docs-at-surgery-poc/assets/images/uuid-9459e7bd-f6f8-9dcf-222d-36651ffd821c.png)
 
 This section summarizes the risks to your build pipeline and displays the IQ Server scan findings for each application. It contains:
 
@@ -61,7 +61,7 @@ Click on an application name to view the existing IQ Server settings for the app
 
 ## Available Plugins
 
-![Available_integrations.png]({{ /assets/images/uuid-9c4c296b-4895-fbf8-afb1-e2a038fb800c.png)
+![Available_integrations.png](/docs-at-surgery-poc/assets/images/uuid-9c4c296b-4895-fbf8-afb1-e2a038fb800c.png)
 
 Click on any of the tabs to view the Sonatype IQ Server plugins currently available for integration with CI/CD pipelines, SCM, issue-tracking systems, and IDE integrations.
 

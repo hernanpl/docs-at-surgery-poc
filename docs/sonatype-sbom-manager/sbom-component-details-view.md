@@ -23,7 +23,7 @@ Color-coded identifiers help you rapidly identify relational information about t
 
 The component summary section provides risk analysis details for the component.
 
-![Screenshot_2024-12-17_at_3_24_16_PM.png]({{ /assets/images/uuid-bde230cd-2ef0-d9e9-8a92-97eff719f40b.png)
+![Screenshot_2024-12-17_at_3_24_16_PM.png](/docs-at-surgery-poc/assets/images/uuid-bde230cd-2ef0-d9e9-8a92-97eff719f40b.png)
 
 ## Disclosed Vulnerabilities and Sonatype Identified Vulnerabilities
 
@@ -35,7 +35,7 @@ The disclosed vulnerabilities section provides a table of vulnerabilities includ
 
 Details about the vulnerability expand and appear in a side panel when you select an Issue ID.
 
-![SBOM-Component-Details-Vulnerability-Details.png]({{ /assets/images/uuid-5d1a8c80-57eb-89aa-a768-c8e1a143aeeb.png)
+![SBOM-Component-Details-Vulnerability-Details.png](/docs-at-surgery-poc/assets/images/uuid-5d1a8c80-57eb-89aa-a768-c8e1a143aeeb.png)
 
 The Vulnerability Details panel provides details of vulnerability including; description, explanation, detection, recommendations, affected versions, root causes, advisories, and CVSS details.
 

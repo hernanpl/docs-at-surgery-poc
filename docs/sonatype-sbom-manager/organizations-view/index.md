@@ -26,6 +26,6 @@ Organizations and applications may be added from the side navigation by selectin
 
 Select an organization to view current applications and add new ones. The Application ID is used to reference your applications during evaluations using the scanner tools or API.
 
-![Screenshot_2024-05-15_at_9_29_44_PM.png]({{ /assets/images/uuid-2fd9886d-e27c-a66b-3fa8-fda9f0563445.png)
+![Screenshot_2024-05-15_at_9_29_44_PM.png](/docs-at-surgery-poc/assets/images/uuid-2fd9886d-e27c-a66b-3fa8-fda9f0563445.png)
 
 Applications and Organizations may also be added using the API.

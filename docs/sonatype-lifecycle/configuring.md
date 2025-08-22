@@ -410,7 +410,7 @@ Steps to edit the data retention configuration.
 - Data retention is set by the Lifecycle stage; choose between not purging for this stage or custom
 - Choose a retention period or a set number of reports to retain. Reports are purged when either rule is satisfied
 
-![Screenshot_2024-03-14_at_4_57_03_PM.png]({{ /assets/images/uuid-0b2566b0-3299-4267-003e-4e08e7ab9c1a.png)
+![Screenshot_2024-03-14_at_4_57_03_PM.png](/docs-at-surgery-poc/assets/images/uuid-0b2566b0-3299-4267-003e-4e08e7ab9c1a.png)
 
 ### Cleaning up Success Metrics data
 
@@ -654,7 +654,7 @@ This section lists the effective InnerSource repository connections applicable t
 
 4. To change this configuration click the edit button to pull up the configuration shown below.
 
-![Innersource_Repository_Configuration.png]({{ /assets/images/uuid-23c9cc8c-055e-1757-0410-c90859ce0c3d.png)
+![Innersource_Repository_Configuration.png](/docs-at-surgery-poc/assets/images/uuid-23c9cc8c-055e-1757-0410-c90859ce0c3d.png)
 
 The options will vary slightly depending on whether you are editing the Root Organization, a child organization, or an application.
 
@@ -711,7 +711,7 @@ The application evaluation report will show the vulnerabilities detected from pu
 
 Click on the *Security tab* on the Component Details Page and scroll down to the Vulnerabilities table.
 
-![4_public_data_sources.png]({{ /assets/images/uuid-c974255f-e255-c8f6-45e8-95e2f73ca151.png)
+![4_public_data_sources.png](/docs-at-surgery-poc/assets/images/uuid-c974255f-e255-c8f6-45e8-95e2f73ca151.png)
 
 The *Data Enrichment* column indicates **Public Data** for vulnerabilities detected from public data sources.
 
@@ -742,7 +742,7 @@ When configured, monitoring for available upgrades for waived components takes p
 - Enable the `Dashboard Indicator` under Component Upgrade Availability
 - Select Update
 
-![161120265.png]({{ /assets/images/uuid-e457ee3b-198c-4164-87b9-349a0a6744c8.png)
+![161120265.png](/docs-at-surgery-poc/assets/images/uuid-e457ee3b-198c-4164-87b9-349a0a6744c8.png)
 
 You may also update this configuration using the [Configuration REST API](#UUID-0fa6ca2c-1237-6aca-a4e6-ad4d074fd63f) .
 

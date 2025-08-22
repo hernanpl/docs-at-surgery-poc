@@ -98,7 +98,7 @@ The *Application Report* will show the policy violations for components (belongi
 
 Click on the policy violation to open the violation details view.
 
-![image-20240730-200459.png]({{ /assets/images/uuid-ddad88b7-7b47-0a91-25f1-e7ebd80e4adf.png)
+![image-20240730-200459.png](/docs-at-surgery-poc/assets/images/uuid-ddad88b7-7b47-0a91-25f1-e7ebd80e4adf.png)
 
 For releases 192 and later, the policy violations tab on the application report contains [The Reachability Column](https://help.sonatype.com/en/component-details-page.html#policy-violations-tab) to indicate the Reachability status of the violation.
 

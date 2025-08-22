@@ -796,7 +796,7 @@ With Sonatype Nexus Repository Pro, you can push images to a group repository. T
 
 **Note:** Note that you will not be able to use Staging moves for writable repositories that are members of a Docker group repository.
 
-![93487515.png]({{ /assets/images/uuid-b5b6fc19-ca98-e885-96b4-0b083a4919c5.png)
+![93487515.png](/docs-at-surgery-poc/assets/images/uuid-b5b6fc19-ca98-e885-96b4-0b083a4919c5.png)
 
 The procedure of pushing images is otherwise the same [as described for a hosted repository](#UUID-60cccba3-51e4-878c-8488-10623077aa84) .
 
@@ -1479,7 +1479,7 @@ The initial installation of Nexus Repository includes the following NuGet reposi
 - `nuget-hosted` - to upload your developed packages and third-party packages
 - `nuget-group` - Group combining the proxy and the hosted repositories
 
-![nx-repository-proxy-nuget.png]({{ /assets/images/uuid-727c1d8e-ae7b-9df9-5f00-3ee3f1a6874a.png)
+![nx-repository-proxy-nuget.png](/docs-at-surgery-poc/assets/images/uuid-727c1d8e-ae7b-9df9-5f00-3ee3f1a6874a.png)
 
 ### NuGet Proxy Repository
 

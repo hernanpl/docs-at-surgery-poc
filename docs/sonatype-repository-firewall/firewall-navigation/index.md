@@ -41,7 +41,7 @@ Manage the configuring for a specific repository manager in the Repository Firew
 - When the complete listing of repository managers is not displayed, selecting the `Repository Managers` title will display the list of repository managers.
 - Selecting a single repository manager in the list navigates to this view.
 
-![fw-navigation-repository-view.png]({{ /assets/images/uuid-fa481523-4f4b-080a-7751-e646c04224fd.png)
+![fw-navigation-repository-view.png](/docs-at-surgery-poc/assets/images/uuid-fa481523-4f4b-080a-7751-e646c04224fd.png)
 
 ### Sections
 
@@ -86,7 +86,7 @@ See [Namespace Confusion Protection](#UUID-53279c26-0859-f790-35e9-7d43cfff316d)
 
 The Firewall dashboard displays a summary of Firewall operations and the components in quarantine. These results are sorted by the most recently quarantined component and may be filtered using the summary metrics.
 
-![fw-dashboard.png]({{ /assets/images/uuid-32db73d7-a192-2a4d-9497-d43da8df3fe7.png)
+![fw-dashboard.png](/docs-at-surgery-poc/assets/images/uuid-32db73d7-a192-2a4d-9497-d43da8df3fe7.png)
 
 ### Summary Metrics
 
@@ -134,7 +134,7 @@ Disable anonymous access using the [Repository Firewall REST API](#UUID-d516f5b1
 
 The repository results page is an audit of a proxy repository configured with the Repository Firewall. This view lists all the components requested through the proxy and any violations found near the time the component was requested.
 
-![Screenshot_2024-02-15_at_7_05_08_PM.png]({{ /assets/images/uuid-849decb0-9296-f7d4-d2d6-39a6a0242beb.png)
+![Screenshot_2024-02-15_at_7_05_08_PM.png](/docs-at-surgery-poc/assets/images/uuid-849decb0-9296-f7d4-d2d6-39a6a0242beb.png)
 
 ### Repository Summary
 

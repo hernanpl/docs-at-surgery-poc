@@ -79,7 +79,7 @@ The configuration for auto-releasing quarantined components is found on the Auto
 
 Modifying the auto-release functionality requires the `Edit IQ Elements` permission set at the `Repository Managers` access level.
 
-![fw.dashboard_auto_release_config]({{ /assets/images/uuid-b614713c-b530-aba5-2aa8-b367068e45c0.png)
+![fw.dashboard_auto_release_config](/docs-at-surgery-poc/assets/images/uuid-b614713c-b530-aba5-2aa8-b367068e45c0.png)
 
 ### Auto-Release Task
 

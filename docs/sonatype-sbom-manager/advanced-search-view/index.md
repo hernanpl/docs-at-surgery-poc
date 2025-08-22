@@ -32,7 +32,7 @@ You may export the results of an advanced search by selecting the Export Results
 
 Results may also be exported using the Advanced Search REST API.
 
-![123404564.png]({{ /assets/images/uuid-d2294c03-fd72-00e4-ba1e-94ff8ecb445f.png)
+![123404564.png](/docs-at-surgery-poc/assets/images/uuid-d2294c03-fd72-00e4-ba1e-94ff8ecb445f.png)
 
 **Note:** Limitations with the Advance Search The Advance Search does not list all vulnerabilities known to Sonatype. The complete list of vulnerabilities are stored in Sonatype's proprietary Hosted Data Services (HDS) database and is used during the application analysis.
 

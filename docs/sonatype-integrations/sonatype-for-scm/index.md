@@ -210,7 +210,7 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 2. A **Golden PR line comment** will be seen as below. The Golden Version of the component is indicated by a gold star.
 
-![Line_comment_golden.png]({{ /assets/images/uuid-64295316-facb-d828-f09d-4b9056fd480a.png)
+![Line_comment_golden.png](/docs-at-surgery-poc/assets/images/uuid-64295316-facb-d828-f09d-4b9056fd480a.png)
 
 3. A **Golden PR** (indicated by a gold star,) will be created as below, indicating the suggested component version, i.e. Golden Version. This is a safe-to-use version with no breaking changes, no policy violations (including its dependencies) and can be used to remediate the policy violations.
 
@@ -228,7 +228,7 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 1. A top-level **Golden PR comment** for a Golden Version of a component will be seen as below. The version upgrade information indicates that bumping to a version will resolve all policy violations for this component (including its dependencies) and result in no breaking changes.
 
-![Top_level_GitLab_comment.png]({{ /assets/images/uuid-e032029b-41b7-d4aa-4aec-55d08603b4e4.png)
+![Top_level_GitLab_comment.png](/docs-at-surgery-poc/assets/images/uuid-e032029b-41b7-d4aa-4aec-55d08603b4e4.png)
 
 2. A **Golden PR line comment** will be seen as below. The Golden Version of the component is indicated by a gold star.
 
@@ -236,7 +236,7 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 3. A **Golden PR** (indicated by a gold star,) will be created as below, indicating the suggested component version, i.e. Golden Version. This is a safe-to-use version with no breaking changes, no policy violations (including its dependencies) and can be used to remediate the policy violations.
 
-![GitLab_Folden_PR.png]({{ /assets/images/uuid-7f3874c6-1665-3627-a999-b7b6c521b487.png)
+![GitLab_Folden_PR.png](/docs-at-surgery-poc/assets/images/uuid-7f3874c6-1665-3627-a999-b7b6c521b487.png)
 
 ### Golden PR for Azure DevOps
 
@@ -254,7 +254,7 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 2. A **Golden PR line comment** will be seen as below. The Golden Version of the component is indicated by a gold star.
 
-![Azure_line_comment.png]({{ /assets/images/uuid-8793d199-dee3-415c-3482-5eccae4f62c7.png)
+![Azure_line_comment.png](/docs-at-surgery-poc/assets/images/uuid-8793d199-dee3-415c-3482-5eccae4f62c7.png)
 
 3. A **Golden PR** (indicated by a gold star,) will be created as below, indicating the suggested component version, i.e. Golden Version. This is a safe-to-use version with no breaking changes, no policy violations (including its dependencies) and can be used to remediate the policy violations.
 
@@ -272,7 +272,7 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 1. A top-level **Golden PR comment** for a Golden Version of a component will be seen as below. The version upgrade information indicates that bumping to a version will resolve all policy violations for this component (including its dependencies) and result in no breaking changes.
 
-![BitBucket_Top_level_comment.png]({{ /assets/images/uuid-2f862e52-29f3-c5a1-b6cb-7a355daeb306.png)
+![BitBucket_Top_level_comment.png](/docs-at-surgery-poc/assets/images/uuid-2f862e52-29f3-c5a1-b6cb-7a355daeb306.png)
 
 2. A **Golden PR line comment** will be seen as below. The Golden Version of the component is indicated by a gold star.
 
@@ -280,7 +280,7 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 3. A **Golden PR** (indicated by a gold star,) will be created as below, indicating the suggested component version, i.e. Golden Version. This is a safe-to-use version with no breaking changes, no policy violations (including its dependencies) and can be used to remediate the policy violations.
 
-![Bitbucket_Golden_PR.png]({{ /assets/images/uuid-4c1980db-cb40-c067-6611-2057ffb6492e.png)
+![Bitbucket_Golden_PR.png](/docs-at-surgery-poc/assets/images/uuid-4c1980db-cb40-c067-6611-2057ffb6492e.png)
 
 ## Policy Evaluation with Nexus IQ for SCM
 

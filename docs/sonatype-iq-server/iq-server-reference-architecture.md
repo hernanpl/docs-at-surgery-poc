@@ -44,7 +44,7 @@ Reference Architecture Diagram:
 
 Reference Architecture Diagram:
 
-![SIQ_Single_Instance_Postgres_port.png]({{ /assets/images/uuid-0d10fab9-c052-b6dc-28dd-2e82c48329c1.png)
+![SIQ_Single_Instance_Postgres_port.png](/docs-at-surgery-poc/assets/images/uuid-0d10fab9-c052-b6dc-28dd-2e82c48329c1.png)
 
 **Recommendations for Container Environments**
 
@@ -75,7 +75,7 @@ Active-passive architecture clones a single instance (primary instance) and plac
 
 **Reference Architecture Diagram:**
 
-![SIQ_Active_Passive_Medium_port.png]({{ /assets/images/uuid-0e0e8050-d95c-1092-88e0-24241ee203c0.png)
+![SIQ_Active_Passive_Medium_port.png](/docs-at-surgery-poc/assets/images/uuid-0e0e8050-d95c-1092-88e0-24241ee203c0.png)
 
 For active-passive deployment using internal database, data will have to be replicated between the active and passive instance of the IQ Server.
 

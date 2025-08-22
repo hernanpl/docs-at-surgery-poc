@@ -43,7 +43,7 @@ See [Zscaler Help Portal](https://help.zscaler.com/zia/managing-cloud-service-ap
 
 Set the formats to be covered with Zscaler. Included formats use more available Zscaler custom URLs.
 
-![fw-zscaler-configuration-formats.png]({{ /assets/images/uuid-fb90a13b-b185-8739-c261-f5c84bfcc5c5.png)
+![fw-zscaler-configuration-formats.png](/docs-at-surgery-poc/assets/images/uuid-fb90a13b-b185-8739-c261-f5c84bfcc5c5.png)
 
 **Note:** Trigger an Update to Zscaler There is up to a 24-hour delay when configuring ZScaler before data is sent to the service. You may trigger the service to update immediately using the API. POST /api/v2/config/zscaler/update
 

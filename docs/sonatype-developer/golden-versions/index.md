@@ -24,7 +24,7 @@ If Sonatype Component Intelligence finds a Golden Version for a component, the *
 
 Click on the row, to view the Golden Version of the component on the [component details page](#UUID-c348055a-b083-a26c-6dda-b4cfda3cf2ef)
 
-![Golden_ver_component_det.png]({{ /assets/images/uuid-7d2b2b9b-d673-18d1-f04d-db2a2268e0af.png)
+![Golden_ver_component_det.png](/docs-at-surgery-poc/assets/images/uuid-7d2b2b9b-d673-18d1-f04d-db2a2268e0af.png)
 
 ## The Golden PR
 

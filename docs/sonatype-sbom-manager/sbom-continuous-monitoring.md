@@ -17,7 +17,7 @@ Vulnerability and policy violations for an SBOM remain static after the initial 
 
 Administrators may enable Continuous Monitoring from the Organizations view. We recommend setting the configuration at the Root Organization, however, this setting may be enabled at any level of the organization hierarchy.
 
-![sbm-continous-monitoring-enable.png]({{ /assets/images/uuid-342bd5d0-6939-7e7e-89e2-b4f714f65cce.png)
+![sbm-continous-monitoring-enable.png](/docs-at-surgery-poc/assets/images/uuid-342bd5d0-6939-7e7e-89e2-b4f714f65cce.png)
 
 - Navigate to the Organizations view
 - From the center view, select the Continuous monitoring configuration

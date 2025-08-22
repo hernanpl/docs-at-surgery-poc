@@ -43,7 +43,7 @@ When scanning binary files, Sonatype can determine when an open-source component
 
 See the topic [Component Identification: Match States](#UUID-c8a1f963-f80b-dd2f-ca31-eac799d3267e_id_ComponentIdentification-matchstateMatchStates) to learn more.
 
-![Screenshot_2024-12-09_at_2_39_37_PM.png]({{ /assets/images/uuid-1872f6fd-76df-05d0-8d6b-133eb7fd5561.png)
+![Screenshot_2024-12-09_at_2_39_37_PM.png](/docs-at-surgery-poc/assets/images/uuid-1872f6fd-76df-05d0-8d6b-133eb7fd5561.png)
 
 ## Binary File Names
 

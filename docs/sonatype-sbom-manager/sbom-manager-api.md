@@ -330,7 +330,7 @@ REST APIs under the *Experimental* tab are evolving and are not recommended for 
 
 The REST APIs are arranged in an alphabetical order, with a brief description on usage.
 
-![methods.png]({{ /assets/images/uuid-ea0bde6c-1aad-3992-ea70-cf0a22004254.png)
+![methods.png](/docs-at-surgery-poc/assets/images/uuid-ea0bde6c-1aad-3992-ea70-cf0a22004254.png)
 
 Click on the dropdown arrow at the right end of the method names to expand the method descriptions.
 

@@ -81,7 +81,7 @@ The Default Role is a role that is automatically granted to all authenticated us
 
 To enable appending a default role to all authenticated users, create a new Capability using capability type *Default Role* as pictured below; you will then be able to select the role that you want applied to users.
 
-![50626754.png]({{ /assets/images/uuid-e4636a5a-c4b5-45c7-45f2-58fdc9953ece.png)
+![50626754.png](/docs-at-surgery-poc/assets/images/uuid-e4636a5a-c4b5-45c7-45f2-58fdc9953ece.png)
 
 Once this is saved, the *Default Role Realm* will be added to the active list of security realms and start applying the new role to all authenticated users.
 
@@ -209,7 +209,7 @@ The repository manager allows you to manage the trust of all remote SSL certific
 
 Access the feature view for SSL Certificates administration by selecting the *SSL Certificates* menu items in the *Security* sub-menu in the Settings menu. A user must have the *nx-ssl-truststore* privileges to access this view.
 
-![SSL Certificates Administration Screen]({{ /assets/images/uuid-657b9dbf-deee-6359-ba01-226e094ac092.png)
+![SSL Certificates Administration Screen](/docs-at-surgery-poc/assets/images/uuid-657b9dbf-deee-6359-ba01-226e094ac092.png)
 
 The list shows any certificates that are already trusted. Clicking on an individual row allows you to inspect the certificate. This detailed view shows further information about the certificate including *Subject* , *Issuer,* and *Certificate* details. The *Delete certificate* button allows you to remove a certificate from the truststore.
 
@@ -331,7 +331,7 @@ Once you have configured the parameters you can use the *Verify email server* se
 
 Nexus Repository uses HTTP(s) requests to fetch content from remote servers configured as proxy repositories. Administrators may set the global configuration for outbound request retries and timeouts.
 
-![Partial view of HTTP configuration screen]({{ /assets/images/uuid-4872638c-c1fa-5831-eb1d-2b3aaec6cfbd.png)
+![Partial view of HTTP configuration screen](/docs-at-surgery-poc/assets/images/uuid-4872638c-c1fa-5831-eb1d-2b3aaec6cfbd.png)
 
 ### HTTP and HTTPS Settings
 
@@ -422,7 +422,7 @@ Nexus Repository detects malware within your repository and warns users when mal
 
 Users logging into Nexus Repository see a warning banner when Malware components are found in their repositories. We recommend users contact their system administrators to report the discovery and request they remove the components immediately.
 
-![Docs_ex_image2.png]({{ /assets/images/uuid-ce6bd9e2-5b36-6b9d-5d85-47ec72a17523.png)
+![Docs_ex_image2.png](/docs-at-surgery-poc/assets/images/uuid-ce6bd9e2-5b36-6b9d-5d85-47ec72a17523.png)
 
 The banner is updated every 24 hours.
 
@@ -841,7 +841,7 @@ Here are some quick benefits of Staging:
 
 Nexus Repository has features to manage and monitor your server and are useful for troubleshooting and support activities. Support features are available in the Support view of the Settings menu.
 
-![nx-support-zip.png]({{ /assets/images/uuid-7dec5f61-d5f0-1b0c-b56d-161493fb094f.png)
+![nx-support-zip.png](/docs-at-surgery-poc/assets/images/uuid-7dec5f61-d5f0-1b0c-b56d-161493fb094f.png)
 
 ### Support ZIP
 
@@ -1050,7 +1050,7 @@ The total requests outnumber the total number of components as multiple requests
 
 Nexus Repository Pro instances not subject to hard limits see a simplified version of the usage metrics different from the Community Edition users.
 
-![nx-usage-center-pro.png]({{ /assets/images/uuid-e1c1f81e-f342-e3c0-a08e-1ed3924b3e68.png)
+![nx-usage-center-pro.png](/docs-at-surgery-poc/assets/images/uuid-e1c1f81e-f342-e3c0-a08e-1ed3924b3e68.png)
 
 ### Component Metrics
 
@@ -1085,7 +1085,7 @@ See the Reference Architectures documentation
 - Usage metrics takes up to an hour to update as counts are not live. Monthly requests are updated once a day.
 - Nexus Repository Pro instances not subject to hard limits see a simplified version of the usage metrics.
 
-![nx-usage-center.png]({{ /assets/images/uuid-3185ba3d-aea8-d485-dceb-e025ee6d2b9b.png)
+![nx-usage-center.png](/docs-at-surgery-poc/assets/images/uuid-3185ba3d-aea8-d485-dceb-e025ee6d2b9b.png)
 
 ### How Components are Defined within Nexus Repository
 
@@ -1180,7 +1180,7 @@ This model is common in authentication systems such as:
 
 Users log in to the environment through a central login page that propagates the login status via HTTP headers. A reverse proxy server (e.g., [Apache HTTPD](http://httpd.apache.org/) or [nginx](http://nginx.org/) ) can be used to perform this authentication and direct all communication with the Nexus Repository. The proxy server may defer this role to another authentication storage systems (e.g., via the [Kerberos](http://web.mit.edu/kerberos/) network authentication protocol).
 
-![116230375.png]({{ /assets/images/uuid-2df08618-c978-a7a2-d5c0-ced924cf3bdd.png)
+![116230375.png](/docs-at-surgery-poc/assets/images/uuid-2df08618-c978-a7a2-d5c0-ced924cf3bdd.png)
 
 ### Reset the Admin Password
 

@@ -155,7 +155,7 @@ To protect a branch:
 
 **Note:** The **IQ Policy Evaluation** status check will not appear in the list of status checks found in the last week for this repository until the first policy evaluation status has been added to the repository.
 
-![126654803.png]({{ /assets/images/uuid-fec6c31a-a9e7-0f75-95aa-7766e8633db8.png)
+![126654803.png](/docs-at-surgery-poc/assets/images/uuid-fec6c31a-a9e7-0f75-95aa-7766e8633db8.png)
 
 ## GitLab Configuration
 
@@ -181,7 +181,7 @@ You can prevent merge requests from being merged if their pipeline did not succe
 
 You can prevent users from merging Pull Requests with failing IQ Policy Evaluations with a **Merge Check.** IQ Policy Evaluations must be set to Fail at the Source Stage.
 
-![126655097.png]({{ /assets/images/uuid-0e14975b-2518-bb3b-ae81-a8cc5ff37480.png)
+![126655097.png](/docs-at-surgery-poc/assets/images/uuid-0e14975b-2518-bb3b-ae81-a8cc5ff37480.png)
 
 Click **Enabled** from the dropdown next to **Minimum successful builds** . Set the desired minimum number of successful builds.
 
@@ -204,7 +204,7 @@ You can prevent users from merging Pull Requests with failing IQ Policy Evaluati
 
 Click **Settings** , then **Branch permissions** , then **Add a branch permission** .
 
-![Protect Bitbucket branch.png]({{ /assets/images/uuid-a4cf3f72-b55d-1f41-8af3-ce0767d84561.png)
+![Protect Bitbucket branch.png](/docs-at-surgery-poc/assets/images/uuid-a4cf3f72-b55d-1f41-8af3-ce0767d84561.png)
 
 Select the a branch option and desired write and merge access. Select **Check the last commit for at least 1 successful build and no failed builds** in the Merge checks section.
 
@@ -214,7 +214,7 @@ This will inform users that the requirements are not fulfilled when trying to me
 
 Premium accounts have the additional ability to prevent the merge.
 
-![New_bitbucket_premium.png]({{ /assets/images/uuid-d6cf6496-cc06-e157-5d1a-b87330da222f.png)
+![New_bitbucket_premium.png](/docs-at-surgery-poc/assets/images/uuid-d6cf6496-cc06-e157-5d1a-b87330da222f.png)
 
 This will prevent users from merging a pull request with a failed build.
 
@@ -239,7 +239,7 @@ Create and configure a **Branch Policy** to protect your target branch:
 
 1. Navigate to **Repos → Branches** in the left menu, and select a branch to protect (typically main or develop). Select **Branch policies** from the menu.
 
-![126655155.png]({{ /assets/images/uuid-ad73f84e-26ff-03d3-bfe8-eb63b56becf6.png)
+![126655155.png](/docs-at-surgery-poc/assets/images/uuid-ad73f84e-26ff-03d3-bfe8-eb63b56becf6.png)
 
 2. Find **Status checks** and click the **+** button
 
@@ -294,7 +294,7 @@ To test the configuration:
 
 **Note:** Testing the SCM Configuration is only available at the Application Level.
 
-![126655196.png]({{ /assets/images/uuid-9578dbc0-1639-cb85-3e8c-0cf00f0153ec.png)
+![126655196.png](/docs-at-surgery-poc/assets/images/uuid-9578dbc0-1639-cb85-3e8c-0cf00f0153ec.png)
 
 The 'Test Configuration' button is available once any changes have been saved with the 'Update' button.
 
@@ -314,7 +314,7 @@ SSH can be used for Git operations such as clone, fetch, and push. To enable SSH
 
 **On a Child Organization or an Application:**
 
-![126655184.png]({{ /assets/images/uuid-d457cf4e-1aed-70e3-6623-25250e5e7e9c.png)
+![126655184.png](/docs-at-surgery-poc/assets/images/uuid-d457cf4e-1aed-70e3-6623-25250e5e7e9c.png)
 
 SSH **requires native git** and a properly configured SSH key that is available to IQ. Configuring an SSH key is beyond the scope of this help document. Please consult your security or operations team.
 

@@ -25,7 +25,7 @@ In Azure DevOps, a build status can be attached to a commit when an IQ Policy Ev
 
 In both Bitbucket Server and Bitbucket Cloud, a build status can be attached to commits when an IQ Policy Evaluation highlights violations. This will be visible on individual commits and on any pull requests containing that commit.
 
-![126654526.png]({{ /assets/images/uuid-92b3d7bd-f41d-98a3-0e9e-a307d61b95dd.png)
+![126654526.png](/docs-at-surgery-poc/assets/images/uuid-92b3d7bd-f41d-98a3-0e9e-a307d61b95dd.png)
 
 ### GitHub
 
@@ -35,7 +35,7 @@ As a GitHub Status, an IQ Policy Evaluation check runs whenever a Pull Request i
 
 The IQ Policy Evaluation report can also be accessed from a commit itself by clicking the status icon then clicking the **Details** link to the right of the IQ Policy Evaluation component summary on the checks popup.
 
-![126654527.png]({{ /assets/images/uuid-256d116d-d124-f26c-871e-2055f3047b14.png)
+![126654527.png](/docs-at-surgery-poc/assets/images/uuid-256d116d-d124-f26c-871e-2055f3047b14.png)
 
 ### GitLab
 

@@ -209,7 +209,7 @@ Waiving violations for components that are both transitive and Innersource can b
 
 The Application Composition Report is a point-in-time report detailing the policy violations affecting the use of open-source components found in your application. The report includes information on how the application complies with the policies your team, or business, has established.
 
-![178716743.png]({{ /assets/images/uuid-8d4b557d-f0fe-45e1-e540-06f02a81b31b.png)
+![178716743.png](/docs-at-surgery-poc/assets/images/uuid-8d4b557d-f0fe-45e1-e540-06f02a81b31b.png)
 
 ### Accessing the Report
 
@@ -259,7 +259,7 @@ This option is available from the [Options dropdown](#UUID-cdab48b3-4098-bf5e-68
 
 The *Latest Evaluations* page contains a list of the last twenty evaluation reports for the selected stage.
 
-![Latest_Evaluations_189.png]({{ /assets/images/uuid-a1863fa9-0734-272a-ccc0-eeb2bb2c97bb.png)
+![Latest_Evaluations_189.png](/docs-at-surgery-poc/assets/images/uuid-a1863fa9-0734-272a-ccc0-eeb2bb2c97bb.png)
 
 **Note:** Cannot Find a Report? If an application evaluation report has been purged, it will not be accessible under the *Latest Evaluations* . Refer to [Data Retention Configuration](#UUID-2b3cfee1-89f1-01d1-3054-80b82081877c) for details on purging and retrieving the purged reports from the trash directory.
 
@@ -334,7 +334,7 @@ Using the [Configuration REST API](#UUID-0fa6ca2c-1237-6aca-a4e6-ad4d074fd63f) ,
 
 Success Metrics can be disabled by an administrator in the Lifecycle UI:
 
-![Screenshot of window to enable success metrics]({{ /assets/images/uuid-67a1a189-91b9-b514-d635-568e69d4ef0c.png)
+![Screenshot of window to enable success metrics](/docs-at-surgery-poc/assets/images/uuid-67a1a189-91b9-b514-d635-568e69d4ef0c.png)
 
 ### Additional Resources
 
@@ -367,7 +367,7 @@ Find will send a request to our data services and return the latest information 
 
 Once a lookup is performed with a valid vulnerability ID, or if coming directly from a link in the Vulnerability List Report, the page will show the details corresponding to that particular vulnerability.
 
-![153060747.png]({{ /assets/images/uuid-03ae4a42-9eec-0f5a-9d46-671382410e11.png)
+![153060747.png](/docs-at-surgery-poc/assets/images/uuid-03ae4a42-9eec-0f5a-9d46-671382410e11.png)
 
 Within these results, the user can find detailed information about a vulnerability, such as an explanation of what comprises the vulnerability, relevant links to more information, severity scores, detection, recommendations, and whether or not the entry has gone through Fast Track or Deep Dive research.
 
@@ -387,7 +387,7 @@ When a lookup is performed anonymously, the provided vulnerability information i
 - Explanation
 - CVSS Details
 
-![153060299.png]({{ /assets/images/uuid-161e813b-1a90-d6d2-b820-88e369a48a74.png)
+![153060299.png](/docs-at-surgery-poc/assets/images/uuid-161e813b-1a90-d6d2-b820-88e369a48a74.png)
 
 ## Advanced Search
 
@@ -461,7 +461,7 @@ For added security, the vulnerability data for a specific application or compone
 
 Click on *Enterprise Reporting* from the left navigation bar.
 
-![ER-sidebar.png]({{ /assets/images/uuid-49600a69-e788-6b39-17bf-470c8e3c64fa.png)
+![ER-sidebar.png](/docs-at-surgery-poc/assets/images/uuid-49600a69-e788-6b39-17bf-470c8e3c64fa.png)
 
 ### Get to know your Enterprise Reporting Landing Page
 

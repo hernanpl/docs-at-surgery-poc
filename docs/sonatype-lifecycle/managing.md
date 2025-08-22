@@ -52,7 +52,7 @@ CI integrations and other scanners use the Application ID to target the applicat
 
 To copy the Application ID to the clipboard:
 
-![iq-173-application-actions-menu]({{ /assets/images/uuid-1c00eb1b-05f0-fd93-379d-09a4c5944754.png)
+![iq-173-application-actions-menu](/docs-at-surgery-poc/assets/images/uuid-1c00eb1b-05f0-fd93-379d-09a4c5944754.png)
 
 ### Changing the Application ID
 
@@ -70,7 +70,7 @@ Moving an application to another organization may result in a different effectiv
 
 During a move, Lifecycle compares these changes to inform the user below moving the application. The user must have the `Edit IQ elements` permission for the application as well as the `Add Applications` permission for the destination organization.
 
-![iq-173-move-application-diaglog]({{ /assets/images/uuid-790b17eb-8825-4798-33c4-28db9578c7f0.png)
+![iq-173-move-application-diaglog](/docs-at-surgery-poc/assets/images/uuid-790b17eb-8825-4798-33c4-28db9578c7f0.png)
 
 ### Deleting an Application
 
@@ -98,7 +98,7 @@ The manual evaluation may be used to initially baseline your application or for 
 
 To scan an application the user needs the `View IQ Elements` and `Evaluate Applications` permissions.
 
-![Screenshot_2024-03-17_at_11_58_01_AM.png]({{ /assets/images/uuid-90100b1e-cefd-ec0a-7331-33aa2e4e930c.png)
+![Screenshot_2024-03-17_at_11_58_01_AM.png](/docs-at-surgery-poc/assets/images/uuid-90100b1e-cefd-ec0a-7331-33aa2e4e930c.png)
 
 ### Continuous Monitoring
 
@@ -235,7 +235,7 @@ To add actions to a policy:
 
 Actions at root organization or organization or application level
 
-![137205678.png]({{ /assets/images/uuid-9f371401-b8dd-9f08-dde3-d21ae38bbd70.png)
+![137205678.png](/docs-at-surgery-poc/assets/images/uuid-9f371401-b8dd-9f08-dde3-d21ae38bbd70.png)
 
 Actions at Repositories level
 
@@ -249,7 +249,7 @@ Policy constraints define the violating conditions to detect during a policy eva
 - Policy constraints may be configured to satisfy any or all of their conditions.
 - Policy constraints must have a unique name. These names are used as details for the policy violation.
 
-![137205677.png]({{ /assets/images/uuid-ddfd1734-f80d-22d6-99ce-e1ed41e97988.png)
+![137205677.png](/docs-at-surgery-poc/assets/images/uuid-ddfd1734-f80d-22d6-99ce-e1ed41e97988.png)
 
 ### Policy Inheritance
 
@@ -290,7 +290,7 @@ To remove a recipient, click on the delete icon.
 
 Notifications at root organization or organization or application level
 
-![137205716.png]({{ /assets/images/uuid-081fadc8-dbc5-bd5b-d425-d2c7ce17714a.png)
+![137205716.png](/docs-at-surgery-poc/assets/images/uuid-081fadc8-dbc5-bd5b-d425-d2c7ce17714a.png)
 
 Notifications at Repositories level
 
@@ -321,7 +321,7 @@ While we recommend using a security protocol such as LDAP for managing users and
 
 To create a new user in the IQ Server realm, follow the instructions below.
 
-![82215548.png]({{ /assets/images/uuid-08070df1-84cb-52d4-e30e-61567067ef7a.png)
+![82215548.png](/docs-at-surgery-poc/assets/images/uuid-08070df1-84cb-52d4-e30e-61567067ef7a.png)
 
 ### Editing and Deleting User Information
 

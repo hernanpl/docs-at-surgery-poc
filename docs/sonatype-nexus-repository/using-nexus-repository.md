@@ -173,7 +173,7 @@ The feature view in the center of the user interface changes based on your selec
 
 As a logged-in user, selecting the icon on the right-hand side of the main toolbar to switch account menu.
 
-![nx-user-account-view.png]({{ /assets/images/uuid-fc16b256-d340-0031-1be5-bb68304c4a87.png)
+![nx-user-account-view.png](/docs-at-surgery-poc/assets/images/uuid-fc16b256-d340-0031-1be5-bb68304c4a87.png)
 
 The *Account* feature allows you to edit your *First Name* , *Last Name* and *Email* directly in the form, as well as change your password when using local accounts.
 
@@ -197,7 +197,7 @@ Select a repository to view a navigable tree containing the assets in the reposi
 
 When selecting a component or asset the information view appears on the right. The information in this view is the same as the asset and component information views for search but laid out as a series of scrolling panels instead of separate tabs. Additionally, in Sonatype Nexus Repository Pro, there will also be a scrolling panel named *Component Tags* that will present tags information in the same manner as when viewing tag information in the search results view.
 
-![nx-ui-browse-repository.png]({{ /assets/images/uuid-f6749225-4f9f-e719-069a-1deed8864593.png)
+![nx-ui-browse-repository.png](/docs-at-surgery-poc/assets/images/uuid-f6749225-4f9f-e719-069a-1deed8864593.png)
 
 ### HTML View
 
@@ -323,7 +323,7 @@ nx-repository-view-*-*-read
 - You may only upload to a hosted repository.
 - The files must be a supported type for the intended repository's format.
 
-![nx-ui-upload-component-view.png]({{ /assets/images/uuid-0e2f08de-a242-7a3c-2a94-5f06fde7fcfd.png)
+![nx-ui-upload-component-view.png](/docs-at-surgery-poc/assets/images/uuid-0e2f08de-a242-7a3c-2a94-5f06fde7fcfd.png)
 
 ### Steps to Upload a Component
 
@@ -364,6 +364,6 @@ Tags that have been created via the REST API can be viewed through the user inte
 
 Clicking on a row in the table will show a view where the attributes of a tag can be viewed.
 
-![nx-ui-tags-form.png]({{ /assets/images/uuid-6507a290-0a6e-8f1b-bebd-2466332f3786.png)
+![nx-ui-tags-form.png](/docs-at-surgery-poc/assets/images/uuid-6507a290-0a6e-8f1b-bebd-2466332f3786.png)
 
 Clicking the *Find Tagged Components* button will open the search interface with a query for the tag currently viewed.

@@ -24,7 +24,7 @@ My.sonatype.com is a self-service hub for managing Sonatype product licenses and
 
 When an account already exists for you and your organization is using a Google or GitHub as an SSO solution, select the Google or GitHub buttons to sign in.
 
-![126653828.png]({{ /assets/images/uuid-bfda1544-3a55-b622-7755-4c2d55e86e4e.png)
+![126653828.png](/docs-at-surgery-poc/assets/images/uuid-bfda1544-3a55-b622-7755-4c2d55e86e4e.png)
 
 ## Creating an Organization
 
@@ -72,7 +72,7 @@ From there, select the *Licenses* tab.
 
 Admin-level users or organization owners can download an existing license by clicking the **Download License** button.
 
-![License.png]({{ /assets/images/uuid-212146d8-d278-4141-31a4-f48fc39b489f.png)
+![License.png](/docs-at-surgery-poc/assets/images/uuid-212146d8-d278-4141-31a4-f48fc39b489f.png)
 
 ## Assigning Support Contacts
 

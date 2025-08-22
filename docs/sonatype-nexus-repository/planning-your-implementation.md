@@ -78,7 +78,7 @@ The backup/same-site restore pattern is the most common and simplest pattern to 
 
 The disaster recovery pattern provides recovery across data centers or cloud regions. Your disaster recovery site will have a cold standby node ready to go so that you can spin up a Nexus Repository instance and switch to this site in the event of failure at your primary site.
 
-![Disaster Recovery Site deployment pattern]({{ /assets/images/uuid-084d6e08-3155-fdb3-64e2-72c47d2ded38.png)
+![Disaster Recovery Site deployment pattern](/docs-at-surgery-poc/assets/images/uuid-084d6e08-3155-fdb3-64e2-72c47d2ded38.png)
 
 ### On-Prem Active/Passive Resiliency
 
@@ -90,7 +90,7 @@ Active/Passive resiliency patterns with automatic recovery mechanisms like Kuber
 
 Active/Passive resiliency patterns with automatic recovery mechanisms like Kubernetes allow you to accomplish automatic failover without manual intervention in the event of node or availability zone failure.
 
-![Cloud Active Passive Resiliency Deployment Pattern]({{ /assets/images/uuid-d14f77ed-6461-e105-b6dc-f1ab150a6a39.png)
+![Cloud Active Passive Resiliency Deployment Pattern](/docs-at-surgery-poc/assets/images/uuid-d14f77ed-6461-e105-b6dc-f1ab150a6a39.png)
 
 ### On-Prem Active/Active High Availability
 
@@ -102,7 +102,7 @@ When Sonatype Nexus Repository is mission-critical, an active/active high availa
 
 When Sonatype Nexus Repository is mission-critical, an active/active high availability deployment pattern can help you maximize uptime and minimize data loss in the event of node or availability zone failure.
 
-![189431871.png]({{ /assets/images/uuid-2106362d-2049-8451-88f1-f55bfff31ec0.png)
+![189431871.png](/docs-at-surgery-poc/assets/images/uuid-2106362d-2049-8451-88f1-f55bfff31ec0.png)
 
 ### Star Pattern
 
@@ -130,7 +130,7 @@ This pattern allows for teams in different regions to proxy content from another
 
 ### Scaling with Proxies
 
-![Scaling with proxies]({{ /assets/images/uuid-a7f39585-3e43-680c-87c0-d6f28736377b.png)
+![Scaling with proxies](/docs-at-surgery-poc/assets/images/uuid-a7f39585-3e43-680c-87c0-d6f28736377b.png)
 
 Much of the load that Sonatype Nexus Repository must bear comes from reads rather than writes. Scaling with proxy nodes allows you to take read load off of a primary Sonatype Nexus Repository instance (node) by using proxy nodes with a load balancer to split read traffic.
 
@@ -154,7 +154,7 @@ To make reads simple, they group together the hosted and proxy repositories in e
 
 Content Replication is a Sonatype Nexus Repository Pro feature that allows you to publish artifacts in one Sonatype Nexus Repository instance and then have another instance pre-emptively fetch via HTTP to provide faster artifact availability across distributed teams. This is different from (and faster than) Federated Repositories or Bi-Directional Proxying where a proxy repository must fetch content on demand.
 
-![174719259.png]({{ /assets/images/uuid-4c1ab6f5-065d-19a9-ea44-eb2e803d93e4.png)
+![174719259.png](/docs-at-surgery-poc/assets/images/uuid-4c1ab6f5-065d-19a9-ea44-eb2e803d93e4.png)
 
 ### Combination Active/Active High Availability + Disaster Recovery Site
 
@@ -170,7 +170,7 @@ Then, at a DR site with a second data center or in a second region, you stand by
 
 If you have resiliency, scalability, and distribution needs, you can combine multiple patterns together such as in this combination of disaster recovery (DR), active/active high availability (HA), and federated repository pattern.
 
-![189431881.png]({{ /assets/images/uuid-932ef026-b05d-f146-01bf-bf09e31af0c5.png)
+![189431881.png](/docs-at-surgery-poc/assets/images/uuid-932ef026-b05d-f146-01bf-bf09e31af0c5.png)
 
 In this pattern, a primary site (called "Region A" in this example) has an active/active HA setup that is federated to Region B. Each region also has a passive DR site set up in case the primary site in that region goes down.
 
@@ -237,7 +237,7 @@ You never know when disaster may strike. With a resilient deployment on Azure li
 
 If you already have a Nexus Repository instance and want to migrate to a resilient architecture, see our migration documentation.
 
-![NXRM_Azure_Resiliency.png]({{ /assets/images/uuid-9aea9d36-2628-1812-5fd1-e055a34a5476.png)
+![NXRM_Azure_Resiliency.png](/docs-at-surgery-poc/assets/images/uuid-9aea9d36-2628-1812-5fd1-e055a34a5476.png)
 
 ### Single-Node Cloud Resilient Deployment Example Using Google Cloud
 
@@ -266,7 +266,7 @@ Use this architecture to fit the following profiles:
 - High Availability (HA) in active-active mode is not required.
 - This model is compatible with the Community Edition. The included Helm chart are only available for Pro deployments, however they may be manually adjusted for CE deployments.
 
-![Nexus_Repository_Resiliency_-_On_-premises_Resiliency_deployment.png]({{ /assets/images/uuid-f455835c-87c0-6cc0-7dfa-7c81ee020bca.png)
+![Nexus_Repository_Resiliency_-_On_-premises_Resiliency_deployment.png](/docs-at-surgery-poc/assets/images/uuid-f455835c-87c0-6cc0-7dfa-7c81ee020bca.png)
 
 ## High Availability Deployment
 
@@ -317,7 +317,7 @@ See the IQ Server HA help documentation
 
 This example architecture illustrates how to use a Kubernetes cluster and PostgreSQL database to create a highly available Nexus Repository deployment.
 
-![Nexus_Repository_Resiliency_-_On_-premises_HA_deployment.png]({{ /assets/images/uuid-4d747f6f-20fd-9d23-e097-84c532d56f7b.png)
+![Nexus_Repository_Resiliency_-_On_-premises_HA_deployment.png](/docs-at-surgery-poc/assets/images/uuid-4d747f6f-20fd-9d23-e097-84c532d56f7b.png)
 
 ### High Availability in Amazon Web Services
 
@@ -344,7 +344,7 @@ Use this architecture for the following use cases:
 
 The reference architecture and steps below provide detailed information on setting up a highly available Nexus Repository deployment in Azure.
 
-![NXRM_Azure_HA.png]({{ /assets/images/uuid-38046518-9792-38fe-d090-4127fff91d68.png)
+![NXRM_Azure_HA.png](/docs-at-surgery-poc/assets/images/uuid-38046518-9792-38fe-d090-4127fff91d68.png)
 
 ### Option 5 - High Availability Deployment in Google Cloud
 

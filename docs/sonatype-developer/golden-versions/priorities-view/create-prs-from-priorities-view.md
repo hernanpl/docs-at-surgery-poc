@@ -27,7 +27,7 @@ Click on the Create PR button in the *Next Step* column to create the manual PR.
 
 Verify breaking changes, suggested version of the component and the target branch for which the PR will be created, and click on *Create* .
 
-![small_Verify_PR_details.png]({{ /assets/images/uuid-3f5cc797-264b-69ff-5a3c-6c9022dc7d3c.png)
+![small_Verify_PR_details.png](/docs-at-surgery-poc/assets/images/uuid-3f5cc797-264b-69ff-5a3c-6c9022dc7d3c.png)
 
 The creation of manual PR is an asynchronous process. The link *View PR* will be available when the PR has been created successfully.
 
@@ -37,7 +37,7 @@ To view more details for the component, prior to creating the manual PR, click o
 
 **Example of a manual PR created from the Priorities View**
 
-![manual_PR_.png]({{ /assets/images/uuid-62a5f53f-1df9-f096-59c6-d81a5caaa84d.png)
+![manual_PR_.png](/docs-at-surgery-poc/assets/images/uuid-62a5f53f-1df9-f096-59c6-d81a5caaa84d.png)
 
 ## The Next Step Column
 

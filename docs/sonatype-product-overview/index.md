@@ -9,7 +9,7 @@ has_children: true
 
 Our vision is to change how the world innovates through intelligent software development.
 
-![Screenshot_2024-04-12_at_10_52_17_AM.png]({{ "/assets/images/uuid-653ac342-8550-22e8-846d-b70b10e7786f.png)
+![Screenshot_2024-04-12_at_10_52_17_AM.png](/docs-at-surgery-poc/assets/images/uuid-653ac342-8550-22e8-846d-b70b10e7786f.png)
 
 Sonatype solutions are licensed to unlock productivity features across the software development lifecycle. The solutions are built from our core products; Sonatype Nexus Repository 3, Sonatype IQ Server, and our numerous integrations.
 

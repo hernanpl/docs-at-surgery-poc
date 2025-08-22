@@ -23,4 +23,4 @@ An overview of how many SBOMs have been reviewed, those where the review is inco
 
 A snapshot of the most recently imported SBOMs and their risks. Selecting the version number will navigate you to their bill of materials view.
 
-![Screenshot_2024-04-17_at_6_53_32_PM.png]({{ /assets/images/uuid-33a31e99-123a-340e-1dbc-040d3fbe14cb.png)
+![Screenshot_2024-04-17_at_6_53_32_PM.png](/docs-at-surgery-poc/assets/images/uuid-33a31e99-123a-340e-1dbc-040d3fbe14cb.png)
