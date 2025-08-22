@@ -2,6 +2,8 @@
 
 This documentation will be reviewed by the automated system to verify that Claude Code integration is working properly.
 
+**Update**: Using only x-litellm-api-key header as documented in LiteLLM API specification.
+
 ## Installation
 
 The software should be installed by the user. In order to install the software, the following steps will need to be completed by the administrator:
