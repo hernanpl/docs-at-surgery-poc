@@ -2,7 +2,7 @@
 
 This documentation will be reviewed by the automated system to verify that Claude Code integration is working properly.
 
-**Update**: Testing with LiteLLM proxy integration and x-litellm-api-key authentication.
+**Update**: Testing with improved LiteLLM proxy integration, better error handling, and claude-3-sonnet-20240229 model.
 
 ## Installation
 
