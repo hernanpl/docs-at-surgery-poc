@@ -1,0 +1,90 @@
+{
+  "claude_reviewer": {
+    "model": "claude-3-5-sonnet-20241022",
+    "max_tokens": 4000,
+    "temperature": 0.1,
+    "system_prompt": "You are an expert technical documentation reviewer specializing in the Google Developer Documentation Style Guide. Provide constructive, actionable feedback to help improve documentation quality."
+  },
+  "review_scope": {
+    "file_patterns": [
+      "docs/**/*.md",
+      "*.md",
+      "_includes/**/*.html",
+      "_layouts/**/*.html"
+    ],
+    "exclude_patterns": [
+      "_site/**/*",
+      "node_modules/**/*", 
+      "*.min.*",
+      "_data/**/*",
+      ".github/**/*.md"
+    ],
+    "max_file_size": 100000,
+    "min_file_size": 100
+  },
+  "comment_settings": {
+    "max_issues_displayed": 8,
+    "max_files_displayed": 15,
+    "include_positive_feedback": true,
+    "include_style_suggestions": true,
+    "include_technical_recommendations": true
+  },
+  "github_integration": {
+    "pr_comment_header": "🤖 **Claude Code Documentation Review**",
+    "pr_comment_footer": "*This review was generated automatically by Claude Code following the [Google Developer Documentation Style Guide](https://developers.google.com/style).*",
+    "update_existing_comments": true,
+    "comment_identifier": "<!-- claude-docs-review -->"
+  },
+  "style_guide": {
+    "primary": "google_developer_style_guide", 
+    "version": "2024",
+    "focus_areas": [
+      "active_voice",
+      "second_person", 
+      "present_tense",
+      "clear_headings",
+      "numbered_procedures",
+      "code_formatting",
+      "link_text",
+      "consistent_terminology",
+      "inclusive_language"
+    ],
+    "severity_mapping": {
+      "accessibility": "high",
+      "structure": "high", 
+      "clarity": "medium",
+      "style": "medium",
+      "formatting": "low"
+    }
+  },
+  "output_formats": {
+    "github_comment": {
+      "enabled": true,
+      "format": "markdown",
+      "include_summary": true,
+      "include_file_breakdown": true
+    },
+    "json_report": {
+      "enabled": true,
+      "file_path": "/tmp/claude-review-report.json",
+      "include_raw_scores": true
+    },
+    "detailed_log": {
+      "enabled": true,
+      "file_path": "/tmp/claude-review-detailed.log",
+      "log_level": "INFO"
+    }
+  },
+  "performance": {
+    "parallel_reviews": false,
+    "timeout_per_file": 60,
+    "max_concurrent_requests": 1,
+    "retry_attempts": 2
+  },
+  "quality_thresholds": {
+    "good": 0.85,
+    "needs_improvement": 0.70,
+    "poor": 0.69,
+    "block_merge_threshold": 0.50
+  }
+}

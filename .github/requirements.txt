@@ -1,0 +1,6 @@
+# Requirements for Claude Code Documentation Review System
+anthropic==0.34.0
+requests==2.31.0
+PyYAML==6.0.1
+markdown==3.5.1
+beautifulsoup4==4.12.2

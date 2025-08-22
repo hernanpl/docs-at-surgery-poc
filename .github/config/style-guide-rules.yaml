@@ -1,0 +1,277 @@
+# Google Developer Documentation Style Guide Rules
+# Configuration file for automated documentation review
+
+metadata:
+  version: "1.0.0"
+  description: "Google Developer Documentation Style Guide rules for automated review"
+  source: "https://developers.google.com/style"
+
+# Writing Style Rules
+writing_style:
+  active_voice:
+    enabled: true
+    weight: high
+    description: "Use active voice instead of passive voice"
+    examples:
+      good:
+        - "Configure the API to handle requests"
+        - "The system processes the data"
+        - "Click Save to apply changes"
+      bad:
+        - "The API should be configured to handle requests"
+        - "The data is processed by the system" 
+        - "Changes will be applied when Save is clicked"
+    patterns:
+      passive_indicators:
+        - "is/are/was/were + past participle"
+        - "will be + past participle"
+        - "should be + past participle"
+
+  second_person:
+    enabled: true
+    weight: medium
+    description: "Address the reader directly using 'you' and 'your'"
+    examples:
+      good:
+        - "You can configure the settings"
+        - "Your repository will be updated"
+        - "Follow these steps to complete the setup"
+      bad:
+        - "One can configure the settings"
+        - "Users should configure the settings"
+        - "The developer will follow these steps"
+
+  present_tense:
+    enabled: true
+    weight: medium
+    description: "Use present tense for instructions and descriptions"
+    examples:
+      good:
+        - "Click the Save button"
+        - "The system validates the input"
+        - "This action creates a new repository"
+      bad:
+        - "You will click the Save button"
+        - "The system will validate the input"
+        - "This action will create a new repository"
+
+  concise_language:
+    enabled: true
+    weight: medium
+    description: "Use clear, concise language without unnecessary words"
+    examples:
+      good:
+        - "To configure the API"
+        - "Because the system requires authentication"
+        - "If you need help"
+      bad:
+        - "In order to configure the API"
+        - "Due to the fact that the system requires authentication"
+        - "In the event that you need help"
+    patterns:
+      wordy_phrases:
+        - "in order to" → "to"
+        - "due to the fact that" → "because"
+        - "in the event that" → "if"
+        - "at this point in time" → "now"
+        - "for the purpose of" → "for" or "to"
+
+# Content Structure Rules
+structure:
+  clear_headings:
+    enabled: true
+    weight: high
+    description: "Use clear, descriptive headings that describe what users will accomplish"
+    examples:
+      good:
+        - "Configure SSL certificates"
+        - "Install the required dependencies"
+        - "Troubleshoot connection errors"
+      bad:
+        - "SSL"
+        - "Dependencies"
+        - "Errors"
+
+  numbered_procedures:
+    enabled: true
+    weight: high
+    description: "Use numbered lists for sequential procedures, bullets for non-sequential items"
+    examples:
+      good:
+        - "Step-by-step installation process using numbered list"
+        - "List of available options using bullet points"
+      bad:
+        - "Sequential steps using bullet points"
+        - "Non-sequential options using numbered list"
+
+  parallel_structure:
+    enabled: true
+    weight: medium
+    description: "Maintain parallel structure in lists and procedures"
+    examples:
+      good:
+        - "Configure, deploy, and monitor the application"
+        - "Click Save, Click Deploy, Click Monitor"
+      bad:
+        - "Configure, deployment, and monitoring the application"
+        - "Click Save, Deploying, Monitor the results"
+
+  logical_flow:
+    enabled: true
+    weight: high
+    description: "Structure content logically: overview, prerequisites, procedures, troubleshooting"
+    sections:
+      recommended_order:
+        - "Overview/Introduction"
+        - "Prerequisites/Before you begin"
+        - "Procedures/Steps"
+        - "Verification/Testing"
+        - "Troubleshooting"
+        - "Next steps/Related topics"
+
+# Technical Writing Rules
+technical_writing:
+  code_formatting:
+    enabled: true
+    weight: high
+    description: "Use proper code formatting with syntax highlighting"
+    examples:
+      good:
+        - "```bash\nsudo apt update\n```"
+        - "```python\nprint('Hello, World!')\n```"
+        - "`npm install` for inline code"
+      bad:
+        - "sudo apt update (no code block)"
+        - "```\nprint('Hello, World!')\n``` (no language specified)"
+
+  link_text:
+    enabled: true
+    weight: medium
+    description: "Use descriptive link text that tells users where the link goes"
+    examples:
+      good:
+        - "[View the API documentation](url)"
+        - "[Download the latest version](url)"
+        - "[Learn about authentication](url)"
+      bad:
+        - "[Click here](url)"
+        - "[Read more](url)"
+        - "[This link](url)"
+    patterns:
+      bad_link_text:
+        - "click here"
+        - "read more"
+        - "this link"
+        - "here"
+        - "link"
+
+  consistent_terminology:
+    enabled: true
+    weight: medium
+    description: "Use consistent terminology throughout documentation"
+    examples:
+      good:
+        - "Use 'repository' consistently throughout"
+        - "Use 'API key' consistently throughout"
+      bad:
+        - "Mixing 'repository' and 'repo'"
+        - "Mixing 'API key' and 'access token' for same concept"
+
+# Accessibility and Inclusivity
+accessibility:
+  inclusive_language:
+    enabled: true
+    weight: high
+    description: "Use inclusive, accessible language"
+    examples:
+      good:
+        - "Primary/secondary instead of master/slave"
+        - "Allowlist/denylist instead of whitelist/blacklist"
+        - "Parent/child instead of master/slave"
+      bad:
+        - "master/slave"
+        - "whitelist/blacklist" 
+        - "guys" (use "everyone" or "team")
+
+  alt_text:
+    enabled: true
+    weight: medium
+    description: "Provide meaningful alt text for images"
+    examples:
+      good:
+        - "![Dashboard showing CPU usage graph](image.png)"
+        - "![Error message: Connection timeout](error.png)"
+      bad:
+        - "![Image](image.png)"
+        - "![Screenshot](screenshot.png)"
+
+# Language and Grammar
+language:
+  oxford_comma:
+    enabled: true
+    weight: low
+    description: "Use the Oxford comma (serial comma) in lists"
+    examples:
+      good:
+        - "Configure, test, and deploy the application"
+        - "APIs, databases, and file systems"
+      bad:
+        - "Configure, test and deploy the application"
+        - "APIs, databases and file systems"
+
+  sentence_length:
+    enabled: true
+    weight: low
+    description: "Keep sentences concise (aim for 20 words or fewer when possible)"
+    max_words: 25
+    recommendation: "Break long sentences into shorter ones for clarity"
+
+# Markdown-Specific Rules
+markdown:
+  heading_hierarchy:
+    enabled: true
+    weight: medium
+    description: "Use proper heading hierarchy (don't skip levels)"
+    examples:
+      good: "H1 → H2 → H3 → H4"
+      bad: "H1 → H3 (skipping H2)"
+
+  table_formatting:
+    enabled: true
+    weight: low
+    description: "Use proper table formatting with headers"
+    examples:
+      good: "Tables with clear headers and consistent alignment"
+      bad: "Tables without headers or inconsistent formatting"
+
+# Review Configuration
+review_settings:
+  max_issues_per_file: 10
+  max_files_per_review: 20
+  priority_order:
+    - "high"
+    - "medium" 
+    - "low"
+  
+  ignore_patterns:
+    files:
+      - "*.min.js"
+      - "*.min.css"
+      - "_site/**/*"
+      - "node_modules/**/*"
+    
+  file_size_limits:
+    max_chars: 50000  # Skip files larger than 50KB
+    min_chars: 50     # Skip files smaller than 50 chars
+
+# Scoring System
+scoring:
+  weights:
+    high: 3
+    medium: 2
+    low: 1
+  
+  thresholds:
+    good: 0.85      # 85% or higher score
+    fair: 0.70      # 70-84% score
+    poor: 0.69      # Below 70% score

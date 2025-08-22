@@ -1,0 +1,82 @@
+name: Documentation Review with Claude Code
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**/*.md'
+      - '*.md'
+      - '_includes/**'
+      - '_layouts/**'
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  docs-review:
+    runs-on: ubuntu-latest
+    name: Automated Documentation Review
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v40
+        with:
+          files: |
+            docs/**/*.md
+            *.md
+            _includes/**
+            _layouts/**
+          
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: |
+          pip install anthropic requests PyYAML markdown beautifulsoup4
+          
+      - name: Run Claude Code Documentation Review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: |
+          python .github/scripts/claude-docs-reviewer.py \
+            --changed-files="${{ steps.changed-files.outputs.all_changed_files }}" \
+            --pr-number="${{ github.event.pull_request.number }}" \
+            --base-sha="${{ github.event.pull_request.base.sha }}" \
+            --head-sha="${{ github.event.pull_request.head.sha }}"
+            
+      - name: Comment on PR
+        if: always()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Read the review results if they exist
+            let reviewComment = '';
+            try {
+              reviewComment = fs.readFileSync('/tmp/claude-review-results.md', 'utf8');
+            } catch (error) {
+              reviewComment = '🤖 **Claude Code Documentation Review**\n\nNo significant style issues detected. Good work!';
+            }
+            
+            // Post the review comment
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: reviewComment
+            });
