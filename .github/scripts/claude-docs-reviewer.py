@@ -139,6 +139,7 @@ class ClaudeDocsReviewer:
         if self.litellm_base_url and self.litellm_api_key:
             # Use company LiteLLM proxy with direct HTTP requests
             logger.info(f"Using LiteLLM proxy at: {self.litellm_base_url}")
+            logger.info(f"LiteLLM API key prefix: {self.litellm_api_key[:12] if self.litellm_api_key else 'None'}...")
             self.use_litellm = True
             self.client = None  # Will use direct HTTP for LiteLLM
         else:
@@ -189,9 +190,7 @@ class ClaudeDocsReviewer:
         
         headers = {
             'Content-Type': 'application/json',
-            'Authorization': f'Bearer {self.litellm_api_key}',  # Standard Bearer token
-            'x-api-key': self.litellm_api_key,  # Standard Anthropic header
-            'x-litellm-api-key': self.litellm_api_key  # LiteLLM specific header
+            'x-litellm-api-key': self.litellm_api_key  # Only use the correct LiteLLM header
         }
         
         data = {
