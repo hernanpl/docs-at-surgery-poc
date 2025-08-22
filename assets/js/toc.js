@@ -5,8 +5,10 @@
     console.log('TOC: initTOC started');
     
     // Only generate TOC on content pages (not home page)
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-      console.log('TOC: Skipping - home page');
+    var pathname = window.location.pathname;
+    if (pathname === '/' || pathname === '/index.html' || 
+        pathname === '/docs-at-surgery-poc/' || pathname === '/docs-at-surgery-poc/index.html') {
+      console.log('TOC: Skipping - home page:', pathname);
       return;
     }
     
