@@ -137,7 +137,7 @@ The property `firewall.iqRepositoryUrl` links to the same Repository Results URL
 
 IQ Repository URL property for a repository with Firewall enabled:
 
-![120521688.png](/assets/images/uuid-fad235f0-0d82-459c-222d-0f20b953ee25.png)
+![120521688.png](/docs-at-surgery-poc/assets/images/uuid-fad235f0-0d82-459c-222d-0f20b953ee25.png)
 
 ### Firewall for Artifactory Configuration
 
@@ -202,6 +202,6 @@ Sensitive configuration properties will have their values obfuscated in returned
 
 ### Uninstalling the Firewall for Artifactory Plugin
 
-![56233163.png](/assets/images/uuid-3e7b2c65-e0a6-dd68-1308-db2bab9faba8.png)
+![56233163.png]({{ /assets/images/uuid-3e7b2c65-e0a6-dd68-1308-db2bab9faba8.png)
 
 ### Firewall for Artifactory Release Notes

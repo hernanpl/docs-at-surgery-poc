@@ -34,4 +34,4 @@ The property `firewall.iqRepositoryUrl` links to the same Repository Results URL
 
 IQ Repository URL property for a repository with Firewall enabled:
 
-![120521688.png](/assets/images/uuid-fad235f0-0d82-459c-222d-0f20b953ee25.png)
+![120521688.png]({{ "/assets/images/uuid-fad235f0-0d82-459c-222d-0f20b953ee25.png)

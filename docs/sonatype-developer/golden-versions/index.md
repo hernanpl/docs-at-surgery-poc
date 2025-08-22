@@ -20,11 +20,11 @@ NOTE: The Golden Version recommendation is currently available for the Maven eco
 
 If Sonatype Component Intelligence finds a Golden Version for a component, the *Recommendation Column* in the Priorities View will show as "Non-breaking upgrade resolving issues for this component and its dependencies"
 
-![Priorities_dashboard_Golden_version.png](/assets/images/uuid-3178bf1d-116a-0c0e-287d-ef23d7214162.png)
+![Priorities_dashboard_Golden_version.png](/docs-at-surgery-poc/assets/images/uuid-3178bf1d-116a-0c0e-287d-ef23d7214162.png)
 
 Click on the row, to view the Golden Version of the component on the [component details page](#UUID-c348055a-b083-a26c-6dda-b4cfda3cf2ef)
 
-![Golden_ver_component_det.png](/assets/images/uuid-7d2b2b9b-d673-18d1-f04d-db2a2268e0af.png)
+![Golden_ver_component_det.png]({{ /assets/images/uuid-7d2b2b9b-d673-18d1-f04d-db2a2268e0af.png)
 
 ## The Golden PR
 

@@ -1,13 +1,13 @@
 title: "Sonatype Help"
 description: "Sonatype Documentation - Jekyll Migration"
-baseurl: "/help-on-jekyll"  # Replace with your repository name
-url: "https://hernanortiz.github.io"  # Replace with your GitHub username
+baseurl: "/docs-at-surgery-poc" 
+url: "https://hernanpl.github.io" 
 
 theme: just-the-docs
 color_scheme: light
 
-# Logo configuration
-logo: "/assets/images/portal-logo.png"
+# Logo configuration  
+logo: "/docs-at-surgery-poc/assets/images/portal-logo.png"
 
 # Enable search
 search_enabled: true

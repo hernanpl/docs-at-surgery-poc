@@ -24,7 +24,7 @@ The Repository Firewall configuration may be managed by setting the `Firewall: A
 
 ### Adding the Audit and Quarantine Capability
 
-![Audit and Quarantine capability creation menu](/assets/images/uuid-b9ca76d0-a946-d9fb-ffe2-785b29148813.png)
+![Audit and Quarantine capability creation menu]({{ "/assets/images/uuid-b9ca76d0-a946-d9fb-ffe2-785b29148813.png)
 
 The audit on the selected repository will automatically start. Nexus Repository connects to the IQ Server and evaluates the components within the selected repository against any associated policy.
 

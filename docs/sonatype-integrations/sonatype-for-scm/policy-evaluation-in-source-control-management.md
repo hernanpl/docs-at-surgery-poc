@@ -117,7 +117,7 @@ pipeline {
 
 2. A policy violation is found for the `react-dom 16.0.0` component. We also see that there is a newer version available we can replace it with.
 
-![Example report vulnerable component](/assets/images/uuid-5273a902-190a-de7a-bbdf-125869a07db9.png)
+![Example report vulnerable component]({{ "/assets/images/uuid-5273a902-190a-de7a-bbdf-125869a07db9.png)
 
 Lifecycle for SCM always bumps to a specific version, and pins it in your manifest. Only pinned versions give you control on remediation through security and quality policies. For example, version 1.3.7 might pass policy, but version 1.3.8 might not. A version range of ~1.3.0 does not allow this type of control—we don’t want to replace one security violation with another.
 

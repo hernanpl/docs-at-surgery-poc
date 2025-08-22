@@ -13,7 +13,7 @@ This page demonstrates that images have been successfully migrated from the HTML
 
 The following image has been successfully migrated from the XML export to Jekyll:
 
-![GitHub Actions]({{ "/assets/images/uuid-dc99fde0-5c73-668b-3a19-9c4410c201ca.png" | relative_url }})
+![GitHub Actions](/docs-at-surgery-poc/assets/images/uuid-dc99fde0-5c73-668b-3a19-9c4410c201ca.png)
 
 This is the GitHub Actions badge/icon that was extracted from the DocBook XML and properly copied to Jekyll's assets directory.
 
@@ -57,17 +57,17 @@ Images can be referenced in markdown using several formats:
 
 #### Standard Markdown
 ```markdown
-![Alt Text](/assets/images/css/corporate-logo.png)
+![Alt Text](/docs-at-surgery-poc/assets/images/css/corporate-logo.png)
 ```
 
 #### Jekyll Liquid with relative_url (recommended)
 ```markdown
-![Alt Text]({{ "/assets/images/css/corporate-logo.png" | relative_url }})
+![Alt Text](/docs-at-surgery-poc/assets/images/css/corporate-logo.png)
 ```
 
 #### Direct HTML (for advanced styling)
 ```html
-<img src="/assets/images/css/corporate-logo.png" alt="Corporate Logo" class="logo">
+<img src=/assets/images/css/corporate-logo.png" alt="Corporate Logo" class="logo">
 ```
 
 ## Migration Process

@@ -368,9 +368,9 @@ Running the [IQ Server HA helm chart](https://github.com/sonatype/nexus-iq-serve
 
 The aggregated log files are in [ndjson format](http://ndjson.org/) and located in the shared file system in the /log directory. You can use the aggregated log files for a support request. By default, they will be included while generating a support zip inside a top-level cluster_log directory.
 
-![137208909.png](/assets/images/uuid-b119ff2d-1242-e071-b699-b36d0a8172b5.png)
+![137208909.png](/docs-at-surgery-poc/assets/images/uuid-b119ff2d-1242-e071-b699-b36d0a8172b5.png)
 
-Refer to the [IQ Server Helm Chart](https://github.com/sonatype/nexus-iq-server-ha/tree/main/chart) (under the section "Logging") for detailed instructions on customizing the log retention periods and other fluentd deaemonset aggregator settings.
+Refer to the [IQ Server Helm Chart](https://github.com/sonatype/nexus-iq-server-ha/tree/main/chart) (under the section Logging") for detailed instructions on customizing the log retention periods and other fluentd deaemonset aggregator settings.
 
 Each pod running IQ Server is pre-configured to generate:
 

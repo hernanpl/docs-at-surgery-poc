@@ -56,11 +56,11 @@ Basic Configuration Item (CI) Lookup Rules are provided to match the CMDB based 
 
 These rules can be found under `Security Operations > CMDB > Lookup Rules` .
 
-![image5.png](/assets/images/uuid-65c49a2a-376b-0aa2-6458-ae4a6c92210e.png)
+![image5.png](/docs-at-surgery-poc/assets/images/uuid-65c49a2a-376b-0aa2-6458-ae4a6c92210e.png)
 
 These rules will help to identify the attributes coming from Sonatype and how they can be used in other more complicated rules that may match your organization’s CMDB structure and Discovery tools.
 
-![image6.png](/assets/images/uuid-8442f493-a8bd-de95-925f-bd3460ea3058.png)
+![image6.png]({{ /assets/images/uuid-8442f493-a8bd-de95-925f-bd3460ea3058.png)
 
 ### Security Roles
 
@@ -109,7 +109,7 @@ AVRs progress through defined states from detection to resolution, guiding users
 
 There are five scheduled integrations that will run as part of the Sonatype for ServiceNow integration. Open *Sonatype App VR Integration -> Admin -> Integrations* to see these components.
 
-![Integrations_-_ServiceNow_-_Components.png](/assets/images/uuid-bfaf53f8-6b75-9a81-636b-55c40c17a389.png)
+![Integrations_-_ServiceNow_-_Components.png](/docs-at-surgery-poc/assets/images/uuid-bfaf53f8-6b75-9a81-636b-55c40c17a389.png)
 
 The following is a brief summary of the data imported by each integration component:
 
@@ -123,7 +123,7 @@ The following is a brief summary of the data imported by each integration compon
 
 Each of the above integrations can be reviewed to determine when integrations have run, how many items were imported or updated by each run, and also to understand any errors or failures that may have taken place during integration runs. Scroll to the bottom of any integration definition to see a related list titled “Integration Runs”:
 
-![Integrations_-_ServiceNow_-_Evaluation.png](/assets/images/uuid-93f06f7e-1772-611e-9434-d3510f0a38f5.png)
+![Integrations_-_ServiceNow_-_Evaluation.png]({{ /assets/images/uuid-93f06f7e-1772-611e-9434-d3510f0a38f5.png)
 
 The columns in this list include:
 
@@ -138,4 +138,4 @@ Further information can also be found by opening a run to look at different “I
 
 This diagram describes the integration functionality at a high level:
 
-![image7.png](/assets/images/uuid-77a380f4-ff40-176c-3d41-f9cc9c7b4972.png)
+![image7.png]({{ "/assets/images/uuid-77a380f4-ff40-176c-3d41-f9cc9c7b4972.png)

@@ -14,7 +14,7 @@ This section covers the REST APIs available for Sonatype IQ Server. Sonatype API
 
 Use the in-product Swagger interface to interact with the REST APIs to quickly execute API requests, and validate responses.
 
-![APi_option_in_left_nav.png](/assets/images/uuid-6cd7e83d-ce4d-2b48-b011-9182b8f2e17a.png)
+![APi_option_in_left_nav.png](/docs-at-surgery-poc/assets/images/uuid-6cd7e83d-ce4d-2b48-b011-9182b8f2e17a.png)
 
 The *API* option in the left navigation bar displays the *API page* .
 
@@ -24,7 +24,7 @@ REST APIs under the *Experimental* tab are evolving and are not recommended for 
 
 The REST APIs are arranged in an alphabetical order, with a brief description on usage.
 
-![methods.png](/assets/images/uuid-ea0bde6c-1aad-3992-ea70-cf0a22004254.png)
+![methods.png]({{ /assets/images/uuid-ea0bde6c-1aad-3992-ea70-cf0a22004254.png)
 
 Click on the dropdown arrow at the right end of the method names to expand the method descriptions.
 

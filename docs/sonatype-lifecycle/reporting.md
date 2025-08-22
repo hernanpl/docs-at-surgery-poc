@@ -197,7 +197,7 @@ For **security violations** only, a waiver is considered "similar" if the vulner
 
 The *Requested Waivers* tab on the Waivers dashboard provides a quick reference to all requests that have been made to waive policy violations. Users with permissions to waive policy violations (reviewer) for the organization or application can review each waiver request in detail and choose to apply or reject it.
 
-![Requested_waivers.png](/assets/images/uuid-f57ee13b-b70d-32e6-8fea-b9d86b16022c.png)
+![Requested_waivers.png](/docs-at-surgery-poc/assets/images/uuid-f57ee13b-b70d-32e6-8fea-b9d86b16022c.png)
 
 Use the filter to retrieve *Requested Waivers* for a specific organization or application, repository, application category, policy type, expiration date, policy threat level, and the waiver reason.
 
@@ -209,7 +209,7 @@ Waiving violations for components that are both transitive and Innersource can b
 
 The Application Composition Report is a point-in-time report detailing the policy violations affecting the use of open-source components found in your application. The report includes information on how the application complies with the policies your team, or business, has established.
 
-![178716743.png](/assets/images/uuid-8d4b557d-f0fe-45e1-e540-06f02a81b31b.png)
+![178716743.png]({{ /assets/images/uuid-8d4b557d-f0fe-45e1-e540-06f02a81b31b.png)
 
 ### Accessing the Report
 
@@ -245,7 +245,7 @@ Just like IQ Server can have policies about security vulnerabilities, it can als
 
 Component labels allow you to tag individual components to target them in policy constraints. Policies are configured with a constraint against that label. You are free to assign the label to any components that should be targeted or avoided by the policy without having to modify the policy.
 
-![iq-policy-constraint-component-label](/assets/images/uuid-5df7a4fe-0e84-e900-d8e2-a22ccb7494a4.png)
+![iq-policy-constraint-component-label](/docs-at-surgery-poc/assets/images/uuid-5df7a4fe-0e84-e900-d8e2-a22ccb7494a4.png)
 
 Component label creation and management are performed in Organization & Policies. For more information on creating or managing component labels, see [Component Labels](#UUID-d2a72712-e91d-bd83-a78c-b89fdeab64ae) .
 
@@ -259,7 +259,7 @@ This option is available from the [Options dropdown](#UUID-cdab48b3-4098-bf5e-68
 
 The *Latest Evaluations* page contains a list of the last twenty evaluation reports for the selected stage.
 
-![Latest_Evaluations_189.png](/assets/images/uuid-a1863fa9-0734-272a-ccc0-eeb2bb2c97bb.png)
+![Latest_Evaluations_189.png]({{ /assets/images/uuid-a1863fa9-0734-272a-ccc0-eeb2bb2c97bb.png)
 
 **Note:** Cannot Find a Report? If an application evaluation report has been purged, it will not be accessible under the *Latest Evaluations* . Refer to [Data Retention Configuration](#UUID-2b3cfee1-89f1-01d1-3054-80b82081877c) for details on purging and retrieving the purged reports from the trash directory.
 
@@ -271,7 +271,7 @@ Not everyone will have access to the IQ Server or any of the integrated enforcem
 
 The Options dropdown button, located in the top-right corner gives you the options available to export the Application Composition Report.
 
-![Options_dropdown.png](/assets/images/uuid-1494ef7e-a66e-e6d9-2ae1-7a4d25175d3c.png)
+![Options_dropdown.png](/docs-at-surgery-poc/assets/images/uuid-1494ef7e-a66e-e6d9-2ae1-7a4d25175d3c.png)
 
 ### InnerSource Insight
 
@@ -334,7 +334,7 @@ Using the [Configuration REST API](#UUID-0fa6ca2c-1237-6aca-a4e6-ad4d074fd63f) ,
 
 Success Metrics can be disabled by an administrator in the Lifecycle UI:
 
-![Screenshot of window to enable success metrics](/assets/images/uuid-67a1a189-91b9-b514-d635-568e69d4ef0c.png)
+![Screenshot of window to enable success metrics]({{ /assets/images/uuid-67a1a189-91b9-b514-d635-568e69d4ef0c.png)
 
 ### Additional Resources
 
@@ -355,7 +355,7 @@ The Vulnerability List Report will show the result of searching for that particu
 
 The page is comprised of two sections: the search box and the vulnerability details.
 
-![126654411.png](/assets/images/uuid-7e1d0728-4beb-24f6-4066-3242bc291799.png)
+![126654411.png](/docs-at-surgery-poc/assets/images/uuid-7e1d0728-4beb-24f6-4066-3242bc291799.png)
 
 Vulnerability lookup is an exact match search using vulnerability ID as an input.
 
@@ -367,7 +367,7 @@ Find will send a request to our data services and return the latest information 
 
 Once a lookup is performed with a valid vulnerability ID, or if coming directly from a link in the Vulnerability List Report, the page will show the details corresponding to that particular vulnerability.
 
-![153060747.png](/assets/images/uuid-03ae4a42-9eec-0f5a-9d46-671382410e11.png)
+![153060747.png]({{ /assets/images/uuid-03ae4a42-9eec-0f5a-9d46-671382410e11.png)
 
 Within these results, the user can find detailed information about a vulnerability, such as an explanation of what comprises the vulnerability, relevant links to more information, severity scores, detection, recommendations, and whether or not the entry has gone through Fast Track or Deep Dive research.
 
@@ -377,7 +377,7 @@ You can look up a vulnerability without logging in.
 
 A link to the vulnerability lookup page is now provided in the Login dialog:
 
-![137206046.png](/assets/images/uuid-2a7f2329-4db2-fb66-3faa-974d224821ba.png)
+![137206046.png](/docs-at-surgery-poc/assets/images/uuid-2a7f2329-4db2-fb66-3faa-974d224821ba.png)
 
 When a lookup is performed anonymously, the provided vulnerability information is limited to the following vulnerability details:
 
@@ -387,7 +387,7 @@ When a lookup is performed anonymously, the provided vulnerability information i
 - Explanation
 - CVSS Details
 
-![153060299.png](/assets/images/uuid-161e813b-1a90-d6d2-b820-88e369a48a74.png)
+![153060299.png]({{ /assets/images/uuid-161e813b-1a90-d6d2-b820-88e369a48a74.png)
 
 ## Advanced Search
 
@@ -409,7 +409,7 @@ You may export the results of an advanced search by selecting the Export Results
 
 Results may also be exported using the Advanced Search REST API.
 
-![123404564.png](/assets/images/uuid-d2294c03-fd72-00e4-ba1e-94ff8ecb445f.png)
+![123404564.png](/docs-at-surgery-poc/assets/images/uuid-d2294c03-fd72-00e4-ba1e-94ff8ecb445f.png)
 
 **Note:** Limitations with the Advance Search The Advance Search does not list all vulnerabilities known to Sonatype. The complete list of vulnerabilities are stored in Sonatype's proprietary Hosted Data Services (HDS) database and is used during the application analysis.
 
@@ -461,11 +461,11 @@ For added security, the vulnerability data for a specific application or compone
 
 Click on *Enterprise Reporting* from the left navigation bar.
 
-![ER-sidebar.png](/assets/images/uuid-49600a69-e788-6b39-17bf-470c8e3c64fa.png)
+![ER-sidebar.png]({{ /assets/images/uuid-49600a69-e788-6b39-17bf-470c8e3c64fa.png)
 
 ### Get to know your Enterprise Reporting Landing Page
 
-![Landing_page.png](/assets/images/uuid-b6049fdd-4a74-a968-f93f-a4c1fe2d3bb4.png)
+![Landing_page.png](/docs-at-surgery-poc/assets/images/uuid-b6049fdd-4a74-a968-f93f-a4c1fe2d3bb4.png)
 
 The Enterprise Reporting landing page displays the following information:
 
@@ -476,7 +476,7 @@ The Enterprise Reporting landing page displays the following information:
 
 ### Component End-of-Life
 
-Sonatype captures the declared End-of-Life (EOL) for open-source software (OSS) projects. Components that are end-of-life are declared either in project metadata, readme files, or in other official locations that they are no longer supported and have reached "end-of-life". For components that have multiple versions, the EOL is tracked only for the latest version of the component.
+Sonatype captures the declared End-of-Life (EOL) for open-source software (OSS) projects. Components that are end-of-life are declared either in project metadata, readme files, or in other official locations that they are no longer supported and have reached end-of-life". For components that have multiple versions, the EOL is tracked only for the latest version of the component.
 
 EOL components do not receive enhancements, security issues may go unreported and unpatched while bug fixes are ignored. A lack of updates to EOL components may present a sense stability and of false security; leaving consumers open to the risk of being exploited.
 

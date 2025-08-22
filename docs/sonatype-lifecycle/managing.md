@@ -32,7 +32,7 @@ To create applications the user needs the `Edit IQ Elements` permission assigned
 
 The `Import Apps` option is for bulk onboard through your source control
 
-![150406333.png](/assets/images/uuid-c8cbac46-dd90-71a0-dd80-55af01138841.png)
+![150406333.png](/docs-at-surgery-poc/assets/images/uuid-c8cbac46-dd90-71a0-dd80-55af01138841.png)
 
 ### Editing an Application
 
@@ -52,7 +52,7 @@ CI integrations and other scanners use the Application ID to target the applicat
 
 To copy the Application ID to the clipboard:
 
-![iq-173-application-actions-menu](/assets/images/uuid-1c00eb1b-05f0-fd93-379d-09a4c5944754.png)
+![iq-173-application-actions-menu]({{ /assets/images/uuid-1c00eb1b-05f0-fd93-379d-09a4c5944754.png)
 
 ### Changing the Application ID
 
@@ -60,7 +60,7 @@ The Application ID is a unique identifier used by external tools to integrate wi
 
 To change the Application ID for an application:
 
-![Screenshot_2024-03-14_at_8_13_55_PM.png](/assets/images/uuid-5d186d2b-bea8-46b4-933a-78b8c4d3e235.png)
+![Screenshot_2024-03-14_at_8_13_55_PM.png](/docs-at-surgery-poc/assets/images/uuid-5d186d2b-bea8-46b4-933a-78b8c4d3e235.png)
 
 ### Moving an Application
 
@@ -70,13 +70,13 @@ Moving an application to another organization may result in a different effectiv
 
 During a move, Lifecycle compares these changes to inform the user below moving the application. The user must have the `Edit IQ elements` permission for the application as well as the `Add Applications` permission for the destination organization.
 
-![iq-173-move-application-diaglog](/assets/images/uuid-790b17eb-8825-4798-33c4-28db9578c7f0.png)
+![iq-173-move-application-diaglog]({{ /assets/images/uuid-790b17eb-8825-4798-33c4-28db9578c7f0.png)
 
 ### Deleting an Application
 
 You may delete an application through the actions menu or with the Applications API.
 
-![150406344.png](/assets/images/uuid-c69469e4-ce30-41ad-1e99-38dff0c2fd50.png)
+![150406344.png](/docs-at-surgery-poc/assets/images/uuid-c69469e4-ce30-41ad-1e99-38dff0c2fd50.png)
 
 ### Automatic Applications
 
@@ -98,7 +98,7 @@ The manual evaluation may be used to initially baseline your application or for 
 
 To scan an application the user needs the `View IQ Elements` and `Evaluate Applications` permissions.
 
-![Screenshot_2024-03-17_at_11_58_01_AM.png](/assets/images/uuid-90100b1e-cefd-ec0a-7331-33aa2e4e930c.png)
+![Screenshot_2024-03-17_at_11_58_01_AM.png]({{ /assets/images/uuid-90100b1e-cefd-ec0a-7331-33aa2e4e930c.png)
 
 ### Continuous Monitoring
 
@@ -128,7 +128,7 @@ When you have view permissions, the configuration for the Root Organization is v
 - The number in parentheses () indicates the number of organizations and/or applications that are linked to this organization.
 - Search for a specific organization or application by entering its name in the filter located at the top of the left navigation bar.
 
-![150405751.png](/assets/images/uuid-4028f708-2758-c278-dea0-13327e88820c.png)
+![150405751.png](/docs-at-surgery-poc/assets/images/uuid-4028f708-2758-c278-dea0-13327e88820c.png)
 
 ### Manage Organizations
 
@@ -235,11 +235,11 @@ To add actions to a policy:
 
 Actions at root organization or organization or application level
 
-![137205678.png](/assets/images/uuid-9f371401-b8dd-9f08-dde3-d21ae38bbd70.png)
+![137205678.png]({{ /assets/images/uuid-9f371401-b8dd-9f08-dde3-d21ae38bbd70.png)
 
 Actions at Repositories level
 
-![153059906.png](/assets/images/uuid-dd0157eb-4606-bd37-893c-348ce230202b.png)
+![153059906.png](/docs-at-surgery-poc/assets/images/uuid-dd0157eb-4606-bd37-893c-348ce230202b.png)
 
 ### Policy Constraints
 
@@ -249,7 +249,7 @@ Policy constraints define the violating conditions to detect during a policy eva
 - Policy constraints may be configured to satisfy any or all of their conditions.
 - Policy constraints must have a unique name. These names are used as details for the policy violation.
 
-![137205677.png](/assets/images/uuid-ddfd1734-f80d-22d6-99ce-e1ed41e97988.png)
+![137205677.png]({{ /assets/images/uuid-ddfd1734-f80d-22d6-99ce-e1ed41e97988.png)
 
 ### Policy Inheritance
 
@@ -264,7 +264,7 @@ The latter choice lets you tailor the implementation of a policy to applications
 
 Checking these boxes allows you to override actions/notifications for this policy at lower levels.
 
-![150406717.png](/assets/images/uuid-6c8975b5-ca1f-fc82-3edf-98120a49caa3.png)
+![150406717.png](/docs-at-surgery-poc/assets/images/uuid-6c8975b5-ca1f-fc82-3edf-98120a49caa3.png)
 
 ### Policy Notifications
 
@@ -290,11 +290,11 @@ To remove a recipient, click on the delete icon.
 
 Notifications at root organization or organization or application level
 
-![137205716.png](/assets/images/uuid-081fadc8-dbc5-bd5b-d425-d2c7ce17714a.png)
+![137205716.png]({{ /assets/images/uuid-081fadc8-dbc5-bd5b-d425-d2c7ce17714a.png)
 
 Notifications at Repositories level
 
-![153059911.png](/assets/images/uuid-5442b25a-2e0a-91e9-80d4-c163f5ada71c.png)
+![153059911.png](/docs-at-surgery-poc/assets/images/uuid-5442b25a-2e0a-91e9-80d4-c163f5ada71c.png)
 
 ### Policy Overrides
 
@@ -321,13 +321,13 @@ While we recommend using a security protocol such as LDAP for managing users and
 
 To create a new user in the IQ Server realm, follow the instructions below.
 
-![82215548.png](/assets/images/uuid-08070df1-84cb-52d4-e30e-61567067ef7a.png)
+![82215548.png]({{ /assets/images/uuid-08070df1-84cb-52d4-e30e-61567067ef7a.png)
 
 ### Editing and Deleting User Information
 
 Editing user information is only available to an admin. The information that can be edited includes the first name, last name, email address and password. To edit an existing user, follow these steps:
 
-![82215552.png](/assets/images/uuid-5e0ba967-be0b-86be-d38a-a435548743a5.png)
+![82215552.png]({{ "/assets/images/uuid-5e0ba967-be0b-86be-d38a-a435548743a5.png)
 
 ### LDAP Integration
 

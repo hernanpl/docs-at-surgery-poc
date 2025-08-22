@@ -38,13 +38,13 @@ There are 2 options available to install Sonatype IQ Server:
 
 Reference Architecture Diagram:
 
-![SIQ_Single_Instance_H2.png](/assets/images/uuid-df47322b-0dfb-7bf3-35f3-8cb33572057e.png)
+![SIQ_Single_Instance_H2.png](/docs-at-surgery-poc/assets/images/uuid-df47322b-0dfb-7bf3-35f3-8cb33572057e.png)
 
 **2. Recommendations for Sonatype IQ Server with external database**
 
 Reference Architecture Diagram:
 
-![SIQ_Single_Instance_Postgres_port.png](/assets/images/uuid-0d10fab9-c052-b6dc-28dd-2e82c48329c1.png)
+![SIQ_Single_Instance_Postgres_port.png]({{ /assets/images/uuid-0d10fab9-c052-b6dc-28dd-2e82c48329c1.png)
 
 **Recommendations for Container Environments**
 
@@ -65,7 +65,7 @@ There are 2 options available to install Sonatype IQ Server:
 
 **Reference Architecture Diagram:**
 
-![SIQ_Medium_size_Postgres_port.png](/assets/images/uuid-36823f53-a667-f75e-9642-020f16830d68.png)
+![SIQ_Medium_size_Postgres_port.png](/docs-at-surgery-poc/assets/images/uuid-36823f53-a667-f75e-9642-020f16830d68.png)
 
 **2. Recommendations for Sonatype IQ Server active-passive deployment**
 
@@ -75,7 +75,7 @@ Active-passive architecture clones a single instance (primary instance) and plac
 
 **Reference Architecture Diagram:**
 
-![SIQ_Active_Passive_Medium_port.png](/assets/images/uuid-0e0e8050-d95c-1092-88e0-24241ee203c0.png)
+![SIQ_Active_Passive_Medium_port.png]({{ /assets/images/uuid-0e0e8050-d95c-1092-88e0-24241ee203c0.png)
 
 For active-passive deployment using internal database, data will have to be replicated between the active and passive instance of the IQ Server.
 
@@ -93,7 +93,7 @@ The following assets need to be replicated:
 
 **Reference Architecture Diagram:**
 
-![IQ_Large_nonHA_Deployment_port.png](/assets/images/uuid-4c4386bc-21b6-4139-4859-6f02148c4873.png)
+![IQ_Large_nonHA_Deployment_port.png]({{ "/assets/images/uuid-4c4386bc-21b6-4139-4859-6f02148c4873.png)
 
 **High Availability active-active Deployment**
 

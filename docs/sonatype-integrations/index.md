@@ -148,7 +148,7 @@ Go to the [Installation and Configuration](#UUID-ca9b7cf5-eaeb-4f80-b4ac-43c32ce
 
 The "SonatypeEvaluate" task appears in the jobs list during a build:
 
-![SonatypeEvaluate.png](/assets/images/uuid-e5d1ac4b-77cf-813b-8b24-26bb512345be.png)
+![SonatypeEvaluate.png](/docs-at-surgery-poc/assets/images/uuid-e5d1ac4b-77cf-813b-8b24-26bb512345be.png)
 
 **Note:** `NexusIqPipelineTask` is still supported, but it has been deprecated and may be removed in a future version.
 
@@ -168,7 +168,7 @@ If you’re using an HTTP proxy within your infrastructure and Azure self-hosted
 In the Azure-provided sample command:
 
 ```
-./config.sh --proxyurl http://127.0.0.1:8888 --proxyusername "myuser" --proxypassword "mypass"
+./config.sh --proxyurl http://127.0.0.1:8888 --proxyusername myuser" --proxypassword "mypass"
 ```
 
 This would appear in the scan output as it is passed through to the IQ scan client:
@@ -232,13 +232,13 @@ Starting from version **3.1.0** , you can configure variables and credentials at
 
 To add a variable, click on the *Global variables* option on the left-hand navigation menu, and enter a variable name and value.
 
-![bamboo_variables.png](/assets/images/uuid-9d9c80eb-76fb-3af5-cb34-f76650390196.png)
+![bamboo_variables.png](/docs-at-surgery-poc/assets/images/uuid-9d9c80eb-76fb-3af5-cb34-f76650390196.png)
 
 To add a credential, click on the *Shared credentials* option on the left-hand navigation menu, and enter the a *Credential name* , *Username* , and *Password* .
 
 The *Credential name* field is the value that will be used by the Sonatype for Bamboo Data Center plugin; make sure it's one of the supported values listed below. The *Username* field can be set to match the *Credential Name* .
 
-![bamboo_credentials.png](/assets/images/uuid-04be4abe-f072-7108-80cd-3c557bdeb09d.png)
+![bamboo_credentials.png]({{ /assets/images/uuid-04be4abe-f072-7108-80cd-3c557bdeb09d.png)
 
 Sonatype for Bamboo Data Center currently supports the following credentials:
 
@@ -274,7 +274,7 @@ The overall evaluation status is indicated by Passed, Failed, Passed with Warnin
 
 Click on Full Report to view a detailed report in the IQ Server.
 
-![126655782.png](/assets/images/uuid-15553f7f-2747-e355-d3f5-1c6c654d15c0.png)
+![126655782.png](/docs-at-surgery-poc/assets/images/uuid-15553f7f-2747-e355-d3f5-1c6c654d15c0.png)
 
 ### Installation and Configuration - Sonatype for Bamboo Data Center
 
@@ -288,7 +288,7 @@ Sonatype Container Security is a comprehensive security solution for the entire 
 ### Prerequisites for Sonatype Container Security
 
 - macOS or Linux.
-- A running instance of the Docker client. [Podman](https://podman.io/) provides wrapper commands ("docker") that mimic the behavior of Docker commands and is also supported.
+- A running instance of the Docker client. [Podman](https://podman.io/) provides wrapper commands (docker") that mimic the behavior of Docker commands and is also supported.
 - [Podman](https://podman.io/) provides wrapper commands ("docker") that mimic the behavior of Docker commands and is also supported.
 - Set the environment variables as needed.
 
@@ -385,11 +385,11 @@ Once the integration has been configured and the component analysis is completed
 
 If a **Golden Version** of the component is available, the suggestion will be marked with a star icon:
 
-![golden-version.png](/assets/images/uuid-ec45388d-3fb5-46a3-8408-8ecc05a3afa4.png)
+![golden-version.png](/docs-at-surgery-poc/assets/images/uuid-ec45388d-3fb5-46a3-8408-8ecc05a3afa4.png)
 
 If there is no **Golden Version** available, but other remediations exist, they will be shown as **Available Fix Version(s)** :
 
-![available-fix-versions.png](/assets/images/uuid-bd1e49b6-de9d-e59c-3f6d-85f2080d48ba.png)
+![available-fix-versions.png]({{ /assets/images/uuid-bd1e49b6-de9d-e59c-3f6d-85f2080d48ba.png)
 
 **Note:** For Maven projects we include the compile and runtime scopes in the component evaluation. If you wish to include additional dependencies found in provided, test, and system scope, these can be configured.
 
@@ -407,7 +407,7 @@ When you select a specific component in the list, the details, various propertie
 
 The list of components found in the analysis and displayed in the component info view can be configured by pressing the **Filter** button . The filter dialog, displayed below, allows you to narrow down the components shown.
 
-![126656304.png](/assets/images/uuid-beefbc62-4629-73d9-0b14-19f1ea478a49.png)
+![126656304.png](/docs-at-surgery-poc/assets/images/uuid-beefbc62-4629-73d9-0b14-19f1ea478a49.png)
 
 The Scope setting determines which projects' components are displayed in the list:
 
@@ -423,7 +423,7 @@ Inspecting this list can help you assess the impact of a potential upgrade to a 
 
 Press the **Open Component Details** button to access the details about policy violations, license analysis and security issues for a specific component selected in the list. An example details view is shown below:
 
-![137203956.png](/assets/images/uuid-61f4dd95-36ef-f4ce-25bc-403ee1b9e31e.png)
+![137203956.png]({{ /assets/images/uuid-61f4dd95-36ef-f4ce-25bc-403ee1b9e31e.png)
 
 The *Policy Violations* section in the top contains a list of all the policies that have been violated by the component.
 
@@ -439,21 +439,21 @@ If you determine that a component upgrade is required to avoid a security or lic
 
 The first step to start the migration is to select a newer version for the component in the visualization chart, or by selecting the recommended version. An example is displayed in the image below:
 
-![migrate-button-enabled.png](/assets/images/uuid-6b02712a-f521-a01a-bf14-480802c36224.png)
+![migrate-button-enabled.png](/docs-at-surgery-poc/assets/images/uuid-6b02712a-f521-a01a-bf14-480802c36224.png)
 
 Once you have selected a different version than the one currently used, the **Migrate to Selected** button will become active. Pressing the button opens a dialog that assists you in the migration to the newer component. The complexity of this task varies considerably from project setup to project setup. The migration wizard is able to detect circumstances such as the component being a transitive dependency or versions managed in a property.
 
 The simplest flow is when a dependency version can be applied and the result is a single dialog like the one displayed below.
 
-![126656307.png](/assets/images/uuid-8d3cd652-8ebd-a0b6-b3df-f7031437aca3.png)
+![126656307.png]({{ /assets/images/uuid-8d3cd652-8ebd-a0b6-b3df-f7031437aca3.png)
 
 If the version is managed in a property, the initial screen in the following example allows you to select if you want to continue with a property upgrade, or perform a replacing version upgrade.
 
-![126656308.png](/assets/images/uuid-7d7c78a9-d01b-e698-74fa-c05ee563bd12.png)
+![126656308.png](/docs-at-surgery-poc/assets/images/uuid-7d7c78a9-d01b-e698-74fa-c05ee563bd12.png)
 
 Once you have selected to perform a property upgrade, you will be able to apply it in the next screen, as shown below:
 
-![126656309.png](/assets/images/uuid-1dfacea0-342e-b6e5-758d-83c0ba3a732d.png)
+![126656309.png]({{ /assets/images/uuid-1dfacea0-342e-b6e5-758d-83c0ba3a732d.png)
 
 The *Refactoring* screen features navigation tools allowing you to view all potential changes in the dialog, and step through them one-by-one before deciding to continue.
 
@@ -481,7 +481,7 @@ For IQ Server Java compatibility, refer to the [Java Compatibility Matrix](#UUID
 
 ### Architecture Overview
 
-![126657005.png](/assets/images/uuid-5b47a503-22e4-0fd1-21c5-5b23a4b166d8.png)
+![126657005.png](/docs-at-surgery-poc/assets/images/uuid-5b47a503-22e4-0fd1-21c5-5b23a4b166d8.png)
 
 The integration has two main parts. Both of them are included in the installation bundle
 
@@ -492,7 +492,7 @@ The integration has two main parts. Both of them are included in the installatio
 
 The Sonatype parser plugin should be installed and enabled.
 
-![126657007.png](/assets/images/uuid-8dc8d08c-2383-a5a6-acf0-3c63275922b2.png)
+![126657007.png]({{ /assets/images/uuid-8dc8d08c-2383-a5a6-acf0-3c63275922b2.png)
 
 ### IQ - Fortify Integration Service Configuration and Execution
 
@@ -611,7 +611,7 @@ Sonatype for GitLab CI allows you to perform policy evaluations against one or m
 
 For GitLab Ultimate customers, Sonatype for GitLab CI can populate the Vulnerability Report and the Dependency List under the GitLab Ultimate Security feature.
 
-![sonatype-gitlab.png](/assets/images/uuid-06a4a1fc-35b5-bf19-bcfc-7a0c99e41a04.png)
+![sonatype-gitlab.png](/docs-at-surgery-poc/assets/images/uuid-06a4a1fc-35b5-bf19-bcfc-7a0c99e41a04.png)
 
 ### Release Notes
 
@@ -682,7 +682,7 @@ The Sonatype for IDEA integration is available on the [JetBrains Marketplace](ht
 
 Sonatype for IDEA supports installation via a zip file. Installation is performed using the Settings/Preferences dialog. Select Plugins from the left-hand pane to open the option to install the plugin from disk. From there, browse to the plugin zip file and select it.
 
-![126656232.png](/assets/images/uuid-56327bf5-ed79-2095-7bb0-c3ad223ebc08.png)
+![126656232.png]({{ /assets/images/uuid-56327bf5-ed79-2095-7bb0-c3ad223ebc08.png)
 
 ### Configuring Sonatype for IDEA
 
@@ -706,7 +706,7 @@ The Sonatype for IDEA tool window can be accessed by clicking the IQ Tab on the 
 
 Once configured and the component analysis is completed, a component view is populated with all open source components and their metadata. The list of components reflect an analysis of the project’s dependencies. For Java projects, that include all project libraries. For JavaScript projects, it includes all dependent Node modules. For Python projects, it includes all Python packages installed in the virtual environment associated with the project. Mixed projects, contain a mix of Java, JavaScript, and Python dependencies.
 
-![137206016.png](/assets/images/uuid-e8e9d4f7-f679-5eab-d634-44ea33c52a47.png)
+![137206016.png](/docs-at-surgery-poc/assets/images/uuid-e8e9d4f7-f679-5eab-d634-44ea33c52a47.png)
 
 By default, all project dependencies are included in the component list. Scope filters can be applied to adjust which components are visible.
 
@@ -742,7 +742,7 @@ A version of a dependency with no policy violations and no breaking changes for 
 
 Alternate versions might also be available so you can migrate to them in case there is no Golden Version available.
 
-![137206019.png](/assets/images/uuid-8ccf8aff-217a-6a47-1a85-101557b341e4.png)
+![137206019.png]({{ /assets/images/uuid-8ccf8aff-217a-6a47-1a85-101557b341e4.png)
 
 Once you have selected a different version than the one currently used, the **Migrate to Selected** button will become active. Selecting the button migrates from the current component version to the selected component version, by updating the component version in the manifest file.
 
@@ -758,7 +758,7 @@ Your release cycle, customer demands, production issues, and other influencing f
 
 New in version 4.3.0, custom code inspections are provided for **pom.xml** and **package.json** files. If a component, declared in those files, has critical, severe or moderate policy violations, it gets a code inspection maker attached to it, describing the severity of the violation and providing a link to its corresponding entry in the Component Info view.
 
-![126656231.png](/assets/images/uuid-38f409f5-7d97-7ae5-4a13-f0220a6d504f.png)
+![126656231.png](/docs-at-surgery-poc/assets/images/uuid-38f409f5-7d97-7ae5-4a13-f0220a6d504f.png)
 
 ### Upgrading to IntelliJ IDEA 2020.2
 
@@ -766,7 +766,7 @@ When upgrading to a newer version of IntelliJ IDEA from version 2020.1.x and bel
 
 You might see a message like this when you start the IntelliJ IDEA 2020.2.x upgrade:
 
-![126656243.png](/assets/images/uuid-1858b96a-bf27-0114-8a56-81683917df66.png)
+![126656243.png]({{ /assets/images/uuid-1858b96a-bf27-0114-8a56-81683917df66.png)
 
 ## Sonatype Platform Plugin for Jenkins - Lifecycle
 
@@ -818,11 +818,11 @@ A historical graph is also shown to indicate policy health over time.
 
 Additionally, a build report is available within Jenkins by clicking the *IQ Build Report* in the left-hand navigation. This build report shows which components caused a 'warn' or 'fail' action on a particular build.
 
-![126655796.png](/assets/images/uuid-e4f95af0-f05b-8481-2f50-9608519acc44.png)
+![126655796.png](/docs-at-surgery-poc/assets/images/uuid-e4f95af0-f05b-8481-2f50-9608519acc44.png)
 
 If you are looking for previous report results, navigate to a specific build report in the Build History. Click on the link *View Application Report* to view the build report in IQ Server. Alternatively, you can use the *View Developer Priorities* link to navigate to the Developer priorities page.
 
-![178717520.png](/assets/images/uuid-d8b40889-7c7f-3f64-2ab8-fc468a48675e.png)
+![178717520.png]({{ /assets/images/uuid-d8b40889-7c7f-3f64-2ab8-fc468a48675e.png)
 
 ### Reachability Analysis
 
@@ -900,7 +900,7 @@ To perform as IQ Server and Policy administrator:
 
 Install the integration directly from the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1232875/sonatype-for-jira-cloud-preview?hosting=cloud&tab=overview)
 
-![iq-integration-Jira-cloud-site.png](/assets/images/uuid-c3b09f4c-1197-6a1b-b7da-24756e63d257.png)
+![iq-integration-Jira-cloud-site.png](/docs-at-surgery-poc/assets/images/uuid-c3b09f4c-1197-6a1b-b7da-24756e63d257.png)
 
 ### Configuration Requirements
 
@@ -914,7 +914,7 @@ Install the integration directly from the [Atlassian Marketplace](https://market
 
 After installing the plugin we need the webhook to send requests to Jira:
 
-![Integrations_-_Jira_Cloud_-_Configuration.png](/assets/images/uuid-b05f0629-15a5-b266-a453-3139e6796200.png)
+![Integrations_-_Jira_Cloud_-_Configuration.png]({{ /assets/images/uuid-b05f0629-15a5-b266-a453-3139e6796200.png)
 
 ### Assign Sonatype Lifecycle Applications to Jira Projects
 
@@ -930,7 +930,7 @@ The Lifecycle server webhooks are used to communicate with the plugin
 
 Not all policy violations require a Jira ticket to be created whenever it is found. Notifications in Lifecycle are set on each policy for the stages you wish tickets to be created. For example, creating tickets on all security-critical and security-high violations at the build stage. The following steps will need to be performed for each policy violation you will want to configure a Jira notification for.
 
-![126655373.png](/assets/images/uuid-a363eb00-ae03-8017-bf95-6d8bbc57dd4a.png)
+![126655373.png](/docs-at-surgery-poc/assets/images/uuid-a363eb00-ae03-8017-bf95-6d8bbc57dd4a.png)
 
 ### Review violation tickets within the plugin
 
@@ -938,11 +938,11 @@ When Lifecycle detects violations, new issues are created on the project board w
 
 Example of issue aggregation of `By IQ Evaluation`
 
-![Lifecycle_notification.png](/assets/images/uuid-0fa9eaf5-02cd-f6ba-5ce7-35fa28ca153c.png)
+![Lifecycle_notification.png]({{ /assets/images/uuid-0fa9eaf5-02cd-f6ba-5ce7-35fa28ca153c.png)
 
 A subtask is created for each of the components attached to the primary report scan ticket for the issue aggregation of `By Component`
 
-![iq-integration-jira-child-issues](/assets/images/uuid-c42cd3bd-29bb-a5c7-82ef-01c696b8ba40.png)
+![iq-integration-jira-child-issues](/docs-at-surgery-poc/assets/images/uuid-c42cd3bd-29bb-a5c7-82ef-01c696b8ba40.png)
 
 The following fields are populated as follows:
 
@@ -1014,7 +1014,7 @@ The initial installation is only required once and will apply to all Jira projec
 
 Configuration of the Sonatype for Jira Data Center plugin is done at the global Jira instance level.
 
-![Integrations_-_Jira_Data_Center.png](/assets/images/uuid-273a90d4-b4e7-752c-b15f-a1cba5b1ce3d.png)
+![Integrations_-_Jira_Data_Center.png]({{ /assets/images/uuid-273a90d4-b4e7-752c-b15f-a1cba5b1ce3d.png)
 
 ### Jira project to Lifecycle server associations
 
@@ -1316,7 +1316,7 @@ The AVR app processes SCA vulnerabilities to identify weaknesses in open-source 
 
 This diagram describes the integration functionality at a high level:
 
-![image7.png](/assets/images/uuid-77a380f4-ff40-176c-3d41-f9cc9c7b4972.png)
+![image7.png](/docs-at-surgery-poc/assets/images/uuid-77a380f4-ff40-176c-3d41-f9cc9c7b4972.png)
 
 ## Sonatype for Visual Studio 2022
 
@@ -1358,7 +1358,7 @@ The Sonatype for Visual Studio tool window is accessed by clicking the Sonatype 
 
 Once configured and the component analysis is completed, a component view will be displayed. Component versions and details are available by clicking on the component name in the Component list.
 
-![181764261.png](/assets/images/uuid-f0a4f240-1eb3-7f14-0deb-bd97af1a28f7.png)
+![181764261.png]({{ /assets/images/uuid-f0a4f240-1eb3-7f14-0deb-bd97af1a28f7.png)
 
 Review the Component Info View for details on the returned Policy Threat levels.
 
@@ -1402,7 +1402,7 @@ The password can be entered in two ways:
 - Open the command palette by pressing `Command + Shift + P` on Mac or `Control + Shift + P` on Windows, and then enter the `Sonatype: Set IQ Server Password` command after the `>` prefix. If you want to clear the stored password, you can use the `Sonatype: Clear IQ Server Password` command.
 - You can also use the SONATYPE_IQ_PASSWORD environmental variable. This method requires the "Use Environment Variable for Password" checkbox to be selected in the extension settings. You might need to restart VS Code for the changes to be recognized.
 
-![vscode-configuration.png](/assets/images/uuid-f5919b85-b574-8d45-5fc3-2256d3e10617.png)
+![vscode-configuration.png](/docs-at-surgery-poc/assets/images/uuid-f5919b85-b574-8d45-5fc3-2256d3e10617.png)
 
 In the extension settings, enter the Default Application ID before running the component analysis. This is required to use the appropriately scoped policy set for your application.
 
@@ -1516,7 +1516,7 @@ Using the `--result-file` parameter creates a file with evaluation results in th
 
 ```
 {
-    "applicationId" : "...",
+    applicationId" : "...",
     "scanId" : "...",
     "reportHtmlUrl" : "http://...",
     "reportPdfUrl" : "http://.../pdf",
@@ -1745,7 +1745,7 @@ By the end of this documentation, you will be able to connect and configure your
 
 Assuming you have properly associated IQ Server with your SCM system repository, IQ Server will first look to see if there is a commit hash. If there is, it will add a commit status within the SCM system repository. It will then look to see if there is an existing feature branch in your SCM system repository and, if so, see whether there is at least one pull request for it. If there is such a pull request, it will then determine whether there are any new or resolved policy violations and either create or update pull request comments (or pull request line comments) within your SCM system. If there are new violations to remediate, IQ Server will create a remediation pull request and send it to your SCM system.
 
-![137200131.png](/assets/images/uuid-0578939f-e083-c3f4-e845-bd6efecead7f.png)
+![137200131.png](/docs-at-surgery-poc/assets/images/uuid-0578939f-e083-c3f4-e845-bd6efecead7f.png)
 
 ### CI and CLI Integrations
 
@@ -1903,14 +1903,14 @@ IQ for Visual Studio can be installed from within Visual Studio using the Extens
 
 The IQ for Visual Studio tool window can be accessed by clicking the Nexus IQ tab on the bottom tool strip of Visual Studio. If not accessible from there, it should also be available in View under Other Windows. Once configured and the component analysis is completed, a component view will look similar to the example displayed below. Component details are available by double-clicking on the component name in the Component list or via the View Details button in the component view once you have selected a component.
 
-![180813912.png](/assets/images/uuid-f872a1ab-bcc4-a174-5661-11f9d75cf8a0.png)
+![180813912.png]({{ /assets/images/uuid-f872a1ab-bcc4-a174-5661-11f9d75cf8a0.png)
 
 If you have selected a component with some threats (as above), you can select other versions in the Version Graph and then the View Details to find remediation options. Alternatively, IQ may present a recommended version that you can select and which will update the version graph.
 
-![180813913.png](/assets/images/uuid-bbcc192c-aa09-8419-d00d-fb9aac38446b.png)
+![180813913.png](/docs-at-surgery-poc/assets/images/uuid-bbcc192c-aa09-8419-d00d-fb9aac38446b.png)
 
-When you select one of the recommended version links, or if you click on any of the versions in the Version Graph, the "Migrate to Selected" button will become enabled.
+When you select one of the recommended version links, or if you click on any of the versions in the Version Graph, the Migrate to Selected" button will become enabled.
 
-![180813914.png](/assets/images/uuid-6063f6d5-0f3f-17b6-1598-ea8dcf3a5562.png)
+![180813914.png]({{ "/assets/images/uuid-6063f6d5-0f3f-17b6-1598-ea8dcf3a5562.png)
 
 Clicking this button will update all projects where this component was present and migrate to the version you selected.

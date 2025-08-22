@@ -9,7 +9,7 @@ nav_order: 12
 
 The Bill of Material view summarizes the components and their risk found in the SBOM, focusing on annotating the vulnerabilities with VEX audit details.
 
-![SBOM_Bill_of_Material_View.png](/assets/images/uuid-0c565fac-21ab-199a-2de7-d394817ce360.png)
+![SBOM_Bill_of_Material_View.png](/docs-at-surgery-poc/assets/images/uuid-0c565fac-21ab-199a-2de7-d394817ce360.png)
 
 ## Actions
 
@@ -49,7 +49,7 @@ The generated PDF includes the `Analysis Status` for VEX annotated vulnerabiliti
 
 See the [VEX Workflow](#UUID-802be01f-19ec-fc23-7537-34280dc06905) for details.
 
-![SBM-Export-PDF-Analysis_Status.png](/assets/images/uuid-b086d3f3-d17f-6ef3-5030-1cc143cf0a3c.png)
+![SBM-Export-PDF-Analysis_Status.png]({{ /assets/images/uuid-b086d3f3-d17f-6ef3-5030-1cc143cf0a3c.png)
 
 ## Missing Vulnerabilities in Imported SBOMs
 

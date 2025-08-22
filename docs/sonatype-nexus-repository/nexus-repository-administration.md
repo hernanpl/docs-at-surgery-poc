@@ -67,7 +67,7 @@ Roles aggregate privileges into a related context and can, in turn, be grouped t
 
 Nexus Repository ships with defined admin and anonymous roles which may not be edited or deleted.
 
-![Roles listing](/assets/images/uuid-2704539e-cd3b-3bfc-782d-a4c33dc96ae2.png)
+![Roles listing](/docs-at-surgery-poc/assets/images/uuid-2704539e-cd3b-3bfc-782d-a4c33dc96ae2.png)
 
 ### Users
 
@@ -81,7 +81,7 @@ The Default Role is a role that is automatically granted to all authenticated us
 
 To enable appending a default role to all authenticated users, create a new Capability using capability type *Default Role* as pictured below; you will then be able to select the role that you want applied to users.
 
-![50626754.png](/assets/images/uuid-e4636a5a-c4b5-45c7-45f2-58fdc9953ece.png)
+![50626754.png]({{ /assets/images/uuid-e4636a5a-c4b5-45c7-45f2-58fdc9953ece.png)
 
 Once this is saved, the *Default Role Realm* will be added to the active list of security realms and start applying the new role to all authenticated users.
 
@@ -193,7 +193,7 @@ The Proxy configuration for each proxy repository documented in Managing Reposit
 
 The *View certificate* button triggers the display of the SSL Certificate Details dialog.
 
-![Certificate Details Dialog to Add an SSL to the Nexus Truststore](/assets/images/uuid-aad35c85-faa5-7986-2da1-91da9ca358df.png)
+![Certificate Details Dialog to Add an SSL to the Nexus Truststore](/docs-at-surgery-poc/assets/images/uuid-aad35c85-faa5-7986-2da1-91da9ca358df.png)
 
 Use the *Certificate Details* dialog when the remote certificate is not issued by a well-known public certificate authority included in the default Java trust store. This specifically also includes the usage of self-signed certificates in your organization. To confirm trust in the remote certificate, click the *Add certificate* *to truststore* button in the dialog. This feature is analogous to going to the SSL Certificates user interface and using the Load certificate button found there in the Outbound SSL - Trusting SSL Certificates Globally section. If the certificate is already added, the button can undo this operation and will read *Remove certificate from trust store* .
 
@@ -209,7 +209,7 @@ The repository manager allows you to manage the trust of all remote SSL certific
 
 Access the feature view for SSL Certificates administration by selecting the *SSL Certificates* menu items in the *Security* sub-menu in the Settings menu. A user must have the *nx-ssl-truststore* privileges to access this view.
 
-![SSL Certificates Administration Screen](/assets/images/uuid-657b9dbf-deee-6359-ba01-226e094ac092.png)
+![SSL Certificates Administration Screen]({{ /assets/images/uuid-657b9dbf-deee-6359-ba01-226e094ac092.png)
 
 The list shows any certificates that are already trusted. Clicking on an individual row allows you to inspect the certificate. This detailed view shows further information about the certificate including *Subject* , *Issuer,* and *Certificate* details. The *Delete certificate* button allows you to remove a certificate from the truststore.
 
@@ -273,7 +273,7 @@ Nexus Repository may send out email messages for a number of reasons. In order f
 
 The ability to access this item can be given by granting the user the nx-settings privilege. Note that the nx-settings privilege gives access to a number of pages of the same theme. There is no privilege to give access to just this item without others.
 
-![Email server configuration form](/assets/images/uuid-2596a7f1-c32e-20f5-361b-e8232ae55072.png)
+![Email server configuration form](/docs-at-surgery-poc/assets/images/uuid-2596a7f1-c32e-20f5-361b-e8232ae55072.png)
 
 The following configuration options are available:
 
@@ -295,7 +295,7 @@ The credentials of the user of the SMTP server to use for authentication.
 
 **From address**
 
-This parameter defines the email address used in the "From:" header of any email sent by the repository manager. Typically, this is configured as a "Do-Not-Reply" email address or a mailbox or mailing list monitored by the administrators of the repository manager.
+This parameter defines the email address used in the From:" header of any email sent by the repository manager. Typically, this is configured as a "Do-Not-Reply" email address or a mailbox or mailing list monitored by the administrators of the repository manager.
 
 **Subject prefix**
 
@@ -325,13 +325,13 @@ This option verifies the server certificate when using TLS or SSL, following the
 
 Once you have configured the parameters you can use the *Verify email server* section to confirm the configured parameters and the successful connection to the server. You are asked to provide an email address that should receive a test email message. Successful sending is confirmed in a message.
 
-![Verify email server section](/assets/images/uuid-b546e317-b064-970c-01db-916114a8a4d3.png)
+![Verify email server section](/docs-at-surgery-poc/assets/images/uuid-b546e317-b064-970c-01db-916114a8a4d3.png)
 
 ## HTTP Request and Proxy Settings
 
 Nexus Repository uses HTTP(s) requests to fetch content from remote servers configured as proxy repositories. Administrators may set the global configuration for outbound request retries and timeouts.
 
-![Partial view of HTTP configuration screen](/assets/images/uuid-4872638c-c1fa-5831-eb1d-2b3aaec6cfbd.png)
+![Partial view of HTTP configuration screen]({{ /assets/images/uuid-4872638c-c1fa-5831-eb1d-2b3aaec6cfbd.png)
 
 ### HTTP and HTTPS Settings
 
@@ -364,7 +364,7 @@ View the installed license in Nexus Repository by navigate to Settings → Syste
 
 In this view you may install or update the license.
 
-![nx-license-view-usage-license.png](/assets/images/uuid-534a5a62-46f7-22d8-2839-5cdd4418e808.png)
+![nx-license-view-usage-license.png](/docs-at-surgery-poc/assets/images/uuid-534a5a62-46f7-22d8-2839-5cdd4418e808.png)
 
 ### Install a License in the User Interface
 
@@ -422,7 +422,7 @@ Nexus Repository detects malware within your repository and warns users when mal
 
 Users logging into Nexus Repository see a warning banner when Malware components are found in their repositories. We recommend users contact their system administrators to report the discovery and request they remove the components immediately.
 
-![Docs_ex_image2.png](/assets/images/uuid-ce6bd9e2-5b36-6b9d-5d85-47ec72a17523.png)
+![Docs_ex_image2.png]({{ /assets/images/uuid-ce6bd9e2-5b36-6b9d-5d85-47ec72a17523.png)
 
 The banner is updated every 24 hours.
 
@@ -450,7 +450,7 @@ Nexus Repository Pro Administrators have access to the Malware Risk Dashboard wh
 
 This information is available for Repository Firewall users.
 
-![nx-malware-risk-dashboard.png](/assets/images/uuid-072cb51c-31b9-18f4-9b9e-7849dd1d2611.png)
+![nx-malware-risk-dashboard.png](/docs-at-surgery-poc/assets/images/uuid-072cb51c-31b9-18f4-9b9e-7849dd1d2611.png)
 
 - **Open Source Malware Protection Status** This dashboard reports the risk of malware found by Sonatype in public ecosystems. The dashboard reports the number of proxy repositories currently protected from Malware using Sonatype Repository Firewall.
 - **Steps to Remediate** Use the following steps to find and remove malware components from your repository. Download the CSV file using the link below to review the components flagged by Sonatype as containing malware. Search your proxy repository to remove the components. Protect your repository to keep developers from downloading Malware.
@@ -513,7 +513,7 @@ Use the following JSON format and save it as a `.json` file in a secured locatio
 
 ```
 {
-  "active": "my-key",
+  active": "my-key",
   "keys": [
     {
       "id": "my-key",
@@ -768,7 +768,7 @@ nexus.tx.retry.noisyExceptionFilter=\
 
 ### RetryControllerBean
 
-![28345110.png](/assets/images/uuid-f137686a-e29f-847c-5586-9795303d4e81.png)
+![28345110.png](/docs-at-surgery-poc/assets/images/uuid-f137686a-e29f-847c-5586-9795303d4e81.png)
 
 This JMX bean can be used to tune the retry settings at runtime without rebooting.
 
@@ -841,7 +841,7 @@ Here are some quick benefits of Staging:
 
 Nexus Repository has features to manage and monitor your server and are useful for troubleshooting and support activities. Support features are available in the Support view of the Settings menu.
 
-![nx-support-zip.png](/assets/images/uuid-7dec5f61-d5f0-1b0c-b56d-161493fb094f.png)
+![nx-support-zip.png]({{ /assets/images/uuid-7dec5f61-d5f0-1b0c-b56d-161493fb094f.png)
 
 ### Support ZIP
 
@@ -864,7 +864,7 @@ System Information displays configuration details for the Nexus Repository serve
 
 This view is available with the `nx-atlas` privilege. Select `Download as JSON` to retrieve a JSON-formatted text file.
 
-![nx-support-information.png](/assets/images/uuid-c3e8dbec-1414-7761-0aff-40955bf239ad.png)
+![nx-support-information.png](/docs-at-surgery-poc/assets/images/uuid-c3e8dbec-1414-7761-0aff-40955bf239ad.png)
 
 System information includes the following:
 
@@ -920,7 +920,7 @@ Having a CI system automatically tag every build can result in an overabundance 
 
 If an administrator selects multiple options, the tag must meet both criteria. Additionally, you can select to delete the components associated with the tag; this option can be restricted to a specific repository or format.
 
-⚠️ **Warning:** In situations where a component has two associated tags and the tag cleanup task is configured to delete the components, the system will delete that component even when the cleanup task only matches on one of the tags. For example, if component A is tagged with "build-123" and "dev-build-123 and the tag cleanup task is configured to clean up tag "dev-build-123" AND delete components associated with it, it will delete component A. The component also being tagged "build-123" will not prevent the deletion.
+⚠️ **Warning:** In situations where a component has two associated tags and the tag cleanup task is configured to delete the components, the system will delete that component even when the cleanup task only matches on one of the tags. For example, if component A is tagged with build-123" and "dev-build-123 and the tag cleanup task is configured to clean up tag "dev-build-123" AND delete components associated with it, it will delete component A. The component also being tagged "build-123" will not prevent the deletion.
 
 The task log for the *Admin - Cleanup tags* task contains a list of the deleted tags and components. See the task logging section on the System Configuration page for details.
 
@@ -1027,7 +1027,7 @@ The `Repository - Import external files` task takes content from a directory on 
 
 Usage metrics are display for administrators on their home screens after logging into the user interface. Depending on what Nexus Repository edition you are using, you will see the information below defining usage in the Usage Center. Usage metrics take up to an hour to update after making changes to your usage. Monthly requests are updated once a day.
 
-![nx-usage-center.png](/assets/images/uuid-3185ba3d-aea8-d485-dceb-e025ee6d2b9b.png)
+![nx-usage-center.png](/docs-at-surgery-poc/assets/images/uuid-3185ba3d-aea8-d485-dceb-e025ee6d2b9b.png)
 
 ### Requests Used to Calculate Metrics
 
@@ -1050,7 +1050,7 @@ The total requests outnumber the total number of components as multiple requests
 
 Nexus Repository Pro instances not subject to hard limits see a simplified version of the usage metrics different from the Community Edition users.
 
-![nx-usage-center-pro.png](/assets/images/uuid-e1c1f81e-f342-e3c0-a08e-1ed3924b3e68.png)
+![nx-usage-center-pro.png]({{ /assets/images/uuid-e1c1f81e-f342-e3c0-a08e-1ed3924b3e68.png)
 
 ### Component Metrics
 
@@ -1070,7 +1070,7 @@ The data for Nexus Repository Cloud metrics are coming from CloudWatch. Detailed
 
 See the Historical Metrics section on the license management page.
 
-![nx-cloud-usage-metrics.png](/assets/images/uuid-de81f7b3-bc01-32ce-8685-f4549e9b91c0.png)
+![nx-cloud-usage-metrics.png](/docs-at-surgery-poc/assets/images/uuid-de81f7b3-bc01-32ce-8685-f4549e9b91c0.png)
 
 ### Deprecated Metrics
 
@@ -1085,7 +1085,7 @@ See the Reference Architectures documentation
 - Usage metrics takes up to an hour to update as counts are not live. Monthly requests are updated once a day.
 - Nexus Repository Pro instances not subject to hard limits see a simplified version of the usage metrics.
 
-![nx-usage-center.png](/assets/images/uuid-3185ba3d-aea8-d485-dceb-e025ee6d2b9b.png)
+![nx-usage-center.png]({{ /assets/images/uuid-3185ba3d-aea8-d485-dceb-e025ee6d2b9b.png)
 
 ### How Components are Defined within Nexus Repository
 
@@ -1126,7 +1126,7 @@ User access is managed through roles assigned with specified privileges as expla
 
 Realms define a Nexus Repository user's authentication source. To manage realms, the user requires the `nx-settings` privilege. Manage realms under the *Settings* , *Security* view.
 
-![nx-security-realms-view.png](/assets/images/uuid-2ff1d297-749f-2cbf-5ec2-cd3ef4398722.png)
+![nx-security-realms-view.png](/docs-at-surgery-poc/assets/images/uuid-2ff1d297-749f-2cbf-5ec2-cd3ef4398722.png)
 
 - Nexus Repository requires multiple security realms for identifying users. Do not remove all realms from the *Active* section as this prevents access to Nexus Repository for all users, including administrators.
 - Activate a security realm by adding it to the Active list in the right-hand column.
@@ -1180,7 +1180,7 @@ This model is common in authentication systems such as:
 
 Users log in to the environment through a central login page that propagates the login status via HTTP headers. A reverse proxy server (e.g., [Apache HTTPD](http://httpd.apache.org/) or [nginx](http://nginx.org/) ) can be used to perform this authentication and direct all communication with the Nexus Repository. The proxy server may defer this role to another authentication storage systems (e.g., via the [Kerberos](http://web.mit.edu/kerberos/) network authentication protocol).
 
-![116230375.png](/assets/images/uuid-2df08618-c978-a7a2-d5c0-ced924cf3bdd.png)
+![116230375.png]({{ /assets/images/uuid-2df08618-c978-a7a2-d5c0-ced924cf3bdd.png)
 
 ### Reset the Admin Password
 

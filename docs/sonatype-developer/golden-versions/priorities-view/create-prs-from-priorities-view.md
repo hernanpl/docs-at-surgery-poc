@@ -13,7 +13,7 @@ Using this feature, teams can seamlessly incorporate the remediation effort into
 
 (Refer to [Steps to configure manual PR creation](#UUID-15336078-6f2b-937e-efc8-0a163fcd48aa_section-idm23494518728636) .)
 
-![small_Priorities_View_Manual_PR.png](/assets/images/uuid-77b55b71-3f42-b1b9-8f65-01b9272862af.png)
+![small_Priorities_View_Manual_PR.png](/docs-at-surgery-poc/assets/images/uuid-77b55b71-3f42-b1b9-8f65-01b9272862af.png)
 
 The *Create PR* button in the Next Step column is enabled if the following conditions are met:
 
@@ -27,17 +27,17 @@ Click on the Create PR button in the *Next Step* column to create the manual PR.
 
 Verify breaking changes, suggested version of the component and the target branch for which the PR will be created, and click on *Create* .
 
-![small_Verify_PR_details.png](/assets/images/uuid-3f5cc797-264b-69ff-5a3c-6c9022dc7d3c.png)
+![small_Verify_PR_details.png]({{ /assets/images/uuid-3f5cc797-264b-69ff-5a3c-6c9022dc7d3c.png)
 
 The creation of manual PR is an asynchronous process. The link *View PR* will be available when the PR has been created successfully.
 
 To view more details for the component, prior to creating the manual PR, click on the component name under the Component column. The link displays the Component Details Page. Use the Create PR button as shown in the image below, on the Component Details Page, if you accept the suggested remediation.
 
-![CPP_with_PR_button.png](/assets/images/uuid-f0c41935-3581-a59f-37d7-d5f3d91ed3e4.png)
+![CPP_with_PR_button.png](/docs-at-surgery-poc/assets/images/uuid-f0c41935-3581-a59f-37d7-d5f3d91ed3e4.png)
 
 **Example of a manual PR created from the Priorities View**
 
-![manual_PR_.png](/assets/images/uuid-62a5f53f-1df9-f096-59c6-d81a5caaa84d.png)
+![manual_PR_.png]({{ /assets/images/uuid-62a5f53f-1df9-f096-59c6-d81a5caaa84d.png)
 
 ## The Next Step Column
 

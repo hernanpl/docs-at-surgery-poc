@@ -19,7 +19,7 @@ We use the following terms for Repository Firewall that they have other meanings
 - The external repository where components are downloaded from. These may be public repositories or privately hosted repositories.
 - A repository where components are stored on the repository manager. These may hold internally built artifacts or third-party software.
 
-![fw-navigation-repository-managers.png](/assets/images/uuid-429aa65a-55e0-0d0c-8c06-99f27f2961d2.png)
+![fw-navigation-repository-managers.png](/docs-at-surgery-poc/assets/images/uuid-429aa65a-55e0-0d0c-8c06-99f27f2961d2.png)
 
 ## Repository Managers Overview
 
@@ -41,7 +41,7 @@ Manage the configuring for a specific repository manager in the Repository Firew
 - When the complete listing of repository managers is not displayed, selecting the `Repository Managers` title will display the list of repository managers.
 - Selecting a single repository manager in the list navigates to this view.
 
-![fw-navigation-repository-view.png](/assets/images/uuid-fa481523-4f4b-080a-7751-e646c04224fd.png)
+![fw-navigation-repository-view.png]({{ /assets/images/uuid-fa481523-4f4b-080a-7751-e646c04224fd.png)
 
 ### Sections
 
@@ -63,7 +63,7 @@ The side navigation includes the proxy and hosted repositories for this reposito
 
 - Select the pen icon for either the proxy or hosted repository to view the configuration for the repository.
 
-![fw-navigation-repositories.png](/assets/images/uuid-7a59f80c-28c9-d4be-eaec-2cb6dd1a9c84.png)
+![fw-navigation-repositories.png](/docs-at-surgery-poc/assets/images/uuid-7a59f80c-28c9-d4be-eaec-2cb6dd1a9c84.png)
 
 ## Proxy Repository Configuration
 
@@ -86,7 +86,7 @@ See [Namespace Confusion Protection](#UUID-53279c26-0859-f790-35e9-7d43cfff316d)
 
 The Firewall dashboard displays a summary of Firewall operations and the components in quarantine. These results are sorted by the most recently quarantined component and may be filtered using the summary metrics.
 
-![fw-dashboard.png](/assets/images/uuid-32db73d7-a192-2a4d-9497-d43da8df3fe7.png)
+![fw-dashboard.png]({{ /assets/images/uuid-32db73d7-a192-2a4d-9497-d43da8df3fe7.png)
 
 ### Summary Metrics
 
@@ -108,7 +108,7 @@ The quarantined component view is a temporary page created when a component is f
 
 Components are quarantined when a component is requested from a proxy repository for the first time. The build tool making the request receives a `403` error when the component is not downloaded. The error code provides details of the quarantine and a link to the quarantined component view.
 
-![113248445.png](/assets/images/uuid-9f41891a-0401-2b7f-8e3d-d7757714d6f2.png)
+![113248445.png](/docs-at-surgery-poc/assets/images/uuid-9f41891a-0401-2b7f-8e3d-d7757714d6f2.png)
 
 **Note:** When users are authenticated with IQ server and not using anonymous access, they are directed to the Component Details View. To view the component details or the full Repository Results report, the user requires the `View IQ elements` permission. The `View IQ elements` permission is not assigned by default to the `Application Evaluator` or the `Component Evaluator` service account roles which are granted limited access to the user interface.
 
@@ -134,7 +134,7 @@ Disable anonymous access using the [Repository Firewall REST API](#UUID-d516f5b1
 
 The repository results page is an audit of a proxy repository configured with the Repository Firewall. This view lists all the components requested through the proxy and any violations found near the time the component was requested.
 
-![Screenshot_2024-02-15_at_7_05_08_PM.png](/assets/images/uuid-849decb0-9296-f7d4-d2d6-39a6a0242beb.png)
+![Screenshot_2024-02-15_at_7_05_08_PM.png]({{ /assets/images/uuid-849decb0-9296-f7d4-d2d6-39a6a0242beb.png)
 
 ### Repository Summary
 
@@ -169,7 +169,7 @@ In Nexus Repository Pro 3, the audit results are summarized in the IQ Policy Vio
 
 This view is located in the Repository sub-menu of the Administration menu.
 
-![91948187.png](/assets/images/uuid-dec4a3c8-c4af-4da2-a5e3-dfdc83fdba9a.png)
+![91948187.png]({{ "/assets/images/uuid-dec4a3c8-c4af-4da2-a5e3-dfdc83fdba9a.png)
 
 The IQ Policy Violations column includes the following items:
 

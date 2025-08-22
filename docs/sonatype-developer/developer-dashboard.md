@@ -11,7 +11,7 @@ Sonatype Developer Dashboard provides insights into the extent of application ad
 
 Click on the *Developer* option in the left navigation section to view the Developer Dashboard.
 
-![New_Developer_dashboard.png](/assets/images/uuid-2ed1f1bf-2375-d5f4-c7e3-57f866196439.png)
+![New_Developer_dashboard.png](/docs-at-surgery-poc/assets/images/uuid-2ed1f1bf-2375-d5f4-c7e3-57f866196439.png)
 
 ## Overview tab
 
@@ -35,7 +35,7 @@ The trend line gives an insight into the priority given to remediation tasks on 
 
 ### Build Stage Risk Monitoring Summary
 
-![Build_stage_risk_monitoring_summary.png](/assets/images/uuid-9459e7bd-f6f8-9dcf-222d-36651ffd821c.png)
+![Build_stage_risk_monitoring_summary.png]({{ /assets/images/uuid-9459e7bd-f6f8-9dcf-222d-36651ffd821c.png)
 
 This section summarizes the risks to your build pipeline and displays the IQ Server scan findings for each application. It contains:
 
@@ -47,7 +47,7 @@ This section summarizes the risks to your build pipeline and displays the IQ Ser
 
 **Using the Filter**
 
-![New_filter.png](/assets/images/uuid-c7bbf428-1bce-e6fa-a572-412d6f57ee2e.png)
+![New_filter.png](/docs-at-surgery-poc/assets/images/uuid-c7bbf428-1bce-e6fa-a572-412d6f57ee2e.png)
 
 Use the filter to limit the scope of your focus to target applications that are configured/non-configured for CI/CD or SCM feedback.
 
@@ -61,7 +61,7 @@ Click on an application name to view the existing IQ Server settings for the app
 
 ## Available Plugins
 
-![Available_integrations.png](/assets/images/uuid-9c4c296b-4895-fbf8-afb1-e2a038fb800c.png)
+![Available_integrations.png]({{ /assets/images/uuid-9c4c296b-4895-fbf8-afb1-e2a038fb800c.png)
 
 Click on any of the tabs to view the Sonatype IQ Server plugins currently available for integration with CI/CD pipelines, SCM, issue-tracking systems, and IDE integrations.
 

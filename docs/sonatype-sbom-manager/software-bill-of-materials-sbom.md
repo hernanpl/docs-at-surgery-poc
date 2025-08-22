@@ -80,7 +80,7 @@ Upload the SBOM directly with the [Third-Party Scan REST API](#UUID-5e8f93a2-bbe
 
 You can scan an application's SBOM using the UI.
 
-![137202570.png](/assets/images/uuid-b1660f66-188f-0d06-5b1c-3741c7e85aad.png)
+![137202570.png](/docs-at-surgery-poc/assets/images/uuid-b1660f66-188f-0d06-5b1c-3741c7e85aad.png)
 
 ## Generating SBOMs
 
@@ -96,7 +96,7 @@ SBOMs generated for CycloneDX 1.4+ include vulnerability data for components kno
 
 Getting the SBOM through the UI.
 
-![170099035.png](/assets/images/uuid-7ed518df-d112-5db0-8900-9eef3ea7001b.png)
+![170099035.png]({{ /assets/images/uuid-7ed518df-d112-5db0-8900-9eef3ea7001b.png)
 
 ### Exporting an SBOM through the REST API
 

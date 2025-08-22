@@ -52,9 +52,9 @@ The Instant Risk Profile is a scan of your Source Control Repository. It is trig
 
 During SCM Onboarding, all new applications without a source scan enter a queue. The Reports page will display a 'pending' indicator for applications that are waiting for their initial onboarding scan. When the scan completes the pending indicator is replaced by a summary of the scan and policy evaluation.
 
-![126654567.png](/assets/images/uuid-13786424-53f9-6e39-f24e-88b07f945541.png)
+![126654567.png](/docs-at-surgery-poc/assets/images/uuid-13786424-53f9-6e39-f24e-88b07f945541.png)
 
-**Note:** **No relevant files** A report will not be generated if the source control does not contain any relevant files to scan. The CLI tooling will produce a "No violations" report.
+**Note:** **No relevant files** A report will not be generated if the source control does not contain any relevant files to scan. The CLI tooling will produce a No violations" report.
 
 ### Reviewing Results
 

@@ -63,7 +63,7 @@ Below are official integrations for Nexus Repository. Bring open-source policy m
 
 The Sonatype IQ Server is an open-source governance and policy management tool that provides compliance metadata to open-source components stored in the Nexus Repository.
 
-![nx-connect-iq-server.png](/assets/images/uuid-91620e5c-d17a-9c33-122b-651bff57a42f.png)
+![nx-connect-iq-server.png](/docs-at-surgery-poc/assets/images/uuid-91620e5c-d17a-9c33-122b-651bff57a42f.png)
 
 ### Nexus Repository for Maven Plugin
 
@@ -91,7 +91,7 @@ GET /service/rest/v1/<api>?<query>
 
 ```
 {
-  "items" : [
+  items" : [
     ...
   ],
   "continuationToken" : "88491cd1d185dd136f143f20c4e7d50c"

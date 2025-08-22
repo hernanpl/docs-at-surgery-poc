@@ -33,7 +33,7 @@ The table below provides a brief overview of the upgrade process based on your c
 
 If you are already using a PostgreSQL database, you can upgrade your Nexus Repository instance following your typical upgrade instructions. However, you will still need to upgrade your Java version to Java 17; Nexus Repository 3.71.0+ does not support Java 8 or 11. If you do not know how to change your Java version, see our documentation on how to change your Java version .
 
-![Orient_369_java811.png](/assets/images/uuid-06403468-cf21-df55-3399-8b19730da6f5.png)
+![Orient_369_java811.png](/docs-at-surgery-poc/assets/images/uuid-06403468-cf21-df55-3399-8b19730da6f5.png)
 
 ### Nexus Repository Deployments Using H2
 
@@ -41,7 +41,7 @@ Nexus Repository versions from 3.70.0 and beyond require a version 2.x H2 databa
 
 The internal H2 database used by Nexus Repository was updated in the 3.71.0 release. This upgrade workflow requires exporting the H2 database using a special task available in the 3.69.0 release before upgrading. Support for Java 17 was introduced in the 3.69.0 release and is required for all future releases.
 
-![H2_Pre368_Java811.png](/assets/images/uuid-1a81d9d4-cc4a-0d1b-a77d-6606feb7f03b.png)
+![H2_Pre368_Java811.png]({{ /assets/images/uuid-1a81d9d4-cc4a-0d1b-a77d-6606feb7f03b.png)
 
 ### Nexus Repository Deployments Using PostgreSQL
 
@@ -261,7 +261,7 @@ One node at a time; take the node offline, upgrade the node, and start the node 
 - The load balancer distributes requests to active nodes.
 - PostgreSQL database remains on the old schema.
 
-![Untitled.jpg](/assets/images/uuid-1499024c-e677-3dd8-6a97-f7d54ec53ee4.jpg)
+![Untitled.jpg](/docs-at-surgery-poc/assets/images/uuid-1499024c-e677-3dd8-6a97-f7d54ec53ee4.jpg)
 
 ### Phase 2 - Finalize Upgrade
 
@@ -269,7 +269,7 @@ Finalize the upgrade by migrating your database schema if applicable; not all re
 
 When the upgrade requires a database schema migration, administrators with the `nexus:*` permission see a banner at the bottom of the screen. There is a delay of up to 10 minutes before the banner appears.
 
-![Finalize_Upgrade_Banner.png](/assets/images/uuid-b0bc06ef-f31e-64fd-522c-00e41876aa84.png)
+![Finalize_Upgrade_Banner.png]({{ /assets/images/uuid-b0bc06ef-f31e-64fd-522c-00e41876aa84.png)
 
 ### Supported Rolling Upgrade Paths
 

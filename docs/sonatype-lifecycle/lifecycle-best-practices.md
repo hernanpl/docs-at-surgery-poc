@@ -47,7 +47,7 @@ Review the best practices for each phase of your deployment.
 - Project Pilot (first 2 months)
 - Project Commencement (1st year)
 
-![137202586.png](/assets/images/uuid-958704a7-05c5-0811-b3df-0c9bbd1a14d1.png)
+![137202586.png](/docs-at-surgery-poc/assets/images/uuid-958704a7-05c5-0811-b3df-0c9bbd1a14d1.png)
 
 ### Architecture Overview
 
@@ -315,7 +315,7 @@ CM needs to be configured to a stage before monitoring will start.
 
 ### Continuous Monitoring Decision Tree
 
-![CM_Decision_Tree.png](/assets/images/uuid-7d8b3be9-aa4a-c0f7-b972-8f456fc46be2.png)
+![CM_Decision_Tree.png]({{ /assets/images/uuid-7d8b3be9-aa4a-c0f7-b972-8f456fc46be2.png)
 
 ## General Lifecycle Best Practices
 

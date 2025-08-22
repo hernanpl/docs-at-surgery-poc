@@ -14,7 +14,7 @@ The Fortify SSC synchronization service supports data synchronization with the I
 
 ## Data Flow Using IQ Webhook Events
 
-![Fortify_SSC_IQ_Webhook_drawio.png](/assets/images/uuid-07765f91-97b0-2901-280d-c221caaab088.png)
+![Fortify_SSC_IQ_Webhook_drawio.png]({{ "/assets/images/uuid-07765f91-97b0-2901-280d-c221caaab088.png)
 
 All application evaluations are sent to the Fortify SSC synchronization services. However, only those applications that are in the mapping file are processed.
 

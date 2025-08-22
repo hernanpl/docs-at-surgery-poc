@@ -152,7 +152,7 @@ Community Edition provides an ideal platform to get small development teams star
 
 The sections below provide details on how to get started with Sonatype Nexus Repository Community Edition.
 
-![Newcommunityeditionbanner__1_.png](/assets/images/uuid-75bf2cb9-b2bc-6631-bb45-92a7b5c6d654.png)
+![Newcommunityeditionbanner__1_.png](/docs-at-surgery-poc/assets/images/uuid-75bf2cb9-b2bc-6631-bb45-92a7b5c6d654.png)
 
 ## Install Nexus Repository with a PostgreSQL Database
 
@@ -182,7 +182,7 @@ The settings are checked in the following order:
 
 ### Configuration Options for PostgreSQL
 
-Set optional configuration settings through the same methods used above. Set multiple `advanced` properties in the JVM arguments by delimiting the values with " `\n` ".
+Set optional configuration settings through the same methods used above. Set multiple `advanced` properties in the JVM arguments by delimiting the values with  `\n` ".
 
 ```
 advanced=maximumPoolSize\=200\nmaxLifetime\=840000

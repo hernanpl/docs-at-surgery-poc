@@ -23,7 +23,7 @@ An administrator account is required to configure the Zscaler integration. The s
 
 See [Getting Started Zia API](https://help.zscaler.com/zia/getting-started-zia-api)
 
-![fw-zscaler-configuration.png](/assets/images/uuid-4e1bc9fe-8bbf-2f74-880c-7760c9c041e6.png)
+![fw-zscaler-configuration.png](/docs-at-surgery-poc/assets/images/uuid-4e1bc9fe-8bbf-2f74-880c-7760c9c041e6.png)
 
 ### Credentials
 
@@ -43,7 +43,7 @@ See [Zscaler Help Portal](https://help.zscaler.com/zia/managing-cloud-service-ap
 
 Set the formats to be covered with Zscaler. Included formats use more available Zscaler custom URLs.
 
-![fw-zscaler-configuration-formats.png](/assets/images/uuid-fb90a13b-b185-8739-c261-f5c84bfcc5c5.png)
+![fw-zscaler-configuration-formats.png]({{ /assets/images/uuid-fb90a13b-b185-8739-c261-f5c84bfcc5c5.png)
 
 **Note:** Trigger an Update to Zscaler There is up to a 24-hour delay when configuring ZScaler before data is sent to the service. You may trigger the service to update immediately using the API. POST /api/v2/config/zscaler/update
 
@@ -61,7 +61,7 @@ The default limit for custom URLs/TLDs is 25K. Contact your Zscaler Account team
 
 See [Zscaler Documentation](https://help.zscaler.com/zia/ranges-limitations)
 
-![fw-zscaler-customer-url-limits.png](/assets/images/uuid-798b2efc-a594-51a9-155c-0204e80f4fff.png)
+![fw-zscaler-customer-url-limits.png]({{ "/assets/images/uuid-798b2efc-a594-51a9-155c-0204e80f4fff.png)
 
 - The number of custom URLs allowed with your subscription.
 - The number of custom URLs remaining.

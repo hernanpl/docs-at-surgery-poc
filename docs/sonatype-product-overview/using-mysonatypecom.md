@@ -9,7 +9,7 @@ nav_order: 7
 
 My.sonatype.com is a self-service hub for managing Sonatype product licenses and designating individuals as authorized contacts to open Sonatype support tickets.
 
-![Screenshot_2024-05-13_at_12_36_11_PM.png](/assets/images/uuid-da2bd971-21fd-79fc-2923-91bb187e453a.png)
+![Screenshot_2024-05-13_at_12_36_11_PM.png](/docs-at-surgery-poc/assets/images/uuid-da2bd971-21fd-79fc-2923-91bb187e453a.png)
 
 ## Creating an Account
 
@@ -24,7 +24,7 @@ My.sonatype.com is a self-service hub for managing Sonatype product licenses and
 
 When an account already exists for you and your organization is using a Google or GitHub as an SSO solution, select the Google or GitHub buttons to sign in.
 
-![126653828.png](/assets/images/uuid-bfda1544-3a55-b622-7755-4c2d55e86e4e.png)
+![126653828.png]({{ /assets/images/uuid-bfda1544-3a55-b622-7755-4c2d55e86e4e.png)
 
 ## Creating an Organization
 
@@ -66,13 +66,13 @@ After a license is verified, you can view the list of products it covers in the 
 
 First, navigate to the *Organizations* view, which is available via the Profile drop-down menu.
 
-![Screenshot_2025-03-04_at_2_50_10_PM.png](/assets/images/uuid-733a8727-a16b-5904-6a58-9c5cd115e0a7.png)
+![Screenshot_2025-03-04_at_2_50_10_PM.png](/docs-at-surgery-poc/assets/images/uuid-733a8727-a16b-5904-6a58-9c5cd115e0a7.png)
 
 From there, select the *Licenses* tab.
 
 Admin-level users or organization owners can download an existing license by clicking the **Download License** button.
 
-![License.png](/assets/images/uuid-212146d8-d278-4141-31a4-f48fc39b489f.png)
+![License.png]({{ /assets/images/uuid-212146d8-d278-4141-31a4-f48fc39b489f.png)
 
 ## Assigning Support Contacts
 
@@ -83,7 +83,7 @@ Authorized support contacts are the people in your organization whom you assign 
 - Only verified Organizations can have support contacts.
 - Individuals who have been invited to an Organization but haven't accepted the invite email cannot be designated a support contact.
 
-![Support_contact.png](/assets/images/uuid-6e366c96-d2b8-2bb8-9ab2-ec690a221159.png)
+![Support_contact.png]({{ "/assets/images/uuid-6e366c96-d2b8-2bb8-9ab2-ec690a221159.png)
 
 To assign support contacts:
 

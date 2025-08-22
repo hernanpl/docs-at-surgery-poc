@@ -518,7 +518,7 @@ In this example, the pulled image is `namespace/image` .
 
 This configuration is set when adding or modifying a repository in the repository management view.
 
-![nx-docker-connectors.png](/assets/images/uuid-62280774-5281-6c93-f9f7-3c041f109ac8.png)
+![nx-docker-connectors.png](/docs-at-surgery-poc/assets/images/uuid-62280774-5281-6c93-f9f7-3c041f109ac8.png)
 
 ### Port Connectors
 
@@ -563,7 +563,7 @@ The OCI specification versions 1.0.0 and 1.0.1 are supported within Docker repos
 
 As part of OCI support the following are some of the changes provided:
 
-- Blob upload allows uploads of any arbitrary binary format ("application/octet-stream" content-type) when "Strict Content Type Validation" is enabled
+- Blob upload allows uploads of any arbitrary binary format (application/octet-stream" content-type) when "Strict Content Type Validation" is enabled
 - The "Location" header is part of the manifest upload response
 - Endpoint that allows user to delete tag added: DELETE /v2/{name}/manifests/{tag}
 - The Docker image "mediaType" property is now optional
@@ -639,7 +639,7 @@ A subdomain is a portion of a domain name, added before the root domain, that al
 
 Subdomain connectors are not supported in Nexus Repository Cloud.
 
-![120521639.png](/assets/images/uuid-dc64b424-0c67-1c9c-6a12-e7f438f9b469.png)
+![120521639.png](/docs-at-surgery-poc/assets/images/uuid-dc64b424-0c67-1c9c-6a12-e7f438f9b469.png)
 
 The subdomain used for your docker repository must be a unique name that is a minimum of 1 and maximum of 63 characters consisting of letters, numbers, and dashes. The subdomain must start with a letter and end with either a letter or number. For simplicity we recommend using the name of the repository.
 
@@ -796,7 +796,7 @@ With Sonatype Nexus Repository Pro, you can push images to a group repository. T
 
 **Note:** Note that you will not be able to use Staging moves for writable repositories that are members of a Docker group repository.
 
-![93487515.png](/assets/images/uuid-b5b6fc19-ca98-e885-96b4-0b083a4919c5.png)
+![93487515.png]({{ /assets/images/uuid-b5b6fc19-ca98-e885-96b4-0b083a4919c5.png)
 
 The procedure of pushing images is otherwise the same [as described for a hosted repository](#UUID-60cccba3-51e4-878c-8488-10623077aa84) .
 
@@ -908,7 +908,7 @@ If you need to access dependencies from authenticated sources, you'll need to ru
 
 The following diagram depicts an example set up:
 
-![28345883.png](/assets/images/uuid-0160d8b3-ce76-7b13-c112-fa54c754bcb4.png)
+![28345883.png](/docs-at-surgery-poc/assets/images/uuid-0160d8b3-ce76-7b13-c112-fa54c754bcb4.png)
 
 ## Helm Repositories
 
@@ -1176,7 +1176,7 @@ Full example projects can be found in the maven folder of the [example project](
 
 ```
 <ivysettings>
-  <settings defaultResolver="nexus"/>
+  <settings defaultResolver=nexus"/>
   <property name="nexus-public"
     value="http://localhost:8081/repository/maven-public/"/>
   <resolvers>
@@ -1443,7 +1443,7 @@ Nexus Repository may be configured to use Sonatype Repository Firewall as a data
 - `npm audit` is supported with proxy and group repositories.
 - Use `npm audit fix` to automatically remediate vulnerable dependencies.
 
-![93487610.png](/assets/images/uuid-99dd178a-3c38-f15d-7ae1-43e626a3640b.png)
+![93487610.png](/docs-at-surgery-poc/assets/images/uuid-99dd178a-3c38-f15d-7ae1-43e626a3640b.png)
 
 ### Download Cataloged Versions Only for Proxied Repositories
 
@@ -1479,7 +1479,7 @@ The initial installation of Nexus Repository includes the following NuGet reposi
 - `nuget-hosted` - to upload your developed packages and third-party packages
 - `nuget-group` - Group combining the proxy and the hosted repositories
 
-![nx-repository-proxy-nuget.png](/assets/images/uuid-727c1d8e-ae7b-9df9-5f00-3ee3f1a6874a.png)
+![nx-repository-proxy-nuget.png]({{ /assets/images/uuid-727c1d8e-ae7b-9df9-5f00-3ee3f1a6874a.png)
 
 ### NuGet Proxy Repository
 

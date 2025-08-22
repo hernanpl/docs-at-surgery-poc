@@ -9,7 +9,7 @@ nav_order: 1
 
 The IQ Server Release Notes cover the full suite of solutions powered by IQ Server. This includes **Sonatype Lifecycle** , **Sonatype Developer** , **Sonatype SBOM Manager** , and **Sonatype Repository Firewall** .
 
-![IQ Server Banner](/assets/images/uuid-84fc4a83-56af-0f9f-d6e8-1f1b918704e4.png)
+![IQ Server Banner](/docs-at-surgery-poc/assets/images/uuid-84fc4a83-56af-0f9f-d6e8-1f1b918704e4.png)
 
 Explore release-specific details by selecting a release note below. Alternatively, get a quick summary of all releases within a given year on the respective year landing page.
 
@@ -502,7 +502,7 @@ Application dependency tree data for Java & NPM components is now available usin
 
 ### IQ Release 130 (December 2021)
 
-Nexus IQ Server does not use log4j versions and uses logback instead. It is therefore not at risk from vulnerabilities impacting log4j. However, because of a low/moderate vulnerability existing in "logback", we're taking precautionary measures by updating the logback library version used in Nexus IQ products.
+Nexus IQ Server does not use log4j versions and uses logback instead. It is therefore not at risk from vulnerabilities impacting log4j. However, because of a low/moderate vulnerability existing in logback", we're taking precautionary measures by updating the logback library version used in Nexus IQ products.
 
 Cran and Cargo data have been improved for both Lifecycle and Firewall.
 

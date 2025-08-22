@@ -137,7 +137,7 @@ You may accumulate several proxy repositories over time and not remember why or 
 
 The Nexus Repository user interface is accessed with a web browser. When anonymous access is enabled, a limited user experience is provided to search for components, browse repositories, and download components. Once logged in, additional features are available depending on the user’s privileges.
 
-![nx-user-interface.png](/assets/images/uuid-b24f8880-a6c2-bf52-b1cd-6c13999eca9d.png)
+![nx-user-interface.png](/docs-at-surgery-poc/assets/images/uuid-b24f8880-a6c2-bf52-b1cd-6c13999eca9d.png)
 
 The user interface is separated into several different sections.
 
@@ -173,7 +173,7 @@ The feature view in the center of the user interface changes based on your selec
 
 As a logged-in user, selecting the icon on the right-hand side of the main toolbar to switch account menu.
 
-![nx-user-account-view.png](/assets/images/uuid-fc16b256-d340-0031-1be5-bb68304c4a87.png)
+![nx-user-account-view.png]({{ /assets/images/uuid-fc16b256-d340-0031-1be5-bb68304c4a87.png)
 
 The *Account* feature allows you to edit your *First Name* , *Last Name* and *Email* directly in the form, as well as change your password when using local accounts.
 
@@ -187,7 +187,7 @@ Only users with the *nx-userschangepw* privilege are able to update their passwo
 
 Browse the contents of any repository or repository group for supported repository formats. This feature may be accessed by selecting browse from the left navigation. Users with the `nx-repository-view` privilege may access the left navigation item.
 
-![nx-ui-browse.png](/assets/images/uuid-3fd12af9-4be6-65a1-11bc-54ee2212c3c2.png)
+![nx-ui-browse.png](/docs-at-surgery-poc/assets/images/uuid-3fd12af9-4be6-65a1-11bc-54ee2212c3c2.png)
 
 Select a repository to view a navigable tree containing the assets in the repository. Filter the tree content, expand nodes, and select components or assets for more detail. Nodes in the tree are sorted in case-insensitive order. Versions are sorted semantically.
 
@@ -197,7 +197,7 @@ Select a repository to view a navigable tree containing the assets in the reposi
 
 When selecting a component or asset the information view appears on the right. The information in this view is the same as the asset and component information views for search but laid out as a series of scrolling panels instead of separate tabs. Additionally, in Sonatype Nexus Repository Pro, there will also be a scrolling panel named *Component Tags* that will present tags information in the same manner as when viewing tag information in the search results view.
 
-![nx-ui-browse-repository.png](/assets/images/uuid-f6749225-4f9f-e719-069a-1deed8864593.png)
+![nx-ui-browse-repository.png]({{ /assets/images/uuid-f6749225-4f9f-e719-069a-1deed8864593.png)
 
 ### HTML View
 
@@ -223,7 +223,7 @@ When viewing search results, drill down for more detailed information. Selecting
 
 ### Required Permissions
 
-![126659282.png](/assets/images/uuid-1528fc92-74e3-930d-8b8c-049267dc27f3.png)
+![126659282.png](/docs-at-surgery-poc/assets/images/uuid-1528fc92-74e3-930d-8b8c-049267dc27f3.png)
 
 ### Component IQ
 
@@ -252,7 +252,7 @@ After entering a search, the first 300 results are visible in the component list
 Search functionality differences exist between the different databases and deployment patterns.
 
 - Searching by Conan Package ID and Conan Package or Recipe Revisions are not available for those using Orient.
-- Use a leading slash (i.e., "/") when searching for raw components in H2 or Non-HA PostgreSQL Environment
+- Use a leading slash (i.e., /") when searching for raw components in H2 or Non-HA PostgreSQL Environment
 - Searches in HA Environments do not search all component attributes in the Keyword search bar. Specify the fields to search using the More Criteria selector.
 
 ### Search Criteria and Component Attributes
@@ -286,7 +286,7 @@ None of the popularity or age data is viewable without Repository Health Check e
 
 A list of one or more assets associated with the component is shown below the component information. Click on the row with the Name of the asset you want to inspect to view the asset information documented in Viewing Asset Information.
 
-![168755519.png](/assets/images/uuid-df8238c2-b96c-bd10-c2cb-4a7c4d4f2735.png)
+![168755519.png](/docs-at-surgery-poc/assets/images/uuid-df8238c2-b96c-bd10-c2cb-4a7c4d4f2735.png)
 
 To delete a component press the *Delete component* button. A modal will pop up to confirm the deletion. You can only delete components from hosted and proxy repositories. A deletion of a component triggers the deletion of all its associated assets, in most repository formats.
 
@@ -323,7 +323,7 @@ nx-repository-view-*-*-read
 - You may only upload to a hosted repository.
 - The files must be a supported type for the intended repository's format.
 
-![nx-ui-upload-component-view.png](/assets/images/uuid-0e2f08de-a242-7a3c-2a94-5f06fde7fcfd.png)
+![nx-ui-upload-component-view.png]({{ /assets/images/uuid-0e2f08de-a242-7a3c-2a94-5f06fde7fcfd.png)
 
 ### Steps to Upload a Component
 
@@ -360,10 +360,10 @@ Bower, CocoaPods, Composer, Conan, Conda, Cargo, Docker, Git LFS, GO Lang, Huggi
 
 Tags that have been created via the REST API can be viewed through the user interface through the *Tags* entry if the active user has the *nexus:tags* privilege.
 
-![nx-ui-tags-view.png](/assets/images/uuid-040318ee-ad39-923a-037f-402ffba007e2.png)
+![nx-ui-tags-view.png](/docs-at-surgery-poc/assets/images/uuid-040318ee-ad39-923a-037f-402ffba007e2.png)
 
 Clicking on a row in the table will show a view where the attributes of a tag can be viewed.
 
-![nx-ui-tags-form.png](/assets/images/uuid-6507a290-0a6e-8f1b-bebd-2466332f3786.png)
+![nx-ui-tags-form.png]({{ /assets/images/uuid-6507a290-0a6e-8f1b-bebd-2466332f3786.png)
 
 Clicking the *Find Tagged Components* button will open the search interface with a query for the tag currently viewed.

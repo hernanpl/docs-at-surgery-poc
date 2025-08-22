@@ -11,7 +11,7 @@ nav_order: 3
 
 The *Build Action* column on the Priorities View contains the following possible statuses:
 
-![Priorities_view_with_waivers.png](/assets/images/uuid-41070b16-e61d-3bd3-0d61-05bbc17b0f4e.png)
+![Priorities_view_with_waivers.png]({{ "/assets/images/uuid-41070b16-e61d-3bd3-0d61-05bbc17b0f4e.png)
 
 If waivers for a violation are in effect, the *Build Action* column displays the status as *Waived* .
 

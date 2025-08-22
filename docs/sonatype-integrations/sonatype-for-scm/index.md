@@ -206,15 +206,15 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 1. A top-level **Golden PR comment** for a Golden Version of a component will be seen as below. The version upgrade information indicates that bumping to a version will resolve all policy violations for this component (including its dependencies) and result in no breaking changes.
 
-![Top_level_Github_comment.png](/assets/images/uuid-5ed70928-43ce-e902-6441-cfdab32ae287.png)
+![Top_level_Github_comment.png](/docs-at-surgery-poc/assets/images/uuid-5ed70928-43ce-e902-6441-cfdab32ae287.png)
 
 2. A **Golden PR line comment** will be seen as below. The Golden Version of the component is indicated by a gold star.
 
-![Line_comment_golden.png](/assets/images/uuid-64295316-facb-d828-f09d-4b9056fd480a.png)
+![Line_comment_golden.png]({{ /assets/images/uuid-64295316-facb-d828-f09d-4b9056fd480a.png)
 
 3. A **Golden PR** (indicated by a gold star,) will be created as below, indicating the suggested component version, i.e. Golden Version. This is a safe-to-use version with no breaking changes, no policy violations (including its dependencies) and can be used to remediate the policy violations.
 
-![Github_Golden_PR.png](/assets/images/uuid-df8b0d0d-6b32-e3fd-871f-780df9cad923.png)
+![Github_Golden_PR.png](/docs-at-surgery-poc/assets/images/uuid-df8b0d0d-6b32-e3fd-871f-780df9cad923.png)
 
 ### Golden PR for GitLab
 
@@ -228,15 +228,15 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 1. A top-level **Golden PR comment** for a Golden Version of a component will be seen as below. The version upgrade information indicates that bumping to a version will resolve all policy violations for this component (including its dependencies) and result in no breaking changes.
 
-![Top_level_GitLab_comment.png](/assets/images/uuid-e032029b-41b7-d4aa-4aec-55d08603b4e4.png)
+![Top_level_GitLab_comment.png]({{ /assets/images/uuid-e032029b-41b7-d4aa-4aec-55d08603b4e4.png)
 
 2. A **Golden PR line comment** will be seen as below. The Golden Version of the component is indicated by a gold star.
 
-![GitLab_Golden_line_comment.png](/assets/images/uuid-39004e5a-f9bb-cb99-30f8-41d08d0e5879.png)
+![GitLab_Golden_line_comment.png](/docs-at-surgery-poc/assets/images/uuid-39004e5a-f9bb-cb99-30f8-41d08d0e5879.png)
 
 3. A **Golden PR** (indicated by a gold star,) will be created as below, indicating the suggested component version, i.e. Golden Version. This is a safe-to-use version with no breaking changes, no policy violations (including its dependencies) and can be used to remediate the policy violations.
 
-![GitLab_Folden_PR.png](/assets/images/uuid-7f3874c6-1665-3627-a999-b7b6c521b487.png)
+![GitLab_Folden_PR.png]({{ /assets/images/uuid-7f3874c6-1665-3627-a999-b7b6c521b487.png)
 
 ### Golden PR for Azure DevOps
 
@@ -250,15 +250,15 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 1. A top-level **Golden PR comment** for a Golden Version of a component will be seen as below. The version upgrade information indicates that bumping to a version will resolve all policy violations for this component (including its dependencies) and result in no breaking changes.
 
-![Azure_top_level_comment.png](/assets/images/uuid-8a483b90-55f8-5123-9416-46360878892e.png)
+![Azure_top_level_comment.png](/docs-at-surgery-poc/assets/images/uuid-8a483b90-55f8-5123-9416-46360878892e.png)
 
 2. A **Golden PR line comment** will be seen as below. The Golden Version of the component is indicated by a gold star.
 
-![Azure_line_comment.png](/assets/images/uuid-8793d199-dee3-415c-3482-5eccae4f62c7.png)
+![Azure_line_comment.png]({{ /assets/images/uuid-8793d199-dee3-415c-3482-5eccae4f62c7.png)
 
 3. A **Golden PR** (indicated by a gold star,) will be created as below, indicating the suggested component version, i.e. Golden Version. This is a safe-to-use version with no breaking changes, no policy violations (including its dependencies) and can be used to remediate the policy violations.
 
-![Azure_Golden_PR.png](/assets/images/uuid-df0a7ae4-9d99-ce1e-0659-907acf1d6e36.png)
+![Azure_Golden_PR.png](/docs-at-surgery-poc/assets/images/uuid-df0a7ae4-9d99-ce1e-0659-907acf1d6e36.png)
 
 ### Golden PR for Bitbucket
 
@@ -272,21 +272,21 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 1. A top-level **Golden PR comment** for a Golden Version of a component will be seen as below. The version upgrade information indicates that bumping to a version will resolve all policy violations for this component (including its dependencies) and result in no breaking changes.
 
-![BitBucket_Top_level_comment.png](/assets/images/uuid-2f862e52-29f3-c5a1-b6cb-7a355daeb306.png)
+![BitBucket_Top_level_comment.png]({{ /assets/images/uuid-2f862e52-29f3-c5a1-b6cb-7a355daeb306.png)
 
 2. A **Golden PR line comment** will be seen as below. The Golden Version of the component is indicated by a gold star.
 
-![BitBucket_line_comment.png](/assets/images/uuid-80246dbe-4138-bc29-a6c1-d36c10df4429.png)
+![BitBucket_line_comment.png](/docs-at-surgery-poc/assets/images/uuid-80246dbe-4138-bc29-a6c1-d36c10df4429.png)
 
 3. A **Golden PR** (indicated by a gold star,) will be created as below, indicating the suggested component version, i.e. Golden Version. This is a safe-to-use version with no breaking changes, no policy violations (including its dependencies) and can be used to remediate the policy violations.
 
-![Bitbucket_Golden_PR.png](/assets/images/uuid-4c1980db-cb40-c067-6611-2057ffb6492e.png)
+![Bitbucket_Golden_PR.png]({{ /assets/images/uuid-4c1980db-cb40-c067-6611-2057ffb6492e.png)
 
 ## Policy Evaluation with Nexus IQ for SCM
 
 Assuming you have properly associated IQ Server with your SCM system repository, IQ Server will first look to see if there is a commit hash. If there is, it will add a commit status within the SCM system repository. It will then look to see if there is an existing feature branch in your SCM system repository and, if so, see whether there is at least one pull request for it. If there is such a pull request, it will then determine whether there are any new or resolved policy violations and either create or update pull request comments (or pull request line comments) within your SCM system. If there are new violations to remediate, IQ Server will create a remediation pull request and send it to your SCM system.
 
-![137200131.png](/assets/images/uuid-0578939f-e083-c3f4-e845-bd6efecead7f.png)
+![137200131.png]({{ "/assets/images/uuid-0578939f-e083-c3f4-e845-bd6efecead7f.png)
 
 ## CI and CLI Integrations
 

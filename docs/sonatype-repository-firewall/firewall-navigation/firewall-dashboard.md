@@ -9,7 +9,7 @@ nav_order: 1
 
 The Firewall dashboard displays a summary of Firewall operations and the components in quarantine. These results are sorted by the most recently quarantined component and may be filtered using the summary metrics.
 
-![fw-dashboard.png](/assets/images/uuid-32db73d7-a192-2a4d-9497-d43da8df3fe7.png)
+![fw-dashboard.png]({{ "/assets/images/uuid-32db73d7-a192-2a4d-9497-d43da8df3fe7.png)
 
 ## Summary Metrics
 

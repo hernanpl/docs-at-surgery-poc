@@ -20,7 +20,7 @@ The top section shows the name of the branch evaluated, evaluation triggered by,
 
 The Component column displays the name of the implicated component and its type - direct dependency, transitive dependency or InnerSource dependency (releases 193 and later). Refer to [type of dependencies reported](https://help.sonatype.com/en/reviewing-a-report.html#types-of-dependencies-reported) for more information.
 
-![Priorities_all.png](/assets/images/uuid-1e2e67d2-bc12-a3b8-f2a3-c01499568c4c.png)
+![Priorities_all.png](/docs-at-surgery-poc/assets/images/uuid-1e2e67d2-bc12-a3b8-f2a3-c01499568c4c.png)
 
 **The Reason for Priority Column**
 
@@ -45,7 +45,7 @@ Use the Fail/Warn policy action filter to view the priorities based on whether t
 
 NOTE: The fail/warn policy action filter is set to false by default, for Jira integrations.
 
-![fail-Warn_filter.png](/assets/images/uuid-8d4e900a-9e0c-723b-472f-a6dd7a31c853.png)
+![fail-Warn_filter.png]({{ /assets/images/uuid-8d4e900a-9e0c-723b-472f-a6dd7a31c853.png)
 
 The *Next Step* column in the new *Priorities View* allows you to create new pull requests (PRs), view existing PRs (including automated PRs). Learn more on how to: [Create manual pull requests from the Priorities View.](#UUID-15336078-6f2b-937e-efc8-0a163fcd48aa)
 
@@ -53,7 +53,7 @@ If waivers for a violation are in effect, the *Build Action* column displays the
 
 If the violation is detected on the default (or main) branch, the *Suggested Remediation* column shows **Resolve on default branch** . This facilitates minimizing the remediation efforts by fixing the violation once on the default branch, instead of duplicating the efforts on every feature branch. Subsequent rebasing or merging will prevent the violation from occurring again in the feature branches. The corresponding *Next Step* is shown as *Go to Build Stage* .
 
-![link_build_stage.png](/assets/images/uuid-01f47075-28db-8ac9-a891-d4203b24099e.png)
+![link_build_stage.png](/docs-at-surgery-poc/assets/images/uuid-01f47075-28db-8ac9-a891-d4203b24099e.png)
 
 Click on the *Go to Build Stage* link to view the latest priorities report in your main branch to resolve the policy violation.
 
@@ -85,7 +85,7 @@ Using this feature, teams can seamlessly incorporate the remediation effort into
 
 (Refer to [Steps to configure manual PR creation](#UUID-15336078-6f2b-937e-efc8-0a163fcd48aa_section-idm23494518728636) .)
 
-![small_Priorities_View_Manual_PR.png](/assets/images/uuid-77b55b71-3f42-b1b9-8f65-01b9272862af.png)
+![small_Priorities_View_Manual_PR.png]({{ /assets/images/uuid-77b55b71-3f42-b1b9-8f65-01b9272862af.png)
 
 The *Create PR* button in the Next Step column is enabled if the following conditions are met:
 
@@ -99,17 +99,17 @@ Click on the Create PR button in the *Next Step* column to create the manual PR.
 
 Verify breaking changes, suggested version of the component and the target branch for which the PR will be created, and click on *Create* .
 
-![small_Verify_PR_details.png](/assets/images/uuid-3f5cc797-264b-69ff-5a3c-6c9022dc7d3c.png)
+![small_Verify_PR_details.png](/docs-at-surgery-poc/assets/images/uuid-3f5cc797-264b-69ff-5a3c-6c9022dc7d3c.png)
 
 The creation of manual PR is an asynchronous process. The link *View PR* will be available when the PR has been created successfully.
 
 To view more details for the component, prior to creating the manual PR, click on the component name under the Component column. The link displays the Component Details Page. Use the Create PR button as shown in the image below, on the Component Details Page, if you accept the suggested remediation.
 
-![CPP_with_PR_button.png](/assets/images/uuid-f0c41935-3581-a59f-37d7-d5f3d91ed3e4.png)
+![CPP_with_PR_button.png]({{ /assets/images/uuid-f0c41935-3581-a59f-37d7-d5f3d91ed3e4.png)
 
 **Example of a manual PR created from the Priorities View**
 
-![manual_PR_.png](/assets/images/uuid-62a5f53f-1df9-f096-59c6-d81a5caaa84d.png)
+![manual_PR_.png](/docs-at-surgery-poc/assets/images/uuid-62a5f53f-1df9-f096-59c6-d81a5caaa84d.png)
 
 ### The Next Step Column
 
@@ -133,7 +133,7 @@ The *Next Step* column in the *Priorities View* can initiate one of the followin
 
 The *Build Action* column on the Priorities View contains the following possible statuses:
 
-![Priorities_view_with_waivers.png](/assets/images/uuid-41070b16-e61d-3bd3-0d61-05bbc17b0f4e.png)
+![Priorities_view_with_waivers.png]({{ /assets/images/uuid-41070b16-e61d-3bd3-0d61-05bbc17b0f4e.png)
 
 If waivers for a violation are in effect, the *Build Action* column displays the status as *Waived* .
 

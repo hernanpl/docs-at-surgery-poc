@@ -21,15 +21,15 @@ Not all SBOMs are created at the same level of quality or fully meet the format'
 
 Software Bill of Materials that failed validation have the warning message " `Invalid SBOM Detected` " at the top of the view and a warning icon remains to indicate the issue.
 
-![sbm-application-validation-error.png](/assets/images/uuid-6d1f5c57-6bbd-eb43-ebe6-0f58b74e2477.png)
+![sbm-application-validation-error.png](/docs-at-surgery-poc/assets/images/uuid-6d1f5c57-6bbd-eb43-ebe6-0f58b74e2477.png)
 
 ### Skip Validation
 
-When importing an invalid SBOM, you have the option to import it as is by checking the option to "Skip validation and import anyway". This method only imports the components section of the SBOM.
+When importing an invalid SBOM, you have the option to import it as is by checking the option to Skip validation and import anyway". This method only imports the components section of the SBOM.
 
 **The option to**
 
-![sbm-skip-validation.png](/assets/images/uuid-d11d1b21-9316-3613-bfeb-5ed775625115.png)
+![sbm-skip-validation.png](/docs-at-surgery-poc/assets/images/uuid-d11d1b21-9316-3613-bfeb-5ed775625115.png)
 
 - Using this method only imports the components section of the SBOM and the resulting report may not be VEX annotated.
 - If you import an invalid SBOM, only the original SBOM can be exported. Most other actions will be disabled.
@@ -43,13 +43,13 @@ When scanning binary files, Sonatype can determine when an open-source component
 
 See the topic [Component Identification: Match States](#UUID-c8a1f963-f80b-dd2f-ca31-eac799d3267e_id_ComponentIdentification-matchstateMatchStates) to learn more.
 
-![Screenshot_2024-12-09_at_2_39_37_PM.png](/assets/images/uuid-1872f6fd-76df-05d0-8d6b-133eb7fd5561.png)
+![Screenshot_2024-12-09_at_2_39_37_PM.png]({{ /assets/images/uuid-1872f6fd-76df-05d0-8d6b-133eb7fd5561.png)
 
 ## Binary File Names
 
 When analyzing binary files, the name of the original binary files is stored with the component data and included in the user interface, the exported SBOM, and the PDF report. When storing the value in the SBOM the file name is included as the custom property `sonatype:original_file` .
 
-![Screenshot_2024-12-09_at_2_45_19_PM.png](/assets/images/uuid-64e223ef-5e8a-2347-d511-7fbe03443a10.png)
+![Screenshot_2024-12-09_at_2_45_19_PM.png]({{ "/assets/images/uuid-64e223ef-5e8a-2347-d511-7fbe03443a10.png)
 
 ## Supported Files for Importing
 

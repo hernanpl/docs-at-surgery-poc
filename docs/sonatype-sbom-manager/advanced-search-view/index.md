@@ -10,7 +10,7 @@ has_children: true
 
 Use the SBOM Search to understand where components and vulnerabilities exist across your catalog of SBOMs directly from the UI. Export the results to build reports to share anywhere you need them.
 
-![Screenshot_2024-04-17_at_5_30_15_PM.png](/assets/images/uuid-82de7216-c44b-218c-9393-467bfdc6e7a8.png)
+![Screenshot_2024-04-17_at_5_30_15_PM.png](/docs-at-surgery-poc/assets/images/uuid-82de7216-c44b-218c-9393-467bfdc6e7a8.png)
 
 ## Advanced Search
 
@@ -32,7 +32,7 @@ You may export the results of an advanced search by selecting the Export Results
 
 Results may also be exported using the Advanced Search REST API.
 
-![123404564.png](/assets/images/uuid-d2294c03-fd72-00e4-ba1e-94ff8ecb445f.png)
+![123404564.png]({{ /assets/images/uuid-d2294c03-fd72-00e4-ba1e-94ff8ecb445f.png)
 
 **Note:** Limitations with the Advance Search The Advance Search does not list all vulnerabilities known to Sonatype. The complete list of vulnerabilities are stored in Sonatype's proprietary Hosted Data Services (HDS) database and is used during the application analysis.
 

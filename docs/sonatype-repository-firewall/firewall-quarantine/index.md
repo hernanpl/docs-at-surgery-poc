@@ -66,7 +66,7 @@ The Auto-Release Dashboard displays an activity summary and components that have
 
 This view is accessed from the Firewall Dashboard.
 
-![Auto-Release_Dashboard.png](/assets/images/uuid-78a46c7a-91b0-d267-034e-0e0078607554.png)
+![Auto-Release_Dashboard.png](/docs-at-surgery-poc/assets/images/uuid-78a46c7a-91b0-d267-034e-0e0078607554.png)
 
 - Components auto-released from quarantine in the current month
 - Components auto-released from quarantine in the current year
@@ -79,7 +79,7 @@ The configuration for auto-releasing quarantined components is found on the Auto
 
 Modifying the auto-release functionality requires the `Edit IQ Elements` permission set at the `Repository Managers` access level.
 
-![fw.dashboard_auto_release_config](/assets/images/uuid-b614713c-b530-aba5-2aa8-b367068e45c0.png)
+![fw.dashboard_auto_release_config]({{ /assets/images/uuid-b614713c-b530-aba5-2aa8-b367068e45c0.png)
 
 ### Auto-Release Task
 

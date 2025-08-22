@@ -9,7 +9,7 @@ nav_order: 1
 
 The repository results page is an audit of a proxy repository configured with the Repository Firewall. This view lists all the components requested through the proxy and any violations found near the time the component was requested.
 
-![Screenshot_2024-02-15_at_7_05_08_PM.png](/assets/images/uuid-849decb0-9296-f7d4-d2d6-39a6a0242beb.png)
+![Screenshot_2024-02-15_at_7_05_08_PM.png](/docs-at-surgery-poc/assets/images/uuid-849decb0-9296-f7d4-d2d6-39a6a0242beb.png)
 
 ## Repository Summary
 
@@ -52,7 +52,7 @@ In Nexus Repository Pro 3, the audit results are summarized in the IQ Policy Vio
 
 This view is located in the Repository sub-menu of the Administration menu.
 
-![91948187.png](/assets/images/uuid-dec4a3c8-c4af-4da2-a5e3-dfdc83fdba9a.png)
+![91948187.png]({{ /assets/images/uuid-dec4a3c8-c4af-4da2-a5e3-dfdc83fdba9a.png)
 
 The IQ Policy Violations column includes the following items:
 

@@ -60,15 +60,15 @@ Adding or removing users to the Sonatype cloud instance.
 
 Authenticated users are visible in the User Management view. Navigate to Users from the System Preferences menu
 
-![cloud-manage-users](/assets/images/uuid-44e8932a-fa11-7392-b407-4e58fcd43717.png)
+![cloud-manage-users](/docs-at-surgery-poc/assets/images/uuid-44e8932a-fa11-7392-b407-4e58fcd43717.png)
 
 ### Adding new users
 
 - Select Users from the System Preferences menu and select the `Invite User` button
 - Enter the user details and select `Send` to confirm
-- A "Getting Started" email with instructions to set up authentication will be sent to the users
+- A Getting Started" email with instructions to set up authentication will be sent to the users
 
-![cloud-invite-user](/assets/images/uuid-8cfe8833-ac98-5f13-dda8-0f7d539c28f2.png)
+![cloud-invite-user]({{ "/assets/images/uuid-8cfe8833-ac98-5f13-dda8-0f7d539c28f2.png)
 
 ### Deleting users
 

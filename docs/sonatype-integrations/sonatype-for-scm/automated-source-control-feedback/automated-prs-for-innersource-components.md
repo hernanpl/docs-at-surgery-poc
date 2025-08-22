@@ -42,4 +42,4 @@ The example below shows an automated PR for an InnerSource component created in 
 
 The latest application evaluation detected a new version (0.8.5) of the InnerSource component `com.github.vandeseer:easytable` at the release stage. This automatically created a PR in GitHub to update the older version (0.6.6).
 
-![AutoPr_for_InnerSource.jpg](/assets/images/uuid-76f54cc1-f9b5-9c66-bb4d-96feff9053b0.jpg)
+![AutoPr_for_InnerSource.jpg]({{ "/assets/images/uuid-76f54cc1-f9b5-9c66-bb4d-96feff9053b0.jpg)

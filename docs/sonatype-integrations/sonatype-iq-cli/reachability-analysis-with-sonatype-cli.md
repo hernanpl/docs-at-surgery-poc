@@ -23,6 +23,6 @@ The Sonatype CLI user should have the *Evaluate Applications* permissions to sca
 
 On first execution, if Reachability Analysis detects a component (belonging to the Maven ecosystem) that has a vulnerable method signature, the application report will show a policy violation with `Reachable` status.
 
-![Reachable_Violation.png](/assets/images/uuid-8cd56a17-baac-e91f-72ba-4136c77c26f7.png)
+![Reachable_Violation.png]({{ "/assets/images/uuid-8cd56a17-baac-e91f-72ba-4136c77c26f7.png)
 
 You can prioritize the remediation of this violation.

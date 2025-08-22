@@ -329,7 +329,7 @@ By integrating Staging and Build Promotion into their software development lifec
 
 For more details, refer to the Staging documentation in the Nexus Repository administration guide.
 
-![16355975.png](/assets/images/uuid-215b839a-15ea-ef18-01c6-32e06154c964.png)
+![16355975.png](/docs-at-surgery-poc/assets/images/uuid-215b839a-15ea-ef18-01c6-32e06154c964.png)
 
 ### Tagging
 
@@ -410,7 +410,7 @@ Atlassian Crowd is a single sign-on and identity management product that many or
 
 ## Nexus Repository Feature Matrix
 
-This matrix outlines the Nexus Repository features available in Community Edition versus a Professional (PRO) license. The matrix is updated as new features are released. Unsupported items are represented by a red x "(error)" icon, while supported items are represented by a green "(tick)" icon.
+This matrix outlines the Nexus Repository features available in Community Edition versus a Professional (PRO) license. The matrix is updated as new features are released. Unsupported items are represented by a red x (error)" icon, while supported items are represented by a green "(tick)" icon.
 
 Contact [nexus-feedback@sonatype.com](mailto:nexus-feedback@sonatype.com) with questions on specific features.
 

@@ -14,7 +14,7 @@ The Sonatype Product Development Lifecycle (PDLC) is designed to keep us continu
 
 Our product lifecycle includes four stages:
 
-![Sonatype Sunsetting Lifecycle](/assets/images/uuid-d83a1379-5df1-2156-8465-82819d5b057b.png)
+![Sonatype Sunsetting Lifecycle]({{ "/assets/images/uuid-d83a1379-5df1-2156-8465-82819d5b057b.png)
 
 **Note:** For more information about Sonatype Support services, please see [Sonatype's Software Support Policy](https://www.sonatype.com/usage/software-support-policy) .
 
