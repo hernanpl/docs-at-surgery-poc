@@ -2,6 +2,8 @@
 
 This documentation will be reviewed by the automated system to verify that Claude Code integration is working properly.
 
+**Update**: Testing with corrected API key configuration.
+
 ## Installation
 
 The software should be installed by the user. In order to install the software, the following steps will need to be completed by the administrator:
