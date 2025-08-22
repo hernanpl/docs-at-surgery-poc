@@ -10,65 +10,65 @@ nav_exclude: true
 </div>
 
 <div class="product-cards">
-  <a href="/docs/sonatype-product-overview/" class="product-card">
+  <a href="/docs-at-surgery-poc/docs/sonatype-product-overview/" class="product-card">
     <div class="card-icon">
-      <img src="/assets/images/logo-product-overview.png" alt="Sonatype Product Overview">
+      <img src="/docs-at-surgery-poc/assets/images/logo-product-overview.png" alt="Sonatype Product Overview">
     </div>
     <h3>Sonatype Product Overview</h3>
     <p>Important announcements, sunsetting information, and solution overview.</p>
   </a>
 
-  <a href="/docs/sonatype-nexus-repository/" class="product-card">
+  <a href="/docs-at-surgery-poc/docs/sonatype-nexus-repository/" class="product-card">
     <div class="card-icon">
-      <img src="/assets/images/logo-nexus-repository.png" alt="Sonatype Nexus Repository">
+      <img src="/docs-at-surgery-poc/assets/images/logo-nexus-repository.png" alt="Sonatype Nexus Repository">
     </div>
     <h3>Sonatype Nexus Repository</h3>
     <p>Store, organize, and share software components securely and efficiently.</p>
   </a>
 
-  <a href="/docs/sonatype-iq-server/" class="product-card">
+  <a href="/docs-at-surgery-poc/docs/sonatype-iq-server/" class="product-card">
     <div class="card-icon">
-      <img src="/assets/images/logo-iq-server.png" alt="Sonatype IQ Server">
+      <img src="/docs-at-surgery-poc/assets/images/logo-iq-server.png" alt="Sonatype IQ Server">
     </div>
     <h3>Sonatype IQ Server</h3>
     <p>Downloads and system requirements for the server that powers Lifecycle, Developer, SBOM Manager, and Firewall.</p>
   </a>
 
-  <a href="/docs/sonatype-lifecycle/" class="product-card">
+  <a href="/docs-at-surgery-poc/docs/sonatype-lifecycle/" class="product-card">
     <div class="card-icon">
-      <img src="/assets/images/logo-lifecycle.png" alt="Sonatype Lifecycle">
+      <img src="/docs-at-surgery-poc/assets/images/logo-lifecycle.png" alt="Sonatype Lifecycle">
     </div>
     <h3>Sonatype Lifecycle</h3>
     <p>Policy enforcement throughout the software development lifecycle.</p>
   </a>
 
-  <a href="/docs/sonatype-repository-firewall/" class="product-card">
+  <a href="/docs-at-surgery-poc/docs/sonatype-repository-firewall/" class="product-card">
     <div class="card-icon">
-      <img src="/assets/images/logo-repository-firewall.png" alt="Sonatype Repository Firewall">
+      <img src="/docs-at-surgery-poc/assets/images/logo-repository-firewall.png" alt="Sonatype Repository Firewall">
     </div>
     <h3>Sonatype Repository Firewall</h3>
     <p>Block malicious components before they enter your software supply chain.</p>
   </a>
 
-  <a href="/docs/sonatype-sbom-manager/" class="product-card">
+  <a href="/docs-at-surgery-poc/docs/sonatype-sbom-manager/" class="product-card">
     <div class="card-icon">
-      <img src="/assets/images/logo-sbom-manager.png" alt="Sonatype SBOM Manager">
+      <img src="/docs-at-surgery-poc/assets/images/logo-sbom-manager.png" alt="Sonatype SBOM Manager">
     </div>
     <h3>Sonatype SBOM Manager</h3>
     <p>Ensure adherence with automated software bill of materials generation and reporting.</p>
   </a>
 
-  <a href="/docs/sonatype-developer/" class="product-card">
+  <a href="/docs-at-surgery-poc/docs/sonatype-developer/" class="product-card">
     <div class="card-icon">
-      <img src="/assets/images/logo-developer.png" alt="Sonatype Developer">
+      <img src="/docs-at-surgery-poc/assets/images/logo-developer.png" alt="Sonatype Developer">
     </div>
     <h3>Sonatype Developer</h3>
     <p>Developer-centric tools for managing open-source component quality.</p>
   </a>
 
-  <a href="/docs/sonatype-integrations/" class="product-card">
+  <a href="/docs-at-surgery-poc/docs/sonatype-integrations/" class="product-card">
     <div class="card-icon">
-      <img src="/assets/images/logo-integrations.png" alt="Sonatype Integrations">
+      <img src="/docs-at-surgery-poc/assets/images/logo-integrations.png" alt="Sonatype Integrations">
     </div>
     <h3>Sonatype Integrations</h3>
     <p>CI/CD, SCM, and IDE plugins for Sonatype solutions.</p>
