@@ -189,7 +189,9 @@ class ClaudeDocsReviewer:
         
         headers = {
             'Content-Type': 'application/json',
-            'x-litellm-api-key': self.litellm_api_key  # Use correct LiteLLM header
+            'Authorization': f'Bearer {self.litellm_api_key}',  # Standard Bearer token
+            'x-api-key': self.litellm_api_key,  # Standard Anthropic header
+            'x-litellm-api-key': self.litellm_api_key  # LiteLLM specific header
         }
         
         data = {
