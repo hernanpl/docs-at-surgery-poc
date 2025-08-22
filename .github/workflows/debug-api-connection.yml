@@ -1,0 +1,59 @@
+name: Debug API Connection
+
+on:
+  workflow_dispatch:  # Manual trigger for testing
+
+jobs:
+  debug-connection:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Test Network Connectivity
+        run: |
+          echo "Testing network connectivity to Anthropic API..."
+          
+          # Test basic connectivity
+          echo "=== DNS Resolution ==="
+          nslookup api.anthropic.com || echo "DNS resolution failed"
+          
+          echo "=== Ping Test ==="
+          ping -c 3 api.anthropic.com || echo "Ping failed"
+          
+          echo "=== HTTP Connectivity ==="
+          curl -v -H "Content-Type: application/json" \
+               -H "x-api-key: test-key" \
+               --connect-timeout 10 \
+               --max-time 30 \
+               https://api.anthropic.com/v1/messages || echo "HTTP connection failed"
+          
+          echo "=== Environment Info ==="
+          echo "Runner IP:"
+          curl -s https://httpbin.org/ip || echo "IP detection failed"
+          
+          echo "=== DNS Servers ==="
+          cat /etc/resolv.conf
+          
+      - name: Test API Key Format
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "=== API Key Check ==="
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "❌ ANTHROPIC_API_KEY is empty or not set"
+            exit 1
+          fi
+          
+          echo "✅ API key is set"
+          echo "Key length: ${#ANTHROPIC_API_KEY}"
+          echo "Key prefix: ${ANTHROPIC_API_KEY:0:12}..."
+          
+          # Check for common formatting issues
+          if [[ "$ANTHROPIC_API_KEY" =~ [[:space:]] ]]; then
+            echo "⚠️  API key contains whitespace"
+          fi
+          
+          if [[ "$ANTHROPIC_API_KEY" == sk-ant-api-* ]]; then
+            echo "✅ API key has correct format"
+          else
+            echo "⚠️  API key doesn't start with expected prefix"
+          fi
