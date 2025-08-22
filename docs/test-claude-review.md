@@ -2,7 +2,7 @@
 
 This documentation will be reviewed by the automated system to verify that Claude Code integration is working properly.
 
-**Update**: Testing with corrected API key configuration.
+**Update**: Testing with LiteLLM proxy integration and x-litellm-api-key authentication.
 
 ## Installation
 
