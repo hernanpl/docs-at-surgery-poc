@@ -39,7 +39,7 @@ As a public cloud deployment, Nexus Repository Cloud does not include anonymous 
 
 Administrators may directly invite users to the tenant through the `Settings -> Security -> Users` view. An email is sent to the user to verify their email address while setting up 2FA access. Once complete, the user is able to login with permissions provided by the Default User role.
 
-![nx-cloud-users-invite.png]({{ "/assets/images/uuid-1c18e0e8-c61b-eff3-5eff-dfd5b5c96f47.png)
+![nx-cloud-users-invite.png](/docs-at-surgery-poc/assets/images/uuid-1c18e0e8-c61b-eff3-5eff-dfd5b5c96f47.png)
 
 ## Using Client Tools
 

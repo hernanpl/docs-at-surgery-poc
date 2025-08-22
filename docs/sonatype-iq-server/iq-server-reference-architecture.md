@@ -93,7 +93,7 @@ The following assets need to be replicated:
 
 **Reference Architecture Diagram:**
 
-![IQ_Large_nonHA_Deployment_port.png]({{ "/assets/images/uuid-4c4386bc-21b6-4139-4859-6f02148c4873.png)
+![IQ_Large_nonHA_Deployment_port.png](/docs-at-surgery-poc/assets/images/uuid-4c4386bc-21b6-4139-4859-6f02148c4873.png)
 
 **High Availability active-active Deployment**
 

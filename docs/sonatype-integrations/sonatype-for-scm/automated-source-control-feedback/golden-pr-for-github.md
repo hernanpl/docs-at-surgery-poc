@@ -25,4 +25,4 @@ Sonatype IQ Server creates a Golden **Pull Request (PR)** automatically, if it i
 
 3. A **Golden PR** (indicated by a gold star,) will be created as below, indicating the suggested component version, i.e. Golden Version. This is a safe-to-use version with no breaking changes, no policy violations (including its dependencies) and can be used to remediate the policy violations.
 
-![Github_Golden_PR.png]({{ "/assets/images/uuid-df8b0d0d-6b32-e3fd-871f-780df9cad923.png)
+![Github_Golden_PR.png](/docs-at-surgery-poc/assets/images/uuid-df8b0d0d-6b32-e3fd-871f-780df9cad923.png)

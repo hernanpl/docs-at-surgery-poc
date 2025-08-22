@@ -43,4 +43,4 @@ The Vulnerability Details panel provides details of vulnerability including; des
 
 The policy violation tab lists the policy violations for the component. The violations may be selected to open the violation details view.
 
-![Screenshot_2024-12-17_at_3_21_17_PM.png]({{ "/assets/images/uuid-371ebdda-d216-2533-ce3f-018f345a27f3.png)
+![Screenshot_2024-12-17_at_3_21_17_PM.png](/docs-at-surgery-poc/assets/images/uuid-371ebdda-d216-2533-ce3f-018f345a27f3.png)

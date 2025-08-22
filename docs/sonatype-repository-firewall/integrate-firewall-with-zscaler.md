@@ -61,7 +61,7 @@ The default limit for custom URLs/TLDs is 25K. Contact your Zscaler Account team
 
 See [Zscaler Documentation](https://help.zscaler.com/zia/ranges-limitations)
 
-![fw-zscaler-customer-url-limits.png]({{ "/assets/images/uuid-798b2efc-a594-51a9-155c-0204e80f4fff.png)
+![fw-zscaler-customer-url-limits.png](/docs-at-surgery-poc/assets/images/uuid-798b2efc-a594-51a9-155c-0204e80f4fff.png)
 
 - The number of custom URLs allowed with your subscription.
 - The number of custom URLs remaining.

@@ -49,7 +49,7 @@ See the topic [Component Identification: Match States](#UUID-c8a1f963-f80b-dd2f-
 
 When analyzing binary files, the name of the original binary files is stored with the component data and included in the user interface, the exported SBOM, and the PDF report. When storing the value in the SBOM the file name is included as the custom property `sonatype:original_file` .
 
-![Screenshot_2024-12-09_at_2_45_19_PM.png]({{ "/assets/images/uuid-64e223ef-5e8a-2347-d511-7fbe03443a10.png)
+![Screenshot_2024-12-09_at_2_45_19_PM.png](/docs-at-surgery-poc/assets/images/uuid-64e223ef-5e8a-2347-d511-7fbe03443a10.png)
 
 ## Supported Files for Importing
 

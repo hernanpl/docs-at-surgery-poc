@@ -83,7 +83,7 @@ Authorized support contacts are the people in your organization whom you assign 
 - Only verified Organizations can have support contacts.
 - Individuals who have been invited to an Organization but haven't accepted the invite email cannot be designated a support contact.
 
-![Support_contact.png]({{ "/assets/images/uuid-6e366c96-d2b8-2bb8-9ab2-ec690a221159.png)
+![Support_contact.png](/docs-at-surgery-poc/assets/images/uuid-6e366c96-d2b8-2bb8-9ab2-ec690a221159.png)
 
 To assign support contacts:
 

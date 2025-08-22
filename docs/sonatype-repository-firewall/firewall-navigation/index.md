@@ -169,7 +169,7 @@ In Nexus Repository Pro 3, the audit results are summarized in the IQ Policy Vio
 
 This view is located in the Repository sub-menu of the Administration menu.
 
-![91948187.png]({{ "/assets/images/uuid-dec4a3c8-c4af-4da2-a5e3-dfdc83fdba9a.png)
+![91948187.png](/docs-at-surgery-poc/assets/images/uuid-dec4a3c8-c4af-4da2-a5e3-dfdc83fdba9a.png)
 
 The IQ Policy Violations column includes the following items:
 

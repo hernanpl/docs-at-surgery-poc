@@ -1911,6 +1911,6 @@ If you have selected a component with some threats (as above), you can select ot
 
 When you select one of the recommended version links, or if you click on any of the versions in the Version Graph, the Migrate to Selected" button will become enabled.
 
-![180813914.png]({{ "/assets/images/uuid-6063f6d5-0f3f-17b6-1598-ea8dcf3a5562.png)
+![180813914.png](/docs-at-surgery-poc/assets/images/uuid-6063f6d5-0f3f-17b6-1598-ea8dcf3a5562.png)
 
 Clicking this button will update all projects where this component was present and migrate to the version you selected.

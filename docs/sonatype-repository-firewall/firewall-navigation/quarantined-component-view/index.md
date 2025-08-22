@@ -12,7 +12,7 @@ The quarantined component view is a temporary page created when a component is f
 
 Components are quarantined when a component is requested from a proxy repository for the first time. The build tool making the request receives a `403` error when the component is not downloaded. The error code provides details of the quarantine and a link to the quarantined component view.
 
-![113248445.png]({{ "/assets/images/uuid-9f41891a-0401-2b7f-8e3d-d7757714d6f2.png)
+![113248445.png](/docs-at-surgery-poc/assets/images/uuid-9f41891a-0401-2b7f-8e3d-d7757714d6f2.png)
 
 **Note:** When users are authenticated with IQ server and not using anonymous access, they are directed to the Component Details View. To view the component details or the full Repository Results report, the user requires the `View IQ elements` permission. The `View IQ elements` permission is not assigned by default to the `Application Evaluator` or the `Component Evaluator` service account roles which are granted limited access to the user interface.
 

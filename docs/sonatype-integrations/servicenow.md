@@ -138,4 +138,4 @@ Further information can also be found by opening a run to look at different “I
 
 This diagram describes the integration functionality at a high level:
 
-![image7.png]({{ "/assets/images/uuid-77a380f4-ff40-176c-3d41-f9cc9c7b4972.png)
+![image7.png](/docs-at-surgery-poc/assets/images/uuid-77a380f4-ff40-176c-3d41-f9cc9c7b4972.png)

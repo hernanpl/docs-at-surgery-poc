@@ -49,7 +49,7 @@ The Integrity-Rating Policy is set using the following constraints. The action i
 
 The Security-Malicious policy is also triggered when a component is found to be malicious. This information is from the `Security Vulnerability Category` and is labeled `Malicious Code` .
 
-![iq-policy-release-integrity]({{ "/assets/images/uuid-9f4dcb0e-de2e-1bb3-2eb7-6d280ef8f5db.png)
+![iq-policy-release-integrity](/docs-at-surgery-poc/assets/images/uuid-9f4dcb0e-de2e-1bb3-2eb7-6d280ef8f5db.png)
 
 ## Sample Malicious Components
 

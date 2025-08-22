@@ -21,7 +21,7 @@ VEX annotations are added from the or the .
 
 When the previous version of the application has been annotated with a VEX status and justification, those annotations may be copied to the current version's vulnerabilities to reduce the time your team spends on vulnerability management.
 
-![sbom-vex-copy.png]({{ "/assets/images/uuid-4f298214-483b-ad71-4805-60da2c83fcbe.png)
+![sbom-vex-copy.png](/docs-at-surgery-poc/assets/images/uuid-4f298214-483b-ad71-4805-60da2c83fcbe.png)
 
 ## VEX Annotations
 

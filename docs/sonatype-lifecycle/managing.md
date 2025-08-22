@@ -327,7 +327,7 @@ To create a new user in the IQ Server realm, follow the instructions below.
 
 Editing user information is only available to an admin. The information that can be edited includes the first name, last name, email address and password. To edit an existing user, follow these steps:
 
-![82215552.png]({{ "/assets/images/uuid-5e0ba967-be0b-86be-d38a-a435548743a5.png)
+![82215552.png](/docs-at-surgery-poc/assets/images/uuid-5e0ba967-be0b-86be-d38a-a435548743a5.png)
 
 ### LDAP Integration
 

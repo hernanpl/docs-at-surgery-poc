@@ -21,7 +21,7 @@ Policy-compliant component selection filters requests to prevent clients from se
 
 ### Enable Policy Compliant Component Selection
 
-![fw-pccs-configuration.png]({{ "/assets/images/uuid-16d5cea7-f1e2-af79-6853-830e671ac1a9.png)
+![fw-pccs-configuration.png](/docs-at-surgery-poc/assets/images/uuid-16d5cea7-f1e2-af79-6853-830e671ac1a9.png)
 
 ### Configure Cache Settings
 
