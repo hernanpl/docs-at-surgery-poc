@@ -41,7 +41,7 @@ The IQ Policy Evaluation report can also be accessed from a commit itself by cli
 
 An IQ Policy Evaluation step can be added to the GitLab pipeline to provide feedback or even block Merge Requests when it detects vulnerable components or policy violations. When violations are detected, the 'IQ Policy Evaluation' will link to the full scan report on IQ Server.
 
-![126654529.png]({{ "/assets/images/uuid-8ad4a098-f76e-73ae-df54-14c73aefe521.png)
+![126654529.png](/docs-at-surgery-poc/assets/images/uuid-8ad4a098-f76e-73ae-df54-14c73aefe521.png)
 
 ## Viewing the Full Policy Evaluation Report
 
