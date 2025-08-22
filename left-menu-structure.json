@@ -1,0 +1,331 @@
+[
+  {
+    "title": "Sonatype Product Overview",
+    "children": [
+      {
+        "title": "Important Announcements",
+        "children": [
+          { "title": "Critical Cleanup Policy Bug Advisory" },
+          { "title": "Find and Fix Springshell" },
+          { "title": "Find and Fix Log4j" },
+          { "title": "Struts2 Frequently Asked Questions" }
+        ]
+      },
+      {
+        "title": "Sonatype Sunsetting Information",
+        "children": [
+          { "title": "Sonatype Nexus Repository 3 Versions Status" },
+          { "title": "Nexus Repository 3 Feature Status" },
+          { "title": "Sonatype Nexus Repository 2 Sunsetting Information" },
+          { "title": "Sonatype Nexus Repository 2 Version Status" },
+          { "title": "Sonatype Auditor Sunsetting" },
+          { "title": "Sonatype Repository Firewall Classic Sunsetting" },
+          { "title": "Sonatype IQ Server Versions Status" },
+          { "title": "Sonatype IQ Server Feature Status" },
+          { "title": "Sonatype Integrations Version Status" }
+        ]
+      },
+      { "title": "Java Compatibility Matrix" },
+      { "title": "Sonatype on Responsible Disclosure" },
+      { "title": "Sonatype Security Vulnerabilities" },
+      { "title": "Product Preview Program" },
+      { "title": "Using my.sonatype.com" },
+      { "title": "IPv6 Readiness Check" },
+      { "title": "Reference: Glossary" }
+    ]
+  },
+  {
+    "title": "Sonatype Nexus Repository",
+    "children": [
+      { "title": "Product Information" },
+      { "title": "Nexus Repository Cloud" },
+      { "title": "Planning Your Implementation" },
+      { "title": "Install Nexus Repository" },
+      { "title": "Upgrade Nexus Repository" },
+      { "title": "Nexus Repository Administration" },
+      { "title": "Using Nexus Repository" },
+      { "title": "Formats" },
+      { "title": "Automation" },
+      { "title": "Nexus Repository Best Practices" },
+      { "title": "Repository Manager 2" }
+    ]
+  },
+  {
+    "title": "Sonatype IQ Server",
+    "children": [
+      { "title": "Sonatype IQ Server Release Notes" },
+      { "title": "Download and Compatibility" },
+      { "title": "IQ Server System Requirements" },
+      { "title": "Sonatype Cloud" },
+      { "title": "IQ Server Reference Architecture" },
+      { "title": "License and Features" },
+      { "title": "Install self-hosted IQ Server" },
+      { "title": "Sonatype Solution Switcher" },
+      { "title": "Add-on Packs" },
+      { "title": "Sonatype Vulnerability Data" },
+      { "title": "Threats in AI/ML Models" },
+      { "title": "Sonatype Malware Data" },
+      { "title": "Sonatype Data Handling Process" },
+      { "title": "Naming conventions for OSS licenses" },
+      { "title": "Package URLs (purl) and Component Identifiers" },
+      { "title": "IQ API Reference" }
+    ]
+  },
+  {
+    "title": "Sonatype Lifecycle",
+    "children": [
+      { "title": "Product Information and Downloads" },
+      { "title": "Lifecycle Release Notes" },
+      { "title": "Getting Started" },
+      { "title": "Configuring" },
+      { "title": "Managing" },
+      { "title": "Reporting" },
+      { "title": "Automating" },
+      { "title": "Analysis" },
+      { "title": "Lifecycle Best Practices" }
+    ]
+  },
+  {
+    "title": "Sonatype Repository Firewall",
+    "children": [
+      { "title": "Product Information and Downloads" },
+      { "title": "Repository Firewall Release Notes" },
+      {
+        "title": "Repository Firewall Getting Started",
+        "children": [
+          {
+            "title": "Nexus Repository 3 Pro Setup",
+            "children": [
+              { "title": "Firewall Audit and Quarantine Capability" },
+              { "title": "Firewall Results in Nexus Repository" }
+            ]
+          },
+          {
+            "title": "JFrog Artifactory Setup",
+            "children": [
+              { "title": "Getting the Firewall results page through the JFrog Artifactory API" },
+              { "title": "Firewall for Artifactory Configuration" },
+              { "title": "JFrog Artifactory Plugin Configuration REST API" },
+              { "title": "Upgrading Firewall for Artifactory plugin" },
+              { "title": "Uninstalling the Firewall for Artifactory Plugin" },
+              { "title": "Firewall for Artifactory Release Notes" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Firewall Navigation",
+        "children": [
+          { "title": "Firewall Dashboard" },
+          {
+            "title": "Quarantined Component View",
+            "children": [
+              { "title": "Repository Results View" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Firewall Quarantine",
+        "children": [
+          { "title": "Automatic Quarantine Release" },
+          { "title": "Custom Quarantine Messages" }
+        ]
+      },
+      { "title": "Guide to Removing Malware" },
+      { "title": "Namespace Confusion Protection" },
+      { "title": "Policy Compliant Component Selection" },
+      { "title": "Release Integrity" },
+      { "title": "Integrate Firewall with Zscaler" },
+      { "title": "Repository Firewall Best Practices" },
+      {
+        "title": "Firewall APIs",
+        "children": [
+          { "title": "Repository Firewall Hashing" },
+          { "title": "Repository Firewall Evaluation API" },
+          { "title": "Quarantine REST API" },
+          { "title": "Repository Results REST API" },
+          { "title": "Namespace Confusion API" },
+          { "title": "Malware Defense Evaluate API" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sonatype SBOM Manager",
+    "children": [
+      { "title": "Product Information and Downloads" },
+      { "title": "SBOM Manager Release Notes" },
+      { "title": "Getting Started" },
+      { "title": "Software Bill of Materials (SBOM)" },
+      { "title": "Setting up your Tenant" },
+      { "title": "Dashboard View" },
+      {
+        "title": "Organizations View",
+        "children": [
+          { "title": "Applications View" }
+        ]
+      },
+      {
+        "title": "Advanced Search View",
+        "children": [
+          { "title": "Search Examples" }
+        ]
+      },
+      { "title": "Legal View" },
+      { "title": "SBOM Manager API" },
+      { "title": "Importing SBOMs" },
+      { "title": "SBOM Bill of Material View" },
+      { "title": "SBOM Component Details View" },
+      { "title": "SBOM Continuous Monitoring" },
+      { "title": "SBOM VEX Workflow" }
+    ]
+  },
+  {
+    "title": "Sonatype Developer",
+    "children": [
+      { "title": "Product Information and Downloads" },
+      { "title": "Sonatype Developer Release Notes" },
+      { "title": "Developer Dashboard" },
+      {
+        "title": "Golden Versions",
+        "children": [
+          {
+            "title": "Priorities View",
+            "children": [
+              { "title": "Prioritization Algorithm" },
+              { "title": "Create PRs from Priorities View" },
+              { "title": "View Waivers from the Priorities View" }
+            ]
+          }
+        ]
+      },
+      { "title": "Reachability Analysis" },
+      {
+        "title": "REST APIs",
+        "children": [
+          { "title": "Priorities REST API" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sonatype Integrations",
+    "children": [
+      { "title": "Notable Integrations Changes" },
+      {
+        "title": "Azure DevOps",
+        "children": [
+          { "title": "Installation and Configuration – Sonatype for Azure DevOps" }
+        ]
+      },
+      {
+        "title": "Bamboo Data Center",
+        "children": [
+          { "title": "Installation and Configuration – Sonatype for Bamboo Data Center" }
+        ]
+      },
+      { "title": "Container Security" },
+      { "title": "Eclipse" },
+      {
+        "title": "Fortify SSC",
+        "children": [
+          { "title": "Integration of IQ Webhook with Fortify SSC Sync Service" }
+        ]
+      },
+      { "title": "GitHub Actions" },
+      {
+        "title": "GitLab CI",
+        "children": [
+          { "title": "CI Components" },
+          { "title": "CI/CD Pipelines" }
+        ]
+      },
+      { "title": "IDEA" },
+      {
+        "title": "Jenkins – Lifecycle",
+        "children": [
+          { "title": "Installation and Configuration – Sonatype Platform Plugin for Jenkins" }
+        ]
+      },
+      {
+        "title": "Jenkins – Nexus Repository",
+        "children": [
+          { "title": "Installation and Configuration – Sonatype Nexus Repository Plugin for Jenkins" }
+        ]
+      },
+      { "title": "Jira Cloud" },
+      { "title": "Jira Data Center" },
+      { "title": "Maven – Lifecycle" },
+      { "title": "Maven – Nexus Repository" },
+      { "title": "ServiceNow" },
+      { "title": "Visual Studio 2022" },
+      { "title": "VS Code" },
+      {
+        "title": "Sonatype IQ CLI",
+        "children": [
+          { "title": "Reachability Analysis with Sonatype CLI" },
+          { "title": "Sonatype IQ CLI Binaries" },
+          { "title": "Sonatype IQ CLI With Bundled JDK" },
+          { "title": "Passing CLI parameters from a file" },
+          { "title": "Example Scan Result File" },
+          { "title": "Using Automatic application creation with the CLI" }
+        ]
+      },
+      { "title": "Sonatype Container Deployment – Lifecycle" },
+      { "title": "Sonatype Container Deployment – Nexus Repository" },
+      {
+        "title": "Sonatype for SCM",
+        "children": [
+          {
+            "title": "Source Control Configuration",
+            "children": [
+              { "title": "SCM Features Technical Overview" },
+              { "title": "GitHub SCM" },
+              { "title": "GitLab SCM" },
+              { "title": "Bitbucket SCM" },
+              { "title": "Bitbucket Cloud SCM" },
+              { "title": "Azure DevOps SCM" },
+              { "title": "IQ Server Configuration" },
+              { "title": "Sparse Checkout File Types" }
+            ]
+          },
+          {
+            "title": "Easy SCM Onboarding",
+            "children": [
+              { "title": "Instant Risk Profile" },
+              { "title": "Continuous Risk Profile" }
+            ]
+          },
+          {
+            "title": "Automated Source Control Feedback",
+            "children": [
+              { "title": "Automated Commit Feedback" },
+              {
+                "title": "Automated Pull Requests",
+                "children": [
+                  { "title": "Automated Pull Requests in Go" },
+                  { "title": "Automated Pull Requests in Maven" },
+                  { "title": "Automated Pull Requests in npm" },
+                  { "title": "Automated Pull Requests with Gradle" }
+                ]
+              },
+              { "title": "Automated PRs for InnerSource Components" },
+              { "title": "Pull Request Commenting" },
+              { "title": "Golden PR for GitHub" },
+              { "title": "Golden PR for GitLab" },
+              { "title": "Golden PR for Azure DevOps" },
+              { "title": "Golden PR for Bitbucket" }
+            ]
+          },
+          { "title": "Policy Evaluation with Nexus IQ for SCM" },
+          { "title": "CI and CLI Integrations" },
+          { "title": "Bitbucket Code Insights" },
+          { "title": "Policy Evaluation in Source Control Management" }
+        ]
+      },
+      { "title": "Java Runtime Agent (Experimental)" },
+      { "title": "Integrations Capability Matrix" }
+    ]
+  }
+]

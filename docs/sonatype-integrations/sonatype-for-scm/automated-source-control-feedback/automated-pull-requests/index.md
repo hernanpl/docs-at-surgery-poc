@@ -1,0 +1,142 @@
+---
+layout: default
+title: "Automated Pull Requests"
+parent: Automated Source Control Feedback
+nav_order: 2
+has_children: true
+---
+
+# Automated Pull Requests
+
+Sonatype Lifecycle can create new pull requests (PRs) to update dependencies to versions without policy violations. Whenever a scan of your SCM repository’s default branch finds a component with a policy violation that hasn't already been identified, and a newer version without the violation is available, Lifecycle will try to update the component to that newer version. This approach is the preferred way to remediate a policy violation. The pull request contains links to the full Lifecycle report that triggered it, as well as links to any security vulnerability details.
+
+**Supported platforms** : Azure DevOps, Bitbucket Cloud, Bitbucket Server, GitHub, GitLab
+
+**Supported ecosystems** : Maven, npm, Gradle, Go
+
+### Golden PRs
+
+The automated PRs created contain recommendations to upgrade dependencies to Golden Versions, when available.
+
+Refer to [The Golden PR](https://help.sonatype.com/en/golden-versions-and-prs.html#idp298622) for more details.
+
+### Automated Pull Requests to Update InnerSource Dependencies
+
+Sonatype *Lifecycle* can automatically create new pull requests to update [InnerSource dependencies](https://help.sonatype.com/en/innersource-insight.html) to newer versions.
+
+When a new non-major version of an InnerSource component is detected at the release stage during evaluation of an application, automated pull requests to update the older version of the InnerSource component are created in the SCM system.
+
+To configure your SCM to enable creation of automated pull requests, refer to [Automated PRs for InnerSource](#UUID-8ebdbbf8-503b-b36e-378e-4cc9725f216c) .
+
+## Prerequisites
+
+To use Automatic Pull Requests:
+
+Also, note that the repository URL is configured at the Application level, but the other attributes can be at the Application, Organization, or Root Organization level.
+
+The following diagram illustrates the ways that the creation of an automated remediation pull request can be triggered.
+
+![137203329.png](/assets/images/uuid-8c47bb70-6798-2330-8783-d19c4bca8e69.png)
+
+## IQ Server Clone Directory Configuration
+
+For each configured application, the repository will be cloned on the host that the IQ Server runs on. The default location is:
+
+```
+<sonatypeWork>/source-control
+```
+
+Note that the default for sonatypeWork is ./sonatype-work/clm-server.
+
+To change the location of the repository clone for IQ Server Release 140 and later, use the .
+
+For release 139 and earlier, use the config.yml
+
+```
+sourceControl:
+  cloneDirectory: /your/path/here
+```
+
+Note that if the `cloneDirectory` does not have a leading "/", then the path will be relative to `<sonatypeWork>` .
+
+## Understanding Automated Pull Requests
+
+The Automated Pull Request functionality behaves in a specific, predictable way:
+
+- The automated pull request workflow is triggered whenever your SCM repository's base branch is scanned.
+- Automated Pull Requests only work on components. It does not find or fix other vulnerabilities in your code.
+- Automated Pull Requests only bumps components to non-violating versions. It does not take any other remediation action. Review the pull requests and the linked Lifecycle report thoroughly to see other remediation options.
+- A manifest file with component version information must be included in the repository. E.G. a pom.xml file
+- The Automated Pull Request follows a hierarchy when selecting a new component version: If a version resolves violations for the target component *and* violations for that component's transitive dependencies, that version is used. Otherwise, a version that resolves all violations for the target component is used. If neither of the above is true, then no pull request is generated.
+- If a version resolves violations for the target component *and* violations for that component's transitive dependencies, that version is used.
+- Otherwise, a version that resolves all violations for the target component is used.
+- If neither of the above is true, then no pull request is generated.
+- Solving transitive dependencies alone is not currently supported. This means that no pull request is created when bumping versions would only remediate a violation in a transitive dependency.
+- This means that no pull request is created when bumping versions would only remediate a violation in a transitive dependency.
+
+**Note:** Component Versions Recommended by Automated PRs The Automated PR only bumps to component versions that are free from all violations. It will not bump to a version with fewer violations or less severe violations. The Automated PR will not recommend or bump to any pre-release versions of a component. For example, component versions like canary, ea, nightly, milestone, alpha, beta, pre, preview, dev, snapshot etc. will be excluded.
+
+## Reading an Automated Pull Request
+
+Pull requests generated by the Automated Pull Request feature look like the example below, and contain useful information that helps developers evaluate the pull request for appropriateness.
+
+![126658069.png](/assets/images/uuid-30cd34ee-1666-89cd-c5ca-0cf24d85c921.png)
+
+## Automated Pull Request Daily Activity
+
+The Source Control Configuration Overview screen displays recent activity related to automated pull request creation.
+
+![126654535.png](/assets/images/uuid-f7a96f0f-35f4-d64f-de37-bd9a27205e63.png)
+
+Summary information for each attempt to create a pull request will be shown in a table. This information is purged on a daily rotating basis determined by when the server was last started, so at any time a maximum of 24 hours of results is shown.
+
+The *Daily Automated Pull Requests* table displays the daily automated PR activity. Hover on the icons in the *Status* column for a description of the reasons indicating a successful/unsuccessful PR creation.
+
+![Auto_PR_Daily_Activity.png](/assets/images/uuid-44df16ff-34b2-02d6-c1d7-222066e400cb.png)
+
+The *Time Spent* shows the total time taken in milliseconds, to checkout, remediate, push, and create the PR.
+
+The *Start Time* shows the timestamp and time zone when the process to create the automated PR was initiated.
+
+## Breaking Changes
+
+If a pull request bumps a component to a different version that is likely to break the application, the pull request will inform the developer of these breaking changes, as in the image below.
+
+![example of a breaking changes notification in a pull request](/assets/images/uuid-2c1c87f5-0d82-c583-3c3a-548c04f5c2c4.png)
+
+Breaking Changes alerts the developer that this remediation path will require some extra effort. For more information about the violation and other potential remediation paths or strategies, users can click View Full Report at the bottom of the Pull Request.
+
+## Automated Pull Requests in Go
+
+### Go
+
+Any `go.mod` file that exists in the repository will be searched for dependencies. Remediation PRs are created for the following scenarios:
+
+- Required modules declared in single or block `require` directives
+- Replaced modules declared in single or block `replace` directives, having a full version specified on the right side of the `replace` directive
+
+## Automated Pull Requests in Maven
+
+Any `pom.xml` that exists in the repository will be searched. Any pom.xml that is in a `src/test` directory is ignored.
+
+- Component defined inside a `<dependencies>` element with an inline `<version>` element.
+- Component defined inside a `<dependencyManagement>` element with an inline `<version>` element.
+- Component defined inside either an `<dependencies>` element, or a `<dependencyManagement>` element, with the version defined via a variable in a `<properties>` section.
+
+## Automated Pull Requests in npm
+
+### npm
+
+Nexus IQ for SCM supports updates to your `package.json` file. Upon policy violations for Javascript components, we will scan your `package.json` for matching components and create a Pull Request for every match that has a remediation available.
+
+Any `package.json` that exists in the repository will be examined. Any `package.json` that contains in its path a directory named `test` , `spec` , `node_modules` , or `node` will be ignored. These are considered test files or build artifacts and not relevant project manifest files.
+
+## Automated Pull Requests with Gradle
+
+### Gradle
+
+Sonatype for SCM supports updates to `build.gradle` files. During policy evaluations, Lifecycle scans your `build.gradle` files for matching components and creates a Pull Request for every match that has a remediation available.
+
+All `build.gradle` files that exist in the repository will be examined, except `build.gradle` files in `src/test` directories, which are ignored. These are considered test files or build artifacts and not relevant project manifest files.
+
+Only Groovy-based build files are supported. Any `gradle.properties` files found in the root directory are considered as well.

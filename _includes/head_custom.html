@@ -1,0 +1,156 @@
+<!-- TOC Styles -->
+<style>
+.toc-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 100vh;
+  border-left: 1px solid #e1e4e8;
+  padding: 2rem 1rem 1.5rem 1rem;
+  overflow-y: auto;
+  z-index: 50;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Match the sidebar styling for consistency */
+@media (min-width: 66.5rem) {
+  .toc-container {
+    width: calc((100% - 66.5rem) / 2 + 16.5rem);
+    min-width: 220px;
+    max-width: 300px;
+  }
+}
+
+/* Move all panels to the left by removing extra spacing */
+@media (min-width: 50rem) {
+  .side-bar {
+    left: 0 !important;
+  }
+  
+  .side-bar + .main {
+    margin-left: 15.5rem !important;
+  }
+}
+
+@media (min-width: 66.5rem) {
+  .side-bar {
+    width: 16.5rem !important;
+    left: 0 !important;
+  }
+  
+  .side-bar + .main {
+    margin-left: 16.5rem !important;
+  }
+}
+
+/* Adjust only the main content wrapper to make room for TOC */
+.main-content-wrap {
+  margin-right: -100px !important;
+}
+
+/* Reset margin on smaller screens */
+@media (max-width: 1200px) {
+  .main-content-wrap {
+    margin-right: 0 !important;
+  }
+}
+
+.toc-title {
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin-bottom: 1.5rem;
+  color: #24292e;
+  border-bottom: 1px solid #5755d9;
+  padding-bottom: 0.25rem;
+  line-height: 1.25;
+  display: block;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.toc-title:hover {
+  color: #5755d9;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-item {
+  margin: 0.25rem 0;
+}
+
+.toc-link {
+  display: block;
+  color: #586069;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  line-height: 1.4;
+  transition: all 0.2s ease;
+}
+
+.toc-link:hover {
+  color: #24292e;
+}
+
+.toc-link.active {
+  color: #5755d9;
+  font-weight: 600;
+  position: relative;
+}
+
+.toc-link.active::before {
+  content: '▶';
+  position: absolute;
+  left: -15px;
+  color: #5755d9;
+  font-size: 0.75em;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-5px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Indentation for different heading levels */
+.toc-level-h2 .toc-link {
+  padding-left: 0;
+}
+
+.toc-level-h3 .toc-link {
+  padding-left: 1rem;
+  font-size: 0.8rem;
+}
+
+.toc-level-h4 .toc-link {
+  padding-left: 2rem;
+  font-size: 0.75rem;
+}
+
+.toc-level-h5 .toc-link,
+.toc-level-h6 .toc-link {
+  padding-left: 2.5rem;
+  font-size: 0.7rem;
+}
+
+/* Hide on smaller screens */
+@media (max-width: 1200px) {
+  .toc-container {
+    display: none;
+  }
+}
+
+/* Smooth scrolling for the page */
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
+<!-- TOC JavaScript -->
+<script src="/assets/js/toc.js"></script>

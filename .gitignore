@@ -1,0 +1,31 @@
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundle files
+.bundle/
+vendor/
+Gemfile.lock
+
+# Python migration scripts (not needed for production)
+*.py
+*.pyc
+__pycache__/
+
+# Export directories (not needed for production)
+export-html/
+export-xml/
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo

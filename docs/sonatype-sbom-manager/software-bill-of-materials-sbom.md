@@ -1,0 +1,142 @@
+---
+layout: default
+title: "Software Bill of Materials (SBOM)"
+parent: Sonatype SBOM Manager
+nav_order: 4
+---
+
+# Software Bill of Materials (SBOM)
+
+Get up to speed with Software Bill of Materials (SBOMs) and how to use them in your build pipeline. Sonatype SBOM Manager supports both the CycloneDX and SPDX formats.
+
+Here at Sonatype, automating the identity and management of open-source risk is our key focus. We were early adopters of the SBOM standard with several key features:
+
+- Sonatype actively participates in CycloneDX SBOM spec and development
+- Sonatype supports analyzing SBOMs anywhere in your build pipeline
+- Export any application report in either CycloneDX or SPDX formats
+
+## CycloneDX
+
+CycloneDX is a fantastic standard for reporting open-source dependencies in an application. It includes the component's unique hash and the Package-URL coordinates to provide precise identification of the component.
+
+The standard provides for the inclusion of basic vulnerability and audit data with the component details to understand the risk. This presents us with the known security risks at the time, however, it may suggest a false sense of security as new vulnerabilities are often found after the SBOM is generated.
+
+## SPDX
+
+The Software Package Data Exchange (SPDX) is another open standard for communicating software bill of material information, which excels in capturing license information and positions itself as an alternative to CycloneDX.
+
+## Consuming SBOMs
+
+Sonatype may analyze SBOMs generated when the application is built or as part of a third-party software audit. While we generally recommend including the software binaries during the analysis to make sure nothing is missed, there are times when analyzing just the SBOM is enough and acceptable.
+
+The Sonatype analysis is segmented into three phases:
+
+- analyzing the components both reported and discovered in the application
+- compile component data from the Sonatype Data Services
+- compare the data against your governance policies to generate a report
+
+### SBOM naming for automatic analysis
+
+Sonatype scanners expect a specific naming format for the scanner to identify the file as an SBOM.
+
+```
+[prefix]-bom.[xml|json]
+```
+
+Use this naming format when scanning SBOMs. The prefix and first dash are optional. You will need to use the correct file type. The prefix is used as the **** for unknown components.
+
+### Improve analysis with SBOMs during the build scan
+
+Analyzing your application with an SBOM improves results over scanning build artifacts alone. Developers often use a few files from an open-source component instead of the entire package. As these parts may be found in more than one component, including an SBOM assists in identifying where these parts of the open-source components are sourced.
+
+SBOMs provide the history, or pedigree, of how the application was built. We use these details to better determine the source component use of parts shared by many components.
+
+This is critical as data such as licenses are only associated with the components and not their parts.
+
+### Analyzing an SBOM before building the application
+
+Scanning applications before or after the application build may end up with incomplete results as the way the applications are built is not stored with the final artifacts. Determining the source of projects' files may rely on a *best guess* of the source component or being left as an unknown component.
+
+Sonatype solves this issue using SBOMs in your analysis to include the pedigree of the components. Application may be analyzed at any time using annotated SBOMs.
+
+### SBOM Best Practices
+
+- Analyzing your source code manifests potential risks before depending on new open-source components.
+- Block new critical violations before promoting an application to production.
+- Maintain a point-in-time SBOM with your releases to access them when needed.
+
+### Scanning an SBOM with the CLI
+
+Review the [Sonatype CLI](#UUID-6b69b7b1-858f-e58a-e010-beb4fdff9cdf) documentation on using the Command Line Scanner (CLI) integration to run an analysis on your applications.
+
+- Set the target of the analysis as your SBOM or include the file named for automatic analysis as detailed above in the root directory with the rest of your application.
+- Review the [CycloneDX Analysis](#UUID-71778dbe-a6d1-72eb-d37f-f1ae5835e7c9) and [SPDX Analysis](#UUID-7134f3e0-c5ea-9211-d1d2-1fcd8ac6b09a) pages on scanning your specific SBOM format.
+
+### Scanning an SBOM with the API
+
+Upload the SBOM directly with the [Third-Party Scan REST API](#UUID-5e8f93a2-bbeb-6ccb-8fd8-c4e4e04d5f08) .
+
+### Scanning an SBOM within the UI
+
+You can scan an application's SBOM using the UI.
+
+![137202570.png](/assets/images/uuid-b1660f66-188f-0d06-5b1c-3741c7e85aad.png)
+
+## Generating SBOMs
+
+Whether you are working on compliance with executive orders or need a standard method to report dependency data, creating an SBOM with Sonatype tools is easy. SBOMs generated by Sonatype tools align with the required criteria reported by NIST.
+
+Every Sonatype scan report can be exported as either a CycloneDX or SPDX SBOM in an XML or JSON file format. Do this in the user interface of the scan report or programmatically through the REST API.
+
+### Vulnerability Analysis
+
+SBOMs generated for CycloneDX 1.4+ include vulnerability data for components known to Sonatype. For components not found in the Sonatype Data Services, the vulnerability details are sourced from the originally imported SBOM or added using the [Vulnerability Analysis Details REST API](#UUID-1abf451b-f104-feeb-348b-317cac3af5b2) .
+
+### Exporting an SBOM through the UI
+
+Getting the SBOM through the UI.
+
+![170099035.png](/assets/images/uuid-7ed518df-d112-5db0-8900-9eef3ea7001b.png)
+
+### Exporting an SBOM through the REST API
+
+Example of getting the CycloneDx SBOM. Review the documentation .
+
+```
+curl -u admin:admin123 -X GET -H 'Accept: application/xml' -o '<public app id>_<version>_<timestamp>.cdx.xml' 'http://localhost:8070/api/v2/cycloneDx/1.4/{applicationInternalId}/stages/build'
+```
+
+Example of getting the SPDX SBOM. Review the documentation on [SPDX REST API](#UUID-3f859705-6f87-f8d4-3ee1-eabce2c038cf) .
+
+```
+curl -u admin:admin123 -X GET -o '<public app id>_<version>_<timestamp>.spdx.xml' 'http://localhost:8070/api/v2/spdx/{applicationInternalId}/stages/build?format=xml'
+```
+
+### Generating a CycloneDX SBOM before scanning
+
+[CycloneDX](https://cyclonedx.org/tool-center/) can be used to generate an SBOM from your source code. These use your application build context to get a list of the declared and transitive dependencies referenced in your code. You can use their tools as a part of your build process to include in your Sonatype evaluation. Our analyzers will combine these results with anything discovered in your code to get a complete bill of material for your application.
+
+### Key considerations with third-party SBOMs
+
+- Use the naming requirements detailed above to have SBOMs picked up by the Sonatype analyzers.
+- The results from third-party tools may differ from our in-built analyzers. They may use different methods for determining what are and what are not components. They may misreport or include incomplete pedigree data that is rejected from our analysis. They may only include components reported in the manifest while missing renamed or embedded components in the source. They may include/exclude components used in the development scope which are often not included in the final application. Sonatype retains vulnerability details for components not known to Sonatype Data Services such as inner-source or third-party components. For known components, Sonatype's data is used.
+- They may use different methods for determining what are and what are not components.
+- They may misreport or include incomplete pedigree data that is rejected from our analysis.
+- They may only include components reported in the manifest while missing renamed or embedded components in the source.
+- They may include/exclude components used in the development scope which are often not included in the final application.
+- Sonatype retains vulnerability details for components not known to Sonatype Data Services such as inner-source or third-party components. For known components, Sonatype's data is used.
+
+As a best practice, you will want to compare the results from the different analyzers to determine which model best aligns with your requirements and expectations. Once satisfied with the results, we recommend you standardize that method across your organization to maintain consistency throughout your build lifecycle.
+
+## Managing SBOMs
+
+How you are going to manage SBOMs is up to you to decide. We recommend trying out Sonatype's SBOM Manager as the solution for storing, managing, and sharing your SBOMs.
+
+### Alternate methods for storing your SBOMs
+
+Organizations use binary repositories, such as Nexus Repository, to store and manage their built artifacts in privately hosted repositories.
+
+- Store your SBOMs with your applications in a Nexus repository for quick reference. The Maven repository format does not limit the type of files you store in the repository so including the SBOMs with each build is a simple solution.
+- When naming your SBOM files, use a clear namespacing standard aligned to your release to make identifying them more manageable.
+- The Tagging API may be used to associate your release metadata with the components in your repository.
+- Timestamping your VEX annotations as when they were created is important since the data may quickly get stale.
