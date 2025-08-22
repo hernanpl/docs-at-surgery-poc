@@ -133,22 +133,21 @@ class ClaudeDocsReviewer:
     
     def __init__(self):
         # Check if we're using company LiteLLM proxy
-        litellm_base_url = os.getenv('LITELLM_BASE_URL')
-        litellm_api_key = os.getenv('LITELLM_API_KEY')
+        self.litellm_base_url = os.getenv('LITELLM_BASE_URL')
+        self.litellm_api_key = os.getenv('LITELLM_API_KEY')
         
-        if litellm_base_url and litellm_api_key:
-            # Use company LiteLLM proxy
-            logger.info(f"Using LiteLLM proxy at: {litellm_base_url}")
-            self.client = anthropic.Anthropic(
-                api_key=litellm_api_key,
-                base_url=litellm_base_url
-            )
+        if self.litellm_base_url and self.litellm_api_key:
+            # Use company LiteLLM proxy with direct HTTP requests
+            logger.info(f"Using LiteLLM proxy at: {self.litellm_base_url}")
+            self.use_litellm = True
+            self.client = None  # Will use direct HTTP for LiteLLM
         else:
             # Fall back to direct Anthropic API
             api_key = os.getenv('ANTHROPIC_API_KEY')
             if not api_key:
                 raise ValueError("Either LITELLM_API_KEY+LITELLM_BASE_URL or ANTHROPIC_API_KEY must be set")
             logger.info("Using direct Anthropic API")
+            self.use_litellm = False
             self.client = anthropic.Anthropic(api_key=api_key)
         self.github_token = os.getenv('GITHUB_TOKEN')
         self.repo_owner = os.getenv('REPO_OWNER')
@@ -175,19 +174,58 @@ class ClaudeDocsReviewer:
             logger.error(f"Error getting file content for {file_path}: {e}")
             return None
     
+    def call_claude_api(self, prompt: str) -> str:
+        """Call Claude API - either through LiteLLM proxy or direct Anthropic API"""
+        if self.use_litellm:
+            return self._call_litellm_proxy(prompt)
+        else:
+            return self._call_anthropic_direct(prompt)
+    
+    def _call_litellm_proxy(self, prompt: str) -> str:
+        """Call Claude through company LiteLLM proxy"""
+        import requests
+        
+        url = f"{self.litellm_base_url.rstrip('/')}/v1/chat/completions"
+        
+        headers = {
+            'Content-Type': 'application/json',
+            'x-litellm-api-key': self.litellm_api_key  # Use correct LiteLLM header
+        }
+        
+        data = {
+            'model': 'claude-3-5-sonnet-20241022',
+            'messages': [{'role': 'user', 'content': prompt}],
+            'max_tokens': 4000,
+            'temperature': 0.1
+        }
+        
+        logger.info(f"Making LiteLLM request to: {url}")
+        response = requests.post(url, headers=headers, json=data, timeout=120)
+        
+        if response.status_code != 200:
+            logger.error(f"LiteLLM API error: {response.status_code} - {response.text}")
+            raise Exception(f"LiteLLM API error: {response.status_code} - {response.text}")
+        
+        result = response.json()
+        return result['choices'][0]['message']['content']
+    
+    def _call_anthropic_direct(self, prompt: str) -> str:
+        """Call Claude through direct Anthropic API"""
+        message = self.client.messages.create(
+            model="claude-3-5-sonnet-20241022",
+            max_tokens=4000,
+            temperature=0.1,
+            messages=[{"role": "user", "content": prompt}]
+        )
+        return message.content[0].text
+
     def review_file(self, file_path: str, content: str) -> Dict[str, Any]:
         """Review a single file using Claude"""
         try:
             prompt = GoogleStyleGuide.get_review_prompt(content, file_path)
             
-            message = self.client.messages.create(
-                model="claude-3-5-sonnet-20241022",
-                max_tokens=4000,
-                temperature=0.1,
-                messages=[{"role": "user", "content": prompt}]
-            )
-            
-            response_text = message.content[0].text
+            # Call Claude API (either LiteLLM or direct)
+            response_text = self.call_claude_api(prompt)
             
             # Extract JSON from response
             start_marker = "```json"
