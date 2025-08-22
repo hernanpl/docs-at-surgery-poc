@@ -10,9 +10,12 @@ vendor/
 Gemfile.lock
 
 # Python migration scripts (not needed for production)
-*.py
+# *.py - Commented out to allow GitHub Actions scripts
 *.pyc
 __pycache__/
+
+# Allow specific Python scripts for GitHub Actions
+!.github/scripts/*.py
 
 # Export directories (not needed for production)
 export-html/
