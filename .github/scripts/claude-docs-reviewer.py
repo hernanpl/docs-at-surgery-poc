@@ -193,26 +193,48 @@ class ClaudeDocsReviewer:
         }
         
         data = {
-            'model': 'claude-3-5-sonnet-20241022',
+            'model': 'claude-3-sonnet-20240229',  # Use more widely supported model name
             'messages': [{'role': 'user', 'content': prompt}],
             'max_tokens': 4000,
             'temperature': 0.1
         }
         
         logger.info(f"Making LiteLLM request to: {url}")
-        response = requests.post(url, headers=headers, json=data, timeout=120)
+        logger.info(f"Using model: {data['model']}")
+        logger.info(f"Request headers: {dict(headers)}")
         
-        if response.status_code != 200:
-            logger.error(f"LiteLLM API error: {response.status_code} - {response.text}")
-            raise Exception(f"LiteLLM API error: {response.status_code} - {response.text}")
-        
-        result = response.json()
-        return result['choices'][0]['message']['content']
+        try:
+            response = requests.post(url, headers=headers, json=data, timeout=120)
+            
+            logger.info(f"Response status code: {response.status_code}")
+            logger.info(f"Response headers: {dict(response.headers)}")
+            
+            if response.status_code != 200:
+                logger.error(f"LiteLLM API error: {response.status_code}")
+                logger.error(f"Response text: {response.text}")
+                raise Exception(f"Error code: {response.status_code} - {response.json() if response.text else 'No response body'}")
+            
+            result = response.json()
+            
+            if 'choices' not in result or not result['choices']:
+                logger.error(f"Unexpected response format: {result}")
+                raise Exception(f"Unexpected response format: {result}")
+                
+            content = result['choices'][0]['message']['content']
+            logger.info(f"Successfully received response of length: {len(content)}")
+            return content
+            
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Request exception: {e}")
+            raise Exception(f"Request failed: {e}")
+        except Exception as e:
+            logger.error(f"Unexpected error in LiteLLM call: {e}")
+            raise
     
     def _call_anthropic_direct(self, prompt: str) -> str:
         """Call Claude through direct Anthropic API"""
         message = self.client.messages.create(
-            model="claude-3-5-sonnet-20241022",
+            model="claude-3-5-sonnet-20241022",  # Keep newer model for direct API
             max_tokens=4000,
             temperature=0.1,
             messages=[{"role": "user", "content": prompt}]
