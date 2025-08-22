@@ -2,7 +2,7 @@
 
 This documentation will be reviewed by the automated system to verify that Claude Code integration is working properly.
 
-**Update**: Testing with multiple authentication headers (Bearer, x-api-key, x-litellm-api-key) for LiteLLM compatibility.
+**Update**: Using only x-litellm-api-key header as documented in LiteLLM API specification.
 
 ## Installation
 
