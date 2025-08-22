@@ -132,7 +132,24 @@ class ClaudeDocsReviewer:
     """Main class for Claude-powered documentation review"""
     
     def __init__(self):
-        self.client = anthropic.Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
+        # Check if we're using company LiteLLM proxy
+        litellm_base_url = os.getenv('LITELLM_BASE_URL')
+        litellm_api_key = os.getenv('LITELLM_API_KEY')
+        
+        if litellm_base_url and litellm_api_key:
+            # Use company LiteLLM proxy
+            logger.info(f"Using LiteLLM proxy at: {litellm_base_url}")
+            self.client = anthropic.Anthropic(
+                api_key=litellm_api_key,
+                base_url=litellm_base_url
+            )
+        else:
+            # Fall back to direct Anthropic API
+            api_key = os.getenv('ANTHROPIC_API_KEY')
+            if not api_key:
+                raise ValueError("Either LITELLM_API_KEY+LITELLM_BASE_URL or ANTHROPIC_API_KEY must be set")
+            logger.info("Using direct Anthropic API")
+            self.client = anthropic.Anthropic(api_key=api_key)
         self.github_token = os.getenv('GITHUB_TOKEN')
         self.repo_owner = os.getenv('REPO_OWNER')
         self.repo_name = os.getenv('REPO_NAME')
