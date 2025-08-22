@@ -7,7 +7,7 @@ theme: just-the-docs
 color_scheme: light
 
 # Logo configuration  
-logo: "/docs-at-surgery-poc/assets/images/portal-logo.png"
+logo: "/assets/images/portal-logo.png"
 
 # Enable search
 search_enabled: true
